@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <base href="https://raw.githubusercontent.com/TedGoas/Cerberus/master/cerberus-fluid.html">
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width">
+        <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">
+        <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>Titulización. Retos y oportunidades ante un nuevo entorno</title>
+        <style>
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+            /* What it does: Remove spaces around the email design added by some email clients. */
+            /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+            html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+            cursor: pointer;
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+        .three-columns table {
+            width: 33.3%!important;
+            float: left;
+        }
+        .show-xs {
+            display: none;
+        }
+        .hidden-xs {
+            display: inline-block;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 50% !important;
+            float: left !important;
+        }
+        .two-columns > tbody > tr > td > table img {
+            width: 150px;
+            height: auto;
+        }
+        .four-columns table{
+            width: 25%!important;
+            max-width: 25%!important;
+            float: left;
+        }
+
+        @media only screen and (max-width: 360px) {
+            .show-xs {
+                display: block;
+                }
+            .stack-column-center,
+            .stack-column-center a {
+                padding: 10px 0!important;
+            }
+            .two-columns > tbody > tr > td > table {
+                width: 100% !important;
+                float: none !important;
+            }
+            .three-columns table {
+                width: 100%!important;
+                float: left!important;
+            }
+            .three-columns table td {
+                padding: 5px 0px!important;
+                text-align: center!important;
+            }
+            .hidden-xs {
+                display: none;
+            }
+            .text-xs-center {
+                text-align: center !important;
+            }
+            .text-xs-left {
+                text-align: left !important;
+            }
+            .two-columns img {
+                margin: 0;
+            }
+            .four-columns table{
+                width: 100%!important;
+                max-width: 100%!important;
+                float: none;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .show-xs {
+                display: block;
+            }
+            .hidden-xs {
+                display: none;
+            }
+            .two-columns > tbody > tr > td > table {
+                width: 100% !important;
+                float: none !important;
+            }
+            .three-columns table {
+                width: 100% !important;
+                float: left !important;
+            }
+            .three-columns table td {
+                padding: 5px 0px!important;
+                text-align: center!important;
+            }
+            .stack-column-center,
+            .stack-column-center a {
+                padding: 20px 10px !important;
+            }
+            .text-xs-center {
+                text-align: center !important;
+            }
+            .text-xs-left {
+                text-align: left !important;
+            }
+            .two-columns img {
+                margin: 0;
+            }
+            .four-columns table{
+                width: 50%!important;
+                max-width: 50%!important;
+                float: left;
+            }
+        }
+        </style>
+    </head>
+
+    <body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7; width:100%">
+            <tr>
+                <td>
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td height="20">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'OpenSans', sans-serif, Arial; font-weight: 300; mso-height-rule: exactlsy; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'OpenSans', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2018/11/eventosue/titulizacion/index.html?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=titulizacion-noviembre2018">aquí.</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+        <!--[if mso]>
+        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+                <td>
+                    <![endif]-->
+                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td>
+                            <a href="http://www.eventosyconferenciasue.com/eventos/titulizacion?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=titulizacion-noviembre2018">
+                                <img style="width: 100%; max-width: 600px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;"
+                                    src="http://emailing.eventosue.com/2018/11/eventosue/titulizacion/img/img-main-01.jpg?v=2"
+                                    alt="Titulización. Retos y oportunidades ante un nuevo entorno" width="600" border="0" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#FFFFFF" width="100%" valign="middle">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#dbdce0">
+                                    <tr>
+                        <td style="padding: 20px 20px 15px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #FFFFFF; background-color: #0a94d6; text-align:center;">
+                            MADRID 14 noviembre 2018 <span style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 16px; mso-height-rule: exactly;"><br/ >Palacio de Linares (Sede de Casa de América) - C/ Marqués de Duero, 2</span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+     </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; background-color: #FFF;">
+        <tr>
+            <td width="30">
+                &nbsp;   
+            </td>
+            <td width="100%" style="width: 100%; max-width:540px;">   
+                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 540px; background-color: #FFF; font-family: 'OpenSans', sans-serif; font-size: 16px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #000000; background-color: #FFF; text-align:left; text-decoration: none;">
+                     <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100%; max-width: 540px;">
+                                <tr>
+                                    <td style="padding: 30px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align: justify; letter-spacing: .5px">
+                                            
+                                                    Estimado amigo,<br /><br />
+
+                                                    Por segundo año consecutivo, <strong>Haya Titulización</strong> organiza su <strong>Jornada de Titulización</strong> en colaboración con el diario <strong>Expansión</strong> y es para nosotros un placer invitarte a asistir.<br /><br />
+
+                                                    <strong>Dña. Elena Aparici Vázquez de Parga</strong>, Directora General del Tesoro y Política Financiera, efectuará la Apertura de Honor. Además, participarán en la agenda representantes de organismos supervisores y reguladores, así como actores de principal relevancia en el mercado financiero como <strong>Banco Santander</strong>, <strong>J.P. Morgan</strong> y <strong>Bank of America</strong>, entre otros.<br /><br />
+
+                                                    En esta nueva edición, nos reunimos para tratar desde una perspectiva global los retos y oportunidades a los que se enfrenta el sector de la titulización ante un nuevo entorno de mercado. Durante la Jornada abordaremos asuntos como el impacto de la nueva regulación, el desarrollo de estructuras que optimizan la transferencia de riesgos y la aplicación de la titulización al mundo corporativo.<br /><br />
+
+                                                    El encuentro tendrá lugar el <strong>14 de noviembre</strong>, en el <strong>Palacio de Linares</strong>, <strong>sede de Casa de América (C/ Marqués del Duero, 2. Madrid)</strong>, dando comienzo a las <strong>09:30 h</strong>.<br /><br />
+
+                                                    Esperamos contar con tu asistencia.<br /><br />
+
+                                                    HAYA TITULIZACIÓN Y EXPANSIÓN
+                                            </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="width: 100%; max-width: 300px;">
+                                            <tr>
+                                                <td width="100%">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" valign="middle">
+                                                        <tr>
+                                                            <td height="10">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-radius: 9px ; background: #0a94d6; text-align: center;" class="button-td" height="60">
+                                                                <a href="http://www.eventosyconferenciasue.com/eventos/titulizacion?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=titulizacion-noviembre2018"
+                                                                    style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color: #FFFFFF">
+                                                                    Solicitar invitación aquí
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="40">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                            <td width="30">
+                                &nbsp;   
+                            </td>
+                        </tr>
+                    </table>
+                                              <!--[if mso]>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top">
+                                <![endif]-->
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px;">
+                        <tr>
+                            <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+                                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="two-columns">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                <tr>
+                                                    <td style="text-align: center; padding: 0 10px;">
+                                                                    <img src="http://emailing.eventosue.com/2018/11/eventosue/titulizacion/img/tw_200x50.gif?v=1"
+                                                                        alt="Hastag #Exp_hayatitulizacion" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;"
+                                                                        width="200" height="">
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="text-align: center;">
+                                                                <a style="padding: 40px 20px 20px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;"
+                                                                    href="https://twitter.com/hashtag/Exp_hayatitulizacion">#Exp_hayatitulizacion</a>
+                                                                                                                                <br />
+                                                                <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="https://twitter.com/hashtag/Eventos_EXP">@Eventos_EXP</a>
+                                                                <br />
+                                                                <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="https://twitter.com/hashtag/expansioncom">@expansioncom</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                                                            <!--[if mso]>
+                                        </td>
+                                        <td align="center" valign="top">
+                                        <![endif]-->
+                                            <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                <tr>
+                                                    <td style="text-align: center; padding: 0 10px;">
+                                                        <img src="http://emailing.eventosue.com/2018/11/eventosue/titulizacion/img/agenda_200x50.gif" width="200" height="" alt="Descargar Agenda" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                        <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="http://www.eventosyconferenciasue.com/eventos/titulizacion/agenda?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=titulizacion-noviembre2018">Descargar agenda</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px;">
+                            <tr>
+                                <td bgcolor="#f4f4f4" style="border-radius: 0 0 18px 18px;">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                                Inscripciones a través de la web:
+                                                <br>
+                                                <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #337ABB; text-align:center;font-weight: 500; word-break:break-all" href="http://www.eventosyconferenciasue.com/eventos/titulizacion?utm_source=ue&utm_medium=mailing&utm_campaign=titulizacion-noviembre2018">www.eventosue.com/titulizacion</a>
+                                                <br>
+                                                <br> Para más información: <strong>91 443 53 36</strong>
+                                                <br class="show-xs" /><span class="hidden-xs">–</span> Aforo limitado.
+                                                <br>Imprescindible confirmación por parte de la organización
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius:8px;" bgcolor="#ffffff">
+                            <tr>
+                            <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'OpenSans', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                © Unidad Editorial, 2018
+                                    <br>Si no desea seguir recibiendo esta información de <a style="font-family: 'OpenSans', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;"
+                                        href="http://www.eventosyconferenciasue.com/?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=titulizacion-noviembre2018">www.eventosyconferenciasue.com</a>,
+                                    <br> por favor haga clic <a style="font-family: 'OpenSans', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;"
+                                        href="{[Opt-Out Baja_Eventos_y_Conferencias|95257]}">aquí</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+                <![endif]-->
+                </td>
+            </tr>
+        </table>
+    <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-1&cid=&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=titulizacion-noviembre2018"
+        style="visibility: hidden;" />
+    </body>
+</html>

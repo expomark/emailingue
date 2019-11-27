@@ -1,0 +1,9 @@
+<mj-wrapper full-width="full-width">
+    <mj-section padding-top="0">
+        <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+                Ha recibido este e-mail porque es usuario registrado de "Unidad Editorial Información Deportiva S.L.U." y ha aceptado recibir comunicaciones electrónicas relacionadas con nuestros productos o servicios. Si desea dejar de recibir este tipo concreto de comunicaciones, por favor <a class="text-color" href="{[Opt_Out Baja Telva Consumer|46148]} ">pulse aqu&iacute;</a>. Si desea modificar sus datos <a class="text-color" href="https://seguro.telva.com/registro/v2/zona-usuario.html">pulse aquí</a>.
+            </mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>

@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+
+        <title>Estrategia de contenidos para páginas web - III Edición Online</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+
+   <style>
+ @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+        margin: 0 auto !important;
+        height: 100% !important;
+        width: 100% !important;
+        letter-spacing: .5px;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        letter-spacing: .85px;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-td a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+            cursor: pointer;
+            background: #282828 !important;
+            border-color: #282828 !important;
+        }
+        .button-td:hover a {
+            color: #eaeaea !important;
+        }
+        .two-columns table {
+            width: 50%!important;
+            max-width: 50%!important;
+            float: left;
+        }
+        .three-columns table {
+            width: 33.3%!important;
+            max-width: 33.3%!important;
+            float: left;
+        }
+        .four-columns table{
+            width: 25%!important;
+            max-width: 25%!important;
+            float: left;
+        }
+        @media only screen and (max-width: 600px) {
+            .show-xs {
+                display: block;
+            }
+            .hidden-xs {
+                display: none;
+            }
+            .three-columns table, .two-columns table, .w100-xs {
+                width: 100%!important;
+                max-width: 100%!important;
+                float: none;
+                margin-bottom: 30px!important;
+            }
+            .three-columns table:last-child, .two-columns table:last-child {
+                margin-bottom: 0px!important;
+            }
+            .four-columns table{
+                width: 50%!important;
+                max-width: 50%!important;
+                float: none;
+            }
+            .four-columns table:nth-child(2) {
+                margin-bottom: 30px!important;
+            }
+
+            * {
+                text-align: center !important;
+            }
+        }
+        @media (min-width: 601px) {
+            .show-xs {
+                display: none;
+            }
+            .hidden-xs {
+                display: table-cell;
+            }
+            .w100-xs {
+                width: auto !important;
+                max-width: auto !important;
+            }
+            * {
+                text-align: auto !important;
+            }
+        }
+        /* video styles */
+        #MessageViewBody .video-wrapper { display:block!important; }
+        #MessageViewBody .video-fallback { display:none!important; }
+
+         .video-wrapper {display:none;}
+
+        @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:1024px) 
+        {
+          .video-wrapper { display:block!important; }
+          .video-fallback { display:none!important; }
+        }
+        @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
+          div[class^=video-wrapper] { display:block!important; }
+          div[class^=video-fallback] { display:none!important; }
+        }
+        </style>
+    </head>
+    <body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7; width:100%">
+            <tr>
+                <td>
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td height="20">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'OpenSans', sans-serif, Arial; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'OpenSans', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2017/07/escuelaue/cursos-de-especializacion/estrategia-de-contenidos-para-paginas-web/emailing1-ad1/index-user.html">aquí.</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+        <!--[if mso]>
+        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+                <td>
+                    <![endif]-->
+                    <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td height="60" style="font-size: 0; line-height: 0;">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; background-color: #FFF;">
+                        <tr>
+                            <td width="7%">
+                                &nbsp;   
+                            </td>
+                            <td width="86%" style="width: 100%; max-width:86%;">
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; background-color: #FFF; font-family: 'OpenSans', sans-serif; font-size: 16px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #000000; background-color: #FFF; text-align:left; text-decoration: none;">
+                                    <tr>
+                                        <td>
+                                            Hola <span style="text-transform: capitalize;">[NOMBRE]</span>, <br /><br />
+                                            Posicionar una web en orgánico es una de las estrategias más fiables para <strong>asegurar un constante flujo de tráfico relevante</strong>.<br /><br />Sin embargo, hay que saber crear, desarrollar y generar un contenido que, además de <strong>cumplir con los cambiantes requisitos técnicos de los buscadores</strong>, sea relevante y conecte con la audiencia. <br /><br />Desarrollar este conocimiento, no sólo <a style="color: #000000; text-decoration: underline; font-weight: 400" href="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/estrategia-de-contenidos-para-paginas-web/?cid={(user_id)}&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-1–estrategia-user" >te diferenciará del resto de profesionales</a>, sino que te dará una ventaja competitiva en tu ámbito profesional.<br /><br />Con el curso Estrategia de Contenidos para Páginas Web también <strong>aprenderás a</strong>:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" cellspacing="0" cellpadding="10" border="0" align="right" style="width: 100%; max-width:600px;">
+                                                <tr>
+                                                    <td valign="top" style="font-family: 'OpenSans', sans-serif; font-size: 13px; mso-height-rule: exactly; line-height: 1.3; font-weight: 200; color: #282828; text-align: center;">
+                                                        <img  width="65" style="width: 65px; max-width: 65px; display: block; margin: 0 auto;" border="0"  src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/digital/icons-herramientas.png" alt="UTILIZAR LAS HERRAMIENTAS para crear contenidos digitales atractivos" />
+                                                        UTILIZAR LAS HERRAMIENTAS<br /><span style="color: #666;"> para crear contenidos digitales atractivos</span><br /><br />
+                                                    </td>
+                                                    <td valign="top" style="font-family: 'OpenSans', sans-serif; font-size: 13px; mso-height-rule: exactly; line-height: 1.3; font-weight: 200; color: #282828; text-align: center;">
+                                                        <img  width="65" style="width: 65px; max-width: 65px; display: block; margin: 0 auto;" border="0"  src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/digital/icons-redes.png" alt="SACAR EL MÁXIMO PARTIDO al uso de las Redes Sociales" />
+                                                        SACAR EL MÁXIMO PARTIDO<br /><span style="color: #666;"> al uso de las Redes Sociales</span><br /><br />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top" style="font-family: 'OpenSans', sans-serif; font-size: 13px; mso-height-rule: exactly; line-height: 1.3; font-weight: 200; color: #282828; text-align: center;">
+                                                        <img  width="65" style="width: 65px; max-width: 65px; display: block; margin: 0 auto;" border="0"  src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/digital/icons-video.png" alt="PRODUCIR VÍDEOS de éxito " />
+                                                        PRODUCIR VÍDEOS<br /><span style="color: #666;">de éxito </span><br /><br />
+                                                    </td>
+                                                    <td valign="top" style="font-family: 'OpenSans', sans-serif; font-size: 13px; mso-height-rule: exactly; line-height: 1.3; font-weight: 200; color: #282828; text-align: center;">
+                                                        <img  width="65" style="width: 65px; max-width: 65px; display: block; margin: 0 auto;" border="0"  src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/digital/icons-audiencia.png" alt="IDENTIFICAR a tu audiencia" />
+                                                        IDENTIFICAR<br /><span style="color: #666;"> a tu audiencia</span><br /><br />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            ¿Además de ver el programa del curso <strong style="letter-spacing: 1px">Estrategia de Contenidos para Páginas Web</strong>, quieres conocer a sus profesores y la metodología del curso?
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="7%">
+                                &nbsp;   
+                            </td>
+                        </tr>
+                        <tr>
+                           <td colspan="3" height="20">&nbsp;</td> 
+                        </tr>
+                    </table>
+                    <table align="center" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0" style="background:#FFFFFF; width:100%; max-width: 600px">
+                        <tr>
+                            <td>
+                                <table style="margin: 0 auto;" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="30">
+                                                &nbsp;
+                                            </td>
+                                            <td style="border-radius: 3px; background: #80acc2; text-align: center;" class="button-td" height="60">
+                                               <a href="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/estrategia-de-contenidos-para-paginas-web/?cid={(user_id)}&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-1–estrategia-user" style="font-family: 'OpenSans', sans-serif, Arial; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color: #FFFFFF">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INFÓRMATE AQUÍ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </a>
+                                            </td>
+                                            <td width="30">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size:14px;text-align:left;">
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;">
+                                                <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" class="three-columns">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" valign="top">
+                                                           <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                                    <tr>
+                                                                        <td style="text-align: center;">
+                                                                            <a href="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/estrategia-de-contenidos-para-paginas-web/?cid={(user_id)}&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-1–estrategia-user"> <img src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/logos/logo-escuela.png?v=2" alt="Escuela de Unidad Editorial" style="width: 100%; max-width: 200px; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" align="middle" border="0" width="200"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!--[if mso]>
+                                                            </td>
+                                                            <td align="center" valign="top">
+                                                                <![endif]-->
+                                                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                                    <tr>
+                                                                        <td style="text-align: center;">
+                                                                            <a href="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/estrategia-de-contenidos-para-paginas-web/?cid={(user_id)}&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-1–estrategia-user"> <img src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/logos/logo-elmundo.png?v=2" alt="Marca" style="width: 100%; max-width: 200px; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!--[if mso]>
+                                                            </td>
+                                                            <td align="center" valign="top">
+                                                                <![endif]-->
+                                                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                                    <tr>
+                                                                        <td style="text-align: center;">
+                                                                            <a href="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/estrategia-de-contenidos-para-paginas-web/?cid={(user_id)}&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-1–estrategia-user"> <img src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/logos/logo-expansion.png?v=2" alt="CEU San Pablo" style="width: 100%; max-width: 200px; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" align="middle" border="0" width="200"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; background-color: #FFFFFF; border-radius: 0 0 9px 9px; box-shadow: 0px 13px 18px rgba(0, 0, 0, .08);">
+                        <tr>
+                            <td width="100%" height="10" valign="middle">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if mso]>
+                            </td>
+                        </tr>
+                    </table>
+                    <![endif]-->
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td height="50">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100%;font-size: 12px; font-family: 'OpenSans', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center;">
+                                    © Unidad Editorial, 2017<br>Si no desea seguir recibiendo esta información de <a style="font-family: 'OpenSans', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.escuelaunidadeditorial.es/?cid={(user_id)}&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-1–estrategia-user">www.escuelaunidadeditorial.es</a>,<br> por favor envíe un e-mail a <a style="font-family: 'OpenSans', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-11&cid={(user_id)}&t=event&ec=email&ea=open&el=estrategia-you&cs=trackitsuite&cm=Email-1–estrategia-user&cn=cursos-de-especializacion-septiembre-2017&utm_content=Email-1–estrategia-user" style="visibility: hidden;"/>
+    </body>
+</html>

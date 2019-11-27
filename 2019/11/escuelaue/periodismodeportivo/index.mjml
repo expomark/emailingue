@@ -1,0 +1,85 @@
+<mjml>
+  <mj-head>
+    <mj-title>¿Te interesan el Periodismo o la Comunicación? | Escuela de Periodismo y Comunicación de Unidad Editorial</mj-title>
+    <mj-preview>Escuela de Periodismo y Comunicación de Unidad Editorial</mj-preview>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" />
+    <mj-attributes>
+      <mj-all font-family="Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-all>
+    </mj-attributes>
+    <mj-style>
+      .text-color {
+        color: #ea232d;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#e2e2e2" width="600px">
+    <mj-section full-width="full-width" padding="0" background-color="#ea232d">
+      <mj-column>
+        <mj-divider border-width="20px" border-color="#ea232d" padding="0" />
+      </mj-column>
+    </mj-section>
+    <mj-section full-width="full-width" padding-bottom="0">
+      <mj-column width="100%">
+        <mj-text align="center" color="#999999" font-size="12px" padding-bottom="20px" padding-top="0" color="#FFF">Si no visualiza correctamente este correo haga <a href="http://emailing.eventosue.com/2019/11/escuelaue/periodismodeportivo/index.html" class="text-color">clic aquí</a>.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-wrapper padding-top="0" padding-bottom="0">
+      <mj-section full-width="full-width" background-color="#fff">
+        <mj-column width="50%">
+          <mj-image src="http://emailing.eventosue.com/2019/11/escuelaue/periodismodeportivo/img/logo-escuelaue.png" alt="Escuela de Periodismo y Comunicación de Unidad Editorial" align="left" width="190px" />
+        </mj-column>
+        <mj-column width="50%">
+          <mj-image src="http://emailing.eventosue.com/2019/11/escuelaue/periodismodeportivo/img/marca.jpg" alt="Marca" align="right" width="150px" />
+        </mj-column>
+      </mj-section>
+      <mj-section full-width="full-width" background-color="#fff" padding-bottom="0" padding-top="0">
+        <mj-column width="100%">
+          <mj-image src="http://emailing.eventosue.com/2019/11/escuelaue/periodismodeportivo/img/periodismodeportivo.jpg" width="600px" alt="" padding="0" href="https://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/curso-especializado-en-periodismo-deportivo/" />
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#ffffff" padding-left="15px" padding-right="15px">
+        <mj-column width="100%">
+          <mj-text color="#ea232d" font-weight="bold" font-size="24px" align="center" line-height="28px">
+            Curso Especializado en Periodismo Deportivo
+          </mj-text>
+          <mj-text color="#666666" font-size="17px" font-weight="300" line-height="25px">
+            El Curso Especializado en Periodismo Deportivo es un programa de la Escuela de Periodismo de Unidad Editorial y el diario MARCA impartido por los profesionales de MARCA. <br><br>El alumno podrá <b>aprender y poner en práctica</b> los métodos de trabajo desarrollados en MARCA para ofrecer una información deportiva interesante, atractiva y rigurosa en papel y en el entorno digital.
+          </mj-text>
+          <mj-text color="#637381" font-size="13px" line-height="18px" align="center">
+            <b>Fechas: todos los jueves y viernes desde el 6 de febrero al 5 de marzo de 2020.<br>Horario: de 17.00 a 20.00 h.</b></br>
+          </mj-text>
+          <mj-button background-color="#ea232d" align="center" color="#ffffff" font-size="17px" font-weight="bold" href="https://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/curso-especializado-en-periodismo-deportivo/" width="300px">
+            INFÓRMATE AQUÍ
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#ffffff" padding="0 0 20px">
+        <mj-column width="100%">
+          <mj-divider border-width="1px" border-color="lightgrey" padding-top="0" />
+          <mj-text color="#637381" font-size="16px" align="center" padding-top="15px">
+            Escuela de Unidad Editorial<br>Formación con salidas profesionales, avalada por líderes del sector
+          </mj-text>
+          <mj-image src="http://emailing.eventosue.com/2019/11/escuelaue/periodismodeportivo/img/logos.png?v=3" width="600px" alt="El Mundo, Expansión, Marca, Telva, Yo Dona" />
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#f4f4f4">
+        <mj-column width="100%" padding="0">
+          <mj-text color="#445566" font-size="18px" align="center"><a href="https://www.escuelaunidadeditorial.es/" class="text-color">www.escuelaunidadeditorial.es</mj-text>
+          <mj-social font-size="15px" icon-size="30px" mode="horizontal" padding="0" align="center">
+            <mj-social-element name="facebook" href="https://facebook.com/EscuelaUnidadEditorial/" background-color="transparent" src="http://emailing.eventosue.com/2019/09/escuelaue/masteres/images/fb2.png">
+            </mj-social-element>
+            <mj-social-element name="instagram" href="https://instagram.com/escuelaunidadeditorial/" background-color="transparent" src="http://emailing.eventosue.com/2019/09/escuelaue/masteres/images/instagram.png"></mj-social-element>
+            <mj-social-element name="twitter" href="https://twitter.com/EscuelaUE" background-color="transparent" src="http://emailing.eventosue.com/2019/09/escuelaue/masteres/images/twitter2.png">
+            </mj-social-element>
+            <mj-social-element name="linkedin" href="https://linkedin.com/company/escuela-unidad-editorial" background-color="transparent" src="http://emailing.eventosue.com/2019/09/escuelaue/masteres/images/linkedin2.png">
+            </mj-social-element>
+            <mj-social-element name="youtube" href="https://youtube.com/user/EscuelaUE" background-color="transparent" src="http://emailing.eventosue.com/2019/09/escuelaue/masteres/images/youtube2.png">
+            </mj-social-element>
+          </mj-social>
+          <mj-text color="#445566" font-size="11px" align="center" line-height="16px"> © Escuela de Periodismo y Comunicación de Unidad Editorial - 2019 - Todos los derechos reservados. </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-include path="./footer-telva.mjml" />
+  </mj-body>
+</mjml>

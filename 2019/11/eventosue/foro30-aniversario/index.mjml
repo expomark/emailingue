@@ -1,0 +1,147 @@
+<mjml>
+  <mj-head>
+    <mj-title> Foro 30º aniversario</mj-title>
+    <mj-preview> Foro 30º aniversario</mj-preview>
+    <mj-attributes>
+      <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto" />
+      <mj-all font-family="Roboto, Helvetica, Arial, sans-serif"></mj-all>
+      <mj-text font-weight="400" letter-spacing=".5px" font-size="16px" color="#000000" line-height="24px" font-family="Roboto, Helvetica, Arial, sans-serif"></mj-text>
+    </mj-attributes>
+    <mj-style inline="inline">
+      .body-section {
+        -webkit-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .text-link {
+        color: #5e6ebf
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .footer-link {
+        color: #888888
+      }
+    </mj-style>
+
+  </mj-head>
+  <mj-body background-color="#eaeaea" width="600px">
+    <mj-section full-width="full-width" background-color="#eaeaea" padding-bottom="0">
+      <mj-column width="100%">
+        <mj-text align="center" font-size="11px" padding-bottom="20px" padding-top="0" color="#000000">Si no visualiza correctamente este correo haga clic <a href="http://emailing.eventosue.com/2019/11/eventosue/foro30-aniversario" style="color: #000000; font-weight: 500; text-decoration: none;">aquí</a>.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#eaeaea" padding="0">
+      <mj-column width="100%">
+        <mj-image src="http://emailing.eventosue.com/2019/11/eventosue/foro30-aniversario/img/img-main.jpg?v5" width="600px" alt="Afterwork para jóvenes empresario" padding="0" href="https://www.eventosyconferenciasue.com/eventos/foros-30-aniversario-homenaje-a-la-lengua-espanola" />
+      </mj-column>
+    </mj-section>
+    <mj-wrapper padding-top="0" padding-bottom="0" css-class="body-section">
+      <mj-section background-color="#e63023" padding="5px">
+          <mj-column width="100%">
+              <mj-text color="#fff" font-size="18px" align="center">
+                  <b>MADRID 18 noviembre 2019</b> <br>Edificio Castellana, 81 - de 19:30 a 21:00 h 
+              </mj-text>
+          </mj-column>
+      </mj-section>
+      <mj-section background-color="#FFF" padding-left="15px" padding-right="15px">
+        <mj-column width="100%">
+          <mj-text color="#637381" font-size="16px" align="justify">
+            Desde <b>EL MUNDO</b>, queremos celebrar nuestro <b>30 Aniversario</b>, 30 años de periodismo y vanguardia informativa. Un aniversario que nos posiciona  como el producto multiplataforma  más innovador.
+          </mj-text>
+          <mj-text color="#637381" font-size="16px" align="justify">
+            Para ello, hemos lanzado los <b>Foros 30 Aniversario El Mundo</b>, que girarán  en torno a la lengua española. En el curso de estos Foros, un plantel destacado de personalidades abordará asuntos como la tecnología, el deporte, la sostenibilidad, el turismo y el cine. 
+          </mj-text>
+          <mj-text color="#637381" font-size="16px" align="justify">
+            El primer Foro, tendrá lugar el próximo <b>18 de noviembre</b> en Madrid En esta ocasión tratará sobre <b>“El Cine, ventana al presente”</b> La música y el cine son dos de los ámbitos en los que  el español ha tenido su mejor plataforma. En este Foro, Antonio Lucas dialogará con Alejandro Amenábar, director de cine y guionista chileno-español.</b>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#ffffff" background-repeat="repeat" padding-top="0px" padding="20px 0 0" text-align="center" vertical-align="top">
+        <mj-column width="100%">
+          <mj-button align="center" background-color="#e63023" border-radius="30px" color="#ffffff" font-size="16px" font-weight="bold" inner-padding="15px 20px" padding="10px 25px" text-decoration="none" text-transform="none" vertical-align="middle" href="https://www.eventosyconferenciasue.com/eventos/foros-30-aniversario-homenaje-a-la-lengua-espanola">Solicitar invitación aquí</mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#fff">
+        <mj-column width="50%">
+            <mj-text color="#637381" font-size="18px" align="center" padding-bottom="0">
+                SÍGUENOS
+            </mj-text> 
+            <mj-image src="http://emailing.eventosue.com/2019/11/eventosue/lujo-sostenible/img/tw_55x55.png?v=" width="45px" align="center" alt="Síguenos en Twitter" padding="0" href="https://twitter.com/hashtag/EM30Amenabar" />
+            <mj-text color="#637381" padding-top="0px" font-size="16px" align="center">
+                <a style="color:#637381; text-decoration: none;" href="https://twitter.com/hashtag/#EM30Amenabar"> #EM30Amenabar</a><br>
+                <a style="color:#637381; text-decoration: none;" href="https://twitter.com/EventosUE">
+                @EventosUE</a><br>
+                <a style="color:#637381; text-decoration: none;" href="https://twitter.com/elmundoes">
+                @elmundoes</a>
+            </mj-text>
+        </mj-column> 
+        <mj-column width="50%">
+            <mj-text color="#637381" font-size="18px" align="center" padding-bottom="0">
+                AGENDA
+            </mj-text> 
+            <mj-image src="http://emailing.eventosue.com/2019/11/eventosue/foro30-aniversario/img/agenda_55x55.png?v=5" width="45px" align="center" alt="Síguenos en Twitter" padding="0" href="https://www.eventosyconferenciasue.com/eventos/foros-30-aniversario-homenaje-a-la-lengua-espanola/agenda" />
+            <mj-text color="#637381" padding-top="0px" font-size="16px" align="center">
+                <a style="color:#637381; text-decoration: none;" href="https://www.eventosyconferenciasue.com/eventos/foros-30-aniversario-homenaje-a-la-lengua-espanola/agenda"> DESCARGAR<br>AGENDA</a>
+            </mj-text>
+        </mj-column>   
+    </mj-section>
+    <mj-section background-color="#eaeaea">
+        <mj-column width="100%">
+            <mj-text color="#637381" font-size="16px" align="center" padding-bottom="0">
+                 Inscripciones a través de la web:
+            </mj-text> 
+            <mj-text color="#637381" padding-top="0px" font-size="16px" align="center">
+                <a style="color:#30509a; text-decoration: underline; font-weight:600;" href="https://www.eventosyconferenciasue.com/eventos/foros-30-aniversario-homenaje-a-la-lengua-espanola">
+                www.eventosue.com/EM30Amenabar</a>
+                <span style="font-size:14px;">
+                <br><br>Para más información: <b>91 443 53 36</b>
+                <br>Aforo limitado.
+                <br>Imprescindible confirmación por parte de la organización </span>
+            </mj-text>
+        </mj-column> 
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-wrapper full-width="full-width">
+      <mj-section>
+        <mj-column width="80%" padding="0">
+          <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+            Si no desea seguir recibiendo esta información de <a style="color:#444444; text-decoration:none;" href="www.eventosyconferenciasue.com">www.eventosyconferenciasue.com</a>, por favor haga clic <a style="color:#444444; text-decoration:underline;" href="{[Opt-Out Baja_Eventos_y_Conferencias|95257]}">aquí</a>.
+          </mj-text>
+        </mj-column>
+        </mj-section>
+        <mj-section>
+        <mj-column width="100%" padding="0">
+          <mj-text color="#A1A0A0" font-size="16px" align="center" line-height="24px">
+            Unidad Editorial S.A.
+          </mj-text>
+          <mj-social font-size="15px" icon-size="30px" mode="horizontal" padding="0" align="center">
+            <mj-social-element name="twitter" href="https://twitter.com/EventosUE" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="facebook" href="https://www.facebook.com/eventosyconferenciasue" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="linkedin" href="https://www.linkedin.com/groups/2722989/" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="instagram" href="https://www.instagram.com/eventosunidadeditorial/" background-color="#A1A0A0">
+            </mj-social-element>
+          </mj-social>
+          <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+            &copy; Unidad Editorial, 2019.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="0">
+        <mj-group>
+          <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px" font-weight="bold">
+              <a class="footer-link" href="https://www.eventosyconferenciasue.com/corporativo/aviso-legal">Privacidad</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <a class="footer-link" href="{[Opt-Out Baja_Eventos_y_Conferencias|95257]}">Darse de baja</a>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+    <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-1&cid=&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=pacto-infraestructuras-oct19" style="visibility: hidden;" />
+  </mj-body>
+</mjml>

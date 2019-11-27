@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><base href="https://raw.githubusercontent.com/TedGoas/Cerberus/master/cerberus-fluid.html">
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>IV ENCUENTRO - Multicanalidad en el sector salud</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+        <!-- Web Font / @font-face : BEGIN -->
+        <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+        <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+        <!--[if mso]>
+        <style>
+        * {
+        font-family: sans-serif !important;
+        }
+        </style>
+        <![endif]-->
+        <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+        <!--[if !mso]><!-->
+        <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+        <!--<![endif]-->
+        <!-- Web Font / @font-face : END -->
+        <!-- CSS Reset -->
+        <style>
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/http://www.eventosyconferenciasue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/Faktsoftpro-Blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "Circo";
+        src: url("http://emailing.eventosue.com/fonts/circo.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/circo.woff") format("woff"), url("http://emailing.eventosue.com/fonts/circo.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td {
+        transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+        cursor: pointer;
+        background: #555555 !important;
+        border-color: #555555 !important;
+        }
+        .show-xs {
+        display: none;
+        }
+        .hidden-xs {
+        display: inline-block;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 50% !important;
+            float: left !important;
+        }
+        .two-columns > tbody > tr > td > table img {
+            width: 150px;
+            height: auto;
+        }
+        @media only screen and (max-width: 360px) {
+        .show-xs {
+        display: block;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 10px 0!important;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        }
+        @media only screen and (max-width: 600px) {
+        .show-xs {
+        display: block;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 20px 10px !important;
+        }
+        }
+        </style>
+    </head>
+    <body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7;width:100%">
+            <tr>
+                <td>
+                    <!-- Visually Hidden Preheader Text : BEGIN -->
+                    <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'FaktProSoft', sans-serif;">
+                        
+                    </div>
+                    <!-- Visually Hidden Preheader Text : END -->
+                    <!--
+                    Set the email width. Defined in two places:
+                    1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
+                    2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+                    -->
+                    <div style="max-width: 600px; margin: auto;">
+                        <!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                            <tr>
+                                <td>
+                                    <![endif]-->
+                                    <!-- Email Header : BEGIN -->
+                                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2016/11/escuelacf/multicanalidad/index.html">aquí.</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td height="8" style="font-size: 0; line-height: 0;">
+                                                &nbsp;
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 100%; max-width: 600px; text-align: center; padding: 20px 0" width="600">
+                                                    <a href="http://escuela.correofarmaceutico.com?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=multicanalidad_noviembre2016">
+                                                        <img src="http://emailing.eventosue.com/2016/11/escuelacf/multicanalidad/img/logo-head-01.gif" alt="Escuela de Correo Farmacéutico" style=";width: 100%; max-width: 450px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000; margin: 0 auto;" height="" align="middle" border="0" width="450">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 20px;">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;" class="two-columns">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                                <tr>
+                                                                    <td style="width: 100%;max-width: 600px;text-decoration:none;font-size: 12px; font-family: 'FaktProSoft', sans-serif; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #000000;" class="stack-column-center">
+                                                                    Socio Académico:
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="text-align: center;">
+
+                                                                        <img src="http://emailing.eventosue.com/2016/11/escuelacf/multicanalidad/img/logo-head-02.gif" width="280" height="" alt="Hastag #CursosCF" style="border: 0;width: 280px;max-width: 280px; background: #dddddd; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        <!--[if mso]>
+                                                            </td>
+                                                            <td align="center" valign="top">
+                                                        <![endif]-->
+                                                            <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                                <tr>
+                                                                    <td style="width: 100%;max-width: 600px;text-decoration:none;font-size: 12px; font-family: 'FaktProSoft', sans-serif; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #000000;" class="stack-column-center">
+                                                                    Patrocina:
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="text-align: center;">
+                                                                        <img src="http://emailing.eventosue.com/2016/11/escuelacf/multicanalidad/img/logo-head-03.gif" width="280" height="" alt="Descargar Agenda" style="border: 0;width: 280px;max-width: 280px; background: #dddddd; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div style="max-width: 100%; margin: 0px auto; background-color: #aac9cb;">
+                                    <div style="max-width: 600px; margin: 0px auto;">
+                                        <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td bgcolor="#FFFFFF" align="center" height="100%" valign="top" width="100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="two-columns">
+                                                        <tr>
+                                                            <td align="center" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                                    <tr>
+                                                                        <td style="padding: 20px 0px 20px 30px; font-family: 'Circo', sans-serif; font-size: 18px; font-weight:400; mso-height-rule: exactly; line-height: 18px; color: #00896A; text-align:left;" class="stack-column-center">
+                                                                            IV ENCUENTRO
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="padding-left: 30px; font-family: 'FaktProSoft', sans-serif; font-size: 35px; font-weight:500; mso-height-rule: exactly; line-height: 35px; color: #000000; text-align:left;"  class="stack-column-center">
+                                                                            Multicanalidad en el sector salud
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            <!--[if mso]>
+                                                                </td>
+                                                                <td align="center" valign="top">
+                                                            <![endif]-->
+                                                                <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                                    <tr>
+                                                                        <td style="text-align: center;">
+                                                                            <a href="http://escuela.correofarmaceutico.com/formacion-presencial/multicanalidad-en-el-sector-salud-ger?utm_source=ue&utm_medium=mailing&utm_campaign=multicanalidad_noviembre2016">
+                                                                                <img src="http://emailing.eventosue.com/2016/11/escuelacf/multicanalidad/img/img-main-01.jpg" width="300" height="" alt="Multicanalidad en el sector salud. 4º Encuentro" border="0" align="center" style="width: 100%; max-width: 300px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div style="max-width: 100%; margin: 0px auto; background-color: #E4E5D5;">
+                                    <div style="max-width: 600px; margin: 0px auto;">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#F6F7E1">
+                                            <tr>
+                                                <td style="padding: 15px 20px; font-family: 'FaktProSoft', sans-serif; font-size: 18px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #000000; background-color: #F6F7E1; text-align:center;"><span style="font-family: 'FaktProSoft', sans-serif; font-weight:500; mso-height-rule: exactly;">MADRID 17 noviembre 2016</span>. Auditorio Unidad Editorial
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div style="max-width: 100%; margin: 0px auto; background-color: #00896A;">
+                                    <div style="max-width: 600px; margin: 0px auto;">
+                                        <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#00896A" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="8" width="23%" style="font-size: 0; line-height: 0; background-color: #B0BD77;">
+                                                    &nbsp;
+                                                    </td>
+                                                    <td height="8" width="7%" style="font-size: 0; line-height: 0; background-color: #629C45;">
+                                                    &nbsp;
+                                                    </td>
+                                                    <td height="8" width="6%" style="font-size: 0; line-height: 0; background-color: #2DA582;">
+                                                    &nbsp;
+                                                    </td>
+                                                    <td height="8" width="6%" style="font-size: 0; line-height: 0; background-color: #B0BD77;">
+                                                    &nbsp;
+                                                    </td>
+                                                    <td height="8" width="9%" style="font-size: 0; line-height: 0; background-color: #B0BD77;">
+                                                    &nbsp;
+                                                    </td>
+                                                    <td height="8" width="9%" style="font-size: 0; line-height: 0; background-color: #2DA582;">
+                                                    &nbsp;
+                                                    </td>
+                                                    <td height="8" width="30%" style="font-size: 0; line-height: 0; background-color: #00896A;">
+                                                    &nbsp;
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div style="max-width: 600px; margin: auto;">
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius: 0 0 18px 18px" bgcolor="#ffffff">
+                                        <tr>
+                                            <td bgcolor="#ffffff" height="40">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#ffffff">
+                                                <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                                                    <tr>
+                                                        <td height="60" style="border-radius: 15px; background: #00896A; text-align: center;" class="button-td">
+                                                            <a href="http://escuela.correofarmaceutico.com/formacion-presencial/multicanalidad-en-el-sector-salud-ger?utm_source=ue&utm_medium=mailing&utm_campaign=multicanalidad_noviembre2016" style="font-family: 'FaktProSoft', sans-serif; font-size: 20px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#FFFFFF; border-radius: 15px;">
+                                                                &nbsp;Inscr&iacute;base aqu&iacute; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly;">con el código MULT17NOV</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align: justify;">
+                                                            Estimado amigo:<br /><br />
+                                                            Es un placer invitarle al “<span style="font-family: 'FaktProSoft', sans-serif; font-weight:500; mso-height-rule: exactly;">IV ENCUENTRO sobre Multicanalidad en el sector salud</span>”, organizado por la <span style="font-family: 'FaktProSoft', sans-serif; font-weight:500; mso-height-rule: exactly;">Escuela de Formación de Correo Farmacéutico</span> en colaboración con <span style="font-family: 'FaktProSoft', sans-serif; font-weight:500; mso-height-rule: exactly;">QUINTILESIMS</span>, y que se celebrará en Madrid el 17 de noviembre de 2016.<br /><br />
+
+                                                            El cada vez mayor protagonismo de los canales online en la relación con los clientes en el sector salud está llevando a una necesidad cada vez mayor de aplicar estrategias multicanal y de integrar los canales utilizados. Por ello, por cuarto año consecutivo, seguimos apostando por realizar este foro, en el que se compartirán los avances que se están produciendo y en el que confiamos se fomente un debate enriquecedor alrededor de estos temas.<br /><br />
+ 
+                                                            Esperamos que este encuentro sea de su interés
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- 1 Column Text + Button : BEGIN -->
+                                        <!-- 2 Even Columns : BEGIN -->
+                                        <tr>
+                                            <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 20px;">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;" class="two-columns">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                                <tr>
+                                                                    <td style="text-align: center; padding: 0 10px;">
+                                                                        <img src="http://emailing.eventosue.com/2016/11/escuelacf/multicanalidad/img/btn-tw.gif"  width="280" height="" alt="Hastag #CursosCF" style="border: 0;width: 280px;max-width: 280px; background: #dddddd; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="text-align: center;font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                                        <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00896A; text-align:center; text-decoration: none;" href="https://twitter.com/hashtag/cursoscf">#CursosCF</a><br>
+                                                                        <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00896A; text-align:center; text-decoration: none;" href="https://twitter.com/@EscuelaCF">@EscuelaCF</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        <!--[if mso]>
+                                                            </td>
+                                                            <td align="center" valign="top">
+                                                        <![endif]-->
+                                                            <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                                <tr>
+                                                                    <td style="text-align: center; padding: 0 10px;">
+                                                                        <img src="http://emailing.eventosue.com/2016/11/escuelacf/multicanalidad/img/btn-agenda.gif" width="280" height="" alt="Descargar Agenda" style="border: 0;width: 280px;max-width: 280px; background: #dddddd; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="text-align: center;font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                                        <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="http://emailing.eventosue.com/2016/11/escuelacf/multicanalidad/img/agenda.pdf">Descargar agenda</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- Two Even Columns : END -->
+                                        <!-- Clear Spacer : BEGIN -->
+                                        <tr>
+                                            <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <!-- Clear Spacer : END -->
+                                        <!-- 1 Column Text + Button : BEGIN -->
+                                        <tr>
+                                            <td bgcolor="#f4f4f4" style="border-radius: 0 0 18px 18px;">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%" >
+                                                    <tr>
+                                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                                            Solicite su invitación a través de la web:<br /><br />
+                                                            <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00896A; text-align:center;font-weight: 500;" href="http://escuela.correofarmaceutico.com/formacion-presencial/multicanalidad-en-el-sector-salud-ger?utm_source=ue&utm_medium=mailing&utm_campaign=multicanalidad_noviembre2016">http://escuela.correofarmaceutico.com/</a><br><br>
+                                                            Para más información: <strong>91 443 53 36<br><br></strong> <br class="show-xs" /><span class="hidden-xs"></span>Plazas limitadas hasta completar el aforo. <br>Imprescindible confirmación por parte de la organización
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- 1 Column Text + Button : BEGIN -->
+                                    </table>
+                                    <br />
+                                    <!-- Email Body : END -->
+                                    <!-- Email Footer : BEGIN -->
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius:8px;" bgcolor="#ffffff">
+                                        <tr>
+                                            <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                                © Unidad Editorial, 2016<br>Si no desea seguir recibiendo esta informaci&oacute;n de <a style="color:#1F9F86;" href=" http://escuela.correofarmaceutico.com/">escuela.correofarmaceutico.com</a> <br> Por favor env&iacute;e un e-mail a <a style="color:#1F9F86;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br />
+                                    <!-- Email Footer : END -->
+                                    <!--[if mso]>
+                                </td>
+                            </tr>
+                        </table>
+                        <![endif]-->
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius: 0px 0px 8px 8px; " bgcolor="#EFF2F7">
+                            <tr>
+                                <td bgcolor="#EFF2F7" height="40">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </html>

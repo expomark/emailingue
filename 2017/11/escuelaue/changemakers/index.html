@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>Changemakers de la era digital</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+        <style>
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/http://www.eventosyconferenciasue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "Oswall";
+        src: url("http://emailing.eventosue.com/fonts/oswall-regular.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/oswall-regular.woff") format("woff"), url("http://emailing.eventosue.com/fonts/oswall-regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "BreeSerif";
+        src: url("http://emailing.eventosue.com/fonts/breeserif-regular.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/breeserif-regular.woff") format("woff"), url("http://emailing.eventosue.com/fonts/breeserif-regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td {
+        transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+        cursor: pointer;
+        background: #555555 !important;
+        border-color: #555555 !important;
+        }
+        .three-columns table {
+            width: 33.3%!important;
+            float: left;
+        }        .show-xs {
+        display: none;
+        }
+        .hidden-xs {
+        display: inline-block;
+        }
+        .two-columns > tbody > tr > td > table,
+        .two-columns-67-33 > tbody > tr > td > table {
+            width: 50% !important;
+            float: left !important;
+        }
+        .two-columns > tbody > tr > td > table img {
+            width: 150px;
+            height: auto;   
+        }
+        .two-columns-67-33 > tbody > tr > td > table {
+            float: left !important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table:first-child {
+            width: 67% !important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table:last-child {
+            width: 33% !important;
+        }
+        .two-columns-67-33  > tbody > tr > td > table img {
+            width: 200px;
+            height: auto;   
+        }
+        @media only screen and (max-width: 360px) {
+        .show-xs {
+        display: block;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 10px 0!important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table,
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .three-columns table {
+            width: 100%!important;
+            float: left!important;
+        }
+        .three-columns table td {
+            padding: 5px 0px!important;    
+            text-align: center!important;
+        }      
+        .hidden-xs {
+        display: none;
+        }
+        }
+        @media only screen and (max-width: 600px) {
+        .show-xs {
+        display: block;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        .center-div, .center-div div, .center-div, .center-div div img {
+            margin: 0 auto !important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table,
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .three-columns table {
+            width: 100% !important;
+            float: left !important;
+        }
+        .three-columns table td {
+            padding: 5px 0px!important;    
+            text-align: center!important;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 20px 10px !important;
+        }
+        }
+        </style>
+    </head>
+    <body bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+		<table align="center"  width="100%" bgcolor="#EFF2F7"  style="background: #EFF2F7;">
+            <tr>
+                <td>
+			<!--[if mso]>
+        		<table align="center" bgcolor="#FFFFFF" width="600" style="background:#FFFFFF; max-width:600px;"">
+		            <tr>
+		                <td>
+			<![endif]-->
+	                <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                    <tbody>
+	                        <tr>
+	                            <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2017/11/escuelaue/changemakers/index.html?utm_source=ue&utm_medium=mailing&utm_campaign=changemakers-eradigital-nov17">aquí.</a>
+	                            </td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	                <table style="max-width: 600px; " align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td height="8" style="font-size: 0; line-height: 0;">
+                                            &nbsp;
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" valign="top" width="100%" style="padding: 10px 0;">
+                                <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" class="two-columns">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="text-align: center; padding: 0 5px;">
+                                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/jornadas-y-workshops/changemakers-de-la-era-digital?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=changemakers-eradigital-nov17"> <img src="http://emailing.eventosue.com/2017/11/escuelaue/changemakers/img/logo-head-01.gif?v=1" alt="Escuela de Periodismo y Comunicación de Unidad Editorial" style=";width: 100%; max-width: 280px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="280"></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if mso]>
+                                            </td>
+                                            <td align="center" valign="top">
+                                                <![endif]-->
+                                                <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="text-align: center; padding: 0 5px;">
+                                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/jornadas-y-workshops/changemakers-de-la-era-digital?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=changemakers-eradigital-nov17"> <img src="http://emailing.eventosue.com/2017/11/escuelaue/changemakers/img/logo-head-02.gif?v=3" alt="Expansión" style=";width: 100%; max-width: 280px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="280"></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+	                            <table style="max-width: 600px;" align="left" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                                <tbody>
+	                                    <tr>
+	                                        <td>
+	                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/jornadas-y-workshops/changemakers-de-la-era-digital?utm_source=ue&utm_medium=mailing&amp;utm_campaign=changemakers-eradigital-nov17">
+	                                                <img src="http://emailing.eventosue.com/2017/11/escuelaue/changemakers/img/img-main-0.jpg?v5" width="600" height="" alt="Changemakers de la era digital" border="0" align="center" style="width: 100%; max-width: 600px; mso-height-rule: exactly; color: #000000;">
+	                                            </a>
+	                                        </td>
+	                                    </tr>
+	                                </tbody>
+	                            </table>
+	                            <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+	                                <tr>
+	                                    <td>
+	                                        <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/jornadas-y-workshops/changemakers-de-la-era-digital?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=changemakers-eradigital-nov17">
+	                                            <img src="http://emailing.eventosue.com/2017/11/escuelaue/changemakers/img/img-main-01.jpg?v5" width="600" height="" alt="Changemakers de la era digital" border="0" align="center" style="width: 100%; max-width: 600px; mso-height-rule: exactly; color: #000000;">
+	                                        </a>
+	                                    </td>
+	                                </tr>
+	                            </table>
+                                <table style="max-width: 600px;" align="center"  border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td width="20">&nbsp;</td>
+                                            <td>
+                                                <table style="max-width: 560px;" bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td height="30" style="font-size: 0; line-height: 0;">
+                                                            &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 16px;mso-height-rule: exactly;line-height: 20px; color:#555555; text-align:justify;">
+                                                                Te invitamos a asistir a la mesa redonda "Changemakers de la era digital", que se celebra el 30 de noviembre, jueves, en la Sala Ephimera (C/ Sandoval 3).<br /><br />
+                                                                La incorporación de la tecnología al desarrollo de los negocios está propiciando un profundo cambio socioeconómico y no sólo en nuestros hábitos de consumo.<br /><br />
+                                                                Numerosas iniciativas han logrado un posicionamiento premium entre los usuarios y consumidores en un tiempo record. ¿Cuál es su secreto?<br /><br />
+                                                                A lo largo de un coloquio de una hora y medía los participantes darán respuesta a  cuestiones como:<br /><br />
+                                                                <ul>
+                                                                <li>Cuál es el impacto real de las tecnologías en su modelo de negocio</li><br />
+                                                                <li>Cómo evolucionar y mantenernos al día para adoptar nuevas herramientas digitales que favorezcan el desarrollo de las empresas</li> <br />
+                                                                <li>Qué capacidades debe tener un líder empresarial del entorno digital</li></ul><br />
+                                                                Esperamos que el encuentro sea de tu interés. Para asistir a la jornada es imprescindible registrarse.<br /><br />
+                                                                Un saludo, 
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td width="20">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+		                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+		                            <tr>
+		                                <td bgcolor="#ffffff" height="40">
+		                                    &nbsp;
+		                                </td>
+		                            </tr>
+		                            <tr>
+		                                <td bgcolor="#ffffff">
+		                                    <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto;">
+		                                        <tr>
+		                                            <td height="60" style=" background: #005680; text-align: center;" class="button-td">
+		                                                <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/jornadas-y-workshops/changemakers-de-la-era-digital?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=changemakers-eradigital-nov17#inscripcion" style="font-family: 'FaktProSoft', sans-serif; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#FFFFFF; ">
+		                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inscripción GRATUITA AQUÍ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		                                                </a>
+		                                            </td>
+		                                        </tr>
+		                                    </table>
+		                                </td>
+		                            </tr>
+		                            <tr>
+		                                <td bgcolor="#ffffff" height="40">
+		                                    &nbsp;
+		                                </td>
+		                            </tr>
+		                            <tr>
+		                                <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+		                                    &nbsp;
+		                                </td>
+		                            </tr>
+		                            <tr>
+		                                <td bgcolor="#f4f4f4">
+		                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" >
+		                                        <tr>
+		                                            <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+		                                                INSCRIPCI&Oacute;N ONLINE: <br />
+		                                                <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00527B; text-align:center;font-weight: 500;word-break:break-all" href="http://www.escuelaunidadeditorial.es?utm_source=ue&utm_medium=mailing&utm_campaign=changemakers-eradigital-nov17">www.escuelaunidadeditorial.es</a><br><br>
+		                                                Para más información: <strong>91 443 51 67</strong> <br/> <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00527B; text-align:center;font-weight: 500;" href="mailto:informacion@escuelaunidadeditorial.es"> informacion@escuelaunidadeditorial.es</a>
+		                                            </td>
+		                                        </tr>
+		                                    </table>
+		                                </td>
+		                            </tr>
+		                            <tr>
+		                                <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+		                                    &nbsp;
+		                                </td>
+		                            </tr>
+		                        </table>
+		                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; " bgcolor="#ffffff">
+		                            <tr>
+		                                <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+		                                    © Unidad Editorial, 2017<br>Si no desea seguir recibiendo esta información de <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.escuelaunidadeditorial.es/">www.escuelaunidadeditorial.es</a>,<br> por favor envíe un e-mail a <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+		                                </td>
+		                            </tr>
+		                        </table>
+		                    </td>
+		                </tr>
+		            </table>
+                </td>
+            </tr>
+        </table>
+	<!--[if mso]>
+                </td>
+            </tr>
+        </table>
+	<![endif]-->
+        <img src="http://www.google-analytics.com/collect?v=1&tid=UA-4155518-57&cid=&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=changemakers-eradigital-nov17" style="visibility: hidden;"/>
+
+    </body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><base href="https://raw.githubusercontent.com/TedGoas/Cerberus/master/cerberus-fluid.html">
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>El reto del primer coche 100% renovable en los rallies</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+        <!-- Web Font / @font-face : BEGIN -->
+        <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+        <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+        <!--[if mso]>
+        <style>
+        * {
+        font-family: sans-serif !important;
+        }
+        </style>
+        <![endif]-->
+        <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+        <!--[if !mso]><!-->
+        <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+        <!--<![endif]-->
+        <!-- Web Font / @font-face : END -->
+        <!-- CSS Reset -->
+        <style>
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/2016/11/eventosue/dakar/img/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/2016/11/eventosue/dakar/img/Faktsoftpro-Blond.woff") format("woff"), url("http://emailing.eventosue.com/2016/11/eventosue/dakar/img/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/2016/11/eventosue/dakar/img/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/2016/11/eventosue/dakar/img/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/2016/11/eventosue/dakar/img/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/2016/11/eventosue/dakar/img/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/2016/11/eventosue/dakar/img/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/2016/11/eventosue/dakar/img/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td {
+        transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+        cursor: pointer;
+        background: #555555 !important;
+        border-color: #555555 !important;
+        }
+        .two-columns table {
+        width: 50%!important;
+        max-width: 50%!important;
+        float: left;
+        }
+        .two-columns table a img {
+        width: 100px!important;
+        }
+        .show-xs {
+        display: none;
+        }
+        .hidden-xs {
+        display: inline-block;
+        }
+        @media only screen and (max-width: 360px) {
+        .show-xs {
+        display: block;
+        }
+        .two-columns table {
+        width: 100%!important;
+        max-width: 100%!important;
+        float: none;
+        }
+        .two-columns table:first-child {
+        margin-bottom: 30px!important;
+        }
+        .two-columns table a img {
+        width: 200px!important;
+        max-width: 200px!important;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 10px 0!important;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        }
+        @media only screen and (max-width: 600px) {
+        .show-xs {
+        display: block;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 20px 10px!important;
+        }
+        .two-columns table a img {
+        width: 200px!important;
+        max-width: 200px!important;
+        }
+        }
+        </style>
+    </head>
+    <body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7;width:100%">
+            <tr>
+                <td>
+                    <!-- Visually Hidden Preheader Text : BEGIN -->
+                    <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'FaktProSoft', sans-serif;">
+
+                    </div>
+                    <!-- Visually Hidden Preheader Text : END -->
+                    <!--
+                    Set the email width. Defined in two places:
+                    1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
+                    2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+                    -->
+                    <div style="max-width: 600px; margin: auto;">
+                        <!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                            <tr>
+                                <td>
+                                    <![endif]-->
+                                    <!-- Email Header : BEGIN -->
+                                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2016/11/eventosue/dakar/index.html">aquí.</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td height="8" style="font-size: 0; line-height: 0;">
+                                                &nbsp;
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 100%; max-width: 600px; text-align: center; padding: 20px 0" width="600">
+                                                        <img src="http://emailing.eventosue.com/2016/11/eventosue/dakar/img/logo-head-01.gif?v=4" alt="MARCA" style=";width: 100%; max-width: 600px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000; margin: 0 auto;" height="" align="middle" border="0" width="450">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div style="max-width: 100%; margin: auto; background-color: #DADEE5;">
+                                    <div style="max-width: 600px; margin: 0 auto;">
+                                        <!-- Email Body : BEGIN -->
+                                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                                            <tr>
+                                                <td bgcolor="#ffffff">
+                                                    <a href="http://www.eventosyconferenciasue.com/eventos/el-reto-del-primer-coche-100-renovable-en-los-rallies?utm_source=ue&utm_medium=mailing&utm_campaign=dakar_noviembre2016">
+                                                        <img src="http://emailing.eventosue.com/2016/11/eventosue/dakar/img/img-main-01.jpg" width="600" height="" alt="El reto del primer coche 100% renovable en los rallies" border="0" align="center" style="width: 100%; max-width: 600px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div style="max-width: 100%; margin: auto; background-color: #E6E9ED;">
+                                    <div style="max-width: 600px; margin: 0 auto; background-color: #D4D8DD">
+                                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#D4D8DD">
+                                            <tr>
+                                                <td style="padding: 15px 20px; font-family: 'FaktProSoft', sans-serif; font-size: 18px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #000000; background-color: #D4D8DD; text-align:center;"><span style="font-family: 'FaktProSoft', sans-serif; font-weight:500; mso-height-rule: exactly;">MADRID 15 noviembre 2016<br /></span> Espacio Harley. <span style="font-family: 'FaktProSoft', sans-serif; font-size: 16px; mso-height-rule: exactly;">C/ General Álvarez de Castro, 12</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div style="max-width: 600px; margin: auto;">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td bgcolor="#ffffff"  align="center" height="100%" valign="top" width="100%"  style="padding: 30px 0px;">
+                                                <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                                                    <tr>
+                                                        <td height="60" style="border-radius: 3px; background: #016EC4; text-align: center;" class="button-td">
+                                                            <a href="http://www.eventosyconferenciasue.com/eventos/el-reto-del-primer-coche-100-renovable-en-los-rallies?utm_source=ue&utm_medium=mailing&utm_campaign=dakar_noviembre2016" style="font-family: 'FaktProSoft', sans-serif; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#FFFFFF; border-radius: 3px;">
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;Solicitar invitación AQUÍ&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td style="padding: 40px 10px 10px 10px; font-family: 'FaktProSoft', sans-serif; font-size: 35px; font-weight:500; mso-height-rule: exactly; line-height: 40px; color: #0068B1; text-align:center;">
+                                                            El reto del primer coche 100% renovable en los rallies
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align: justify;">
+                                                            Desde las 18.00 h, os invitamos a participar en un encuentro donde podremos conocer todos los retos y experiencias de la mano del piloto Ariel Jatón y el navegante Tito Rolón del Acciona 100% Ecopowered en una charla con Miguel Ángel Sanz, responsable de Motor de MARCA. El encuentro será, además, presentado por dos directivos del diario MARCA y ACCIONA.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <table cellspacing="0" cellpadding="0" border="0" width="100%"">
+                                                                <tr>
+                                                                    <td style="text-align: center; padding: 0 10px;">
+                                                                        <img src="http://emailing.eventosue.com/2016/11/eventosue/dakar/img/tw_200x50.gif" width="200" height="" alt="Hastag #CocheRenovable" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="text-align: center;font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #0068B1; padding: 10px 10px 0;" class="stack-column-center">
+                                                                        <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #0068B1; text-align:center; text-decoration: none;" href="https://twitter.com/hashtag/cocherenovable?f=tweets">#CocheRenovable</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#f4f4f4" style="border-radius: 0 0 18px 18px;">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%" >
+                                                    <tr>
+                                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                                            Inscripciones a través de la web:<br>
+                                                            <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #337ABB; text-align:center;font-weight: 500; word-break:break-all" href="http://www.eventosyconferenciasue.com/eventos/el-reto-del-primer-coche-100-renovable-en-los-rallies?utm_source=ue&utm_medium=mailing&utm_campaign=dakar_noviembre2016">www.eventosue.com/cocherenovable</a><br><br>
+                                                            Para más información: <strong>91 443 53 36</strong> <br class="show-xs" /><span class="hidden-xs">–</span> Aforo limitado. <br>Imprescindible confirmación por parte de la organización
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- 1 Column Text + Button : BEGIN -->
+                                    </table>
+                                    <br />
+                                    <!-- Email Body : END -->
+                                    <!-- Email Footer : BEGIN -->
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius:8px;" bgcolor="#ffffff">
+                                        <tr>
+                                            <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                                © Unidad Editorial, 2016<br>Si no desea seguir recibiendo esta información de <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.eventosyconferenciasue.com/?utm_source=ue&utm_medium=mailing&utm_campaign=dakar_noviembre2016">www.eventosyconferenciasue.com</a>,<br> por favor envíe un e-mail a <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br />
+                                    <!-- Email Footer : END -->
+                                    <!--[if mso]>
+                                </td>
+                            </tr>
+                        </table>
+                        <![endif]-->
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </html>

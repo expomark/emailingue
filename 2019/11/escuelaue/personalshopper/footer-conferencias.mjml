@@ -1,0 +1,9 @@
+<mj-wrapper full-width="full-width">
+    <mj-section padding-top="0">
+        <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+                © Unidad Editorial, 2019 <br />Si no desea seguir recibiendo esta información de <a class="text-color" href="http://l.e.conferenciasyformacion.com/rts/go2.aspx?h=917829&tp=i-H8B-Q4y-O7i-KkGDd-2Q-UE-3E-G-KkGDd-CjERL">www.eventosyconferenciasue.com</a> por favor haga clic <a class="text-color" href="{[Opt-Out Baja_Eventos_y_Conferencias_ext|95276]} ">aquí</a>
+            </mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>

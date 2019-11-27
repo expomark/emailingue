@@ -1,0 +1,101 @@
+<mjml>
+  <mj-head>
+    <mj-title> Desmontando los mitos de la cosmética natural</mj-title>
+    <mj-preview> Desmontando los mitos de la cosmética natural</mj-preview>
+    <mj-attributes>
+      <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto" />
+      <mj-all font-family="Roboto, Helvetica, Arial, sans-serif"></mj-all>
+      <mj-text font-weight="400" letter-spacing=".5px" font-size="16px" color="#000000" line-height="24px" font-family="Roboto, Helvetica, Arial, sans-serif"></mj-text>
+    </mj-attributes>
+    <mj-style inline="inline">
+      .body-section {
+        -webkit-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .text-link {
+        color: #5e6ebf
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .footer-link {
+        color: #888888
+      }
+    </mj-style>
+
+  </mj-head>
+  <mj-body background-color="#eaeaea"  width="700px">
+        <mj-wrapper padding-top="0" padding-bottom="0" full-width="full-width" background-color="#eaeaea">
+            <mj-section padding-bottom="0">
+                <mj-column width="600px">
+                    <mj-text align="center" font-size="11px" padding-bottom="20px" padding-top="0" color="#000000">Si no visualiza correctamente este correo haga clic <a href="http://emailing.eventosue.com/2019/11/eventosue/cosmetica-natural-2/" style="color: #000000; font-weight: 500; text-decoration: none;">aquí</a>.</mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0">
+                <mj-column width="100%">
+                    <mj-image src="http://emailing.eventosue.com/2019/11/eventosue/cosmetica-natural-2/img/index_01.jpg" width="800px" alt="QUEREMOS INVITARTE A LA MESA REDONDA “DESMONTANDO LOS MITOS, COSMÉTICA NATURAL”" padding="0" href="https://www.eventosyconferenciasue.com/eventos/desmontando-los-mitos-de-la-cosmetica-natural" />
+                    <mj-image src="http://emailing.eventosue.com/2019/11/eventosue/cosmetica-natural-2/img/index_02.jpg" width="800px" alt="MADRID - 14 NOVIEMBRE 2019 - 19:00h EL HUERTO DE LUCAS - San Lucas, 13" padding="0" />
+                    <mj-image src="http://emailing.eventosue.com/2019/11/eventosue/cosmetica-natural-2/img/index_03.jpg?v=2" width="800px" alt="A continuación, Garnier B10 te invita a conocer su nueva gama facial durante el workshop donde te descubrirá el secreto de las fórmulas certificadas ecológicas, las propiedades de sus ingredientes estrella y las rutinas de uso más adecuadas que garantizan un resultado eficaz en limpieza e hidratación. " padding="0" />
+                    <mj-image src="http://emailing.eventosue.com/2019/11/eventosue/cosmetica-natural-2/img/index_04-01.png?v=9" width="800px" alt="Solicitar invitación aquí" padding="0" href="https://www.eventosyconferenciasue.com/eventos/desmontando-los-mitos-de-la-cosmetica-natural" />
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0">
+                <mj-column width="50%">
+                    <mj-image src="http://emailing.eventosue.com/2019/11/eventosue/cosmetica-natural-2/img/index_04-02.png?v=2" width="400px" alt="Síguenos en las Redes Sociales" padding="0" href="https://twitter.com/hashtag/cosmeticanatural" />
+                </mj-column>
+                <mj-column width="50%">
+                    <mj-image src="http://emailing.eventosue.com/2019/11/eventosue/cosmetica-natural-2/img/index_04-03.png?v=2" width="400px" alt="Desmontando los mitos de la cosm&eacute;tica natural | Agenda" padding="0" href="https://www.eventosyconferenciasue.com/eventos/desmontando-los-mitos-de-la-cosmetica-natural/agenda" />
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0">
+                <mj-column width="100%">
+                    <mj-image src="http://emailing.eventosue.com/2019/11/eventosue/cosmetica-natural-2/img/index_05.jpg" width="800px" alt="Inscripciones a través de la web:  www.eventosue.com/cosmeticanatural Para más información: 91 443 53 36 Aforo limitado. Imprescindible confirmación por parte de la organización ." padding="0" href="https://www.eventosyconferenciasue.com/eventos/desmontando-los-mitos-de-la-cosmetica-natural" />
+                </mj-column>
+            </mj-section>            
+            <mj-section>   
+                <mj-column width="15%" padding="0">
+                </mj-column>
+                <mj-column width="70%" padding="0">
+                    <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+                        Si no desea seguir recibiendo esta información de <a style="color:#444444; text-decoration:none;" href="www.eventosyconferenciasue.com">www.eventosyconferenciasue.com</a>, por favor haga clic <a style="color:#444444; text-decoration:underline;" href="{[Opt-Out Baja_Eventos_y_Conferencias|95257]}">aquí</a>.
+                    </mj-text>
+                </mj-column>
+                <mj-column width="15%" padding="0">
+                </mj-column>
+            </mj-section>
+            
+            <mj-section>   
+                <mj-column width="100%" padding="0">
+                    <mj-text color="#A1A0A0" font-size="16px" align="center" line-height="24px">
+                        Unidad Editorial S.A.
+                    </mj-text>
+                    <mj-social font-size="15px" icon-size="30px" mode="horizontal" padding="0" align="center">
+                        <mj-social-element name="twitter" href="https://twitter.com/EventosUE" background-color="#A1A0A0">
+                        </mj-social-element>
+                        <mj-social-element name="facebook" href="https://www.facebook.com/eventosyconferenciasue" background-color="#A1A0A0">
+                        </mj-social-element>
+                        <mj-social-element name="linkedin" href="https://www.linkedin.com/groups/2722989/" background-color="#A1A0A0">
+                        </mj-social-element>
+                        <mj-social-element name="instagram" href="https://www.instagram.com/eventosunidadeditorial/" background-color="#A1A0A0">
+                        </mj-social-element>
+                    </mj-social>                    
+                    <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+                        &copy; Unidad Editorial, 2019.
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding-top="0">
+                <mj-group>
+                    <mj-column width="100%" padding-right="0">
+                        <mj-text color="#445566" font-size="11px" align="center" line-height="16px" font-weight="bold">
+                        <a class="footer-link" href="https://www.eventosyconferenciasue.com/corporativo/aviso-legal">Privacidad</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <a class="footer-link" href="{[Opt-Out Baja_Eventos_y_Conferencias|95257]}">Darse de baja</a>
+                        </mj-text>
+                    </mj-column>
+                </mj-group>
+                <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-1&cid=&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=pacto-infraestructuras-oct19" style="visibility: hidden;" />
+            </mj-section>
+        </mj-wrapper>
+    </mj-body>
+</mjml>

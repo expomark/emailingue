@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><base href="https://raw.githubusercontent.com/TedGoas/Cerberus/master/cerberus-fluid.html">
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>Gestión de la categoría de Dermocosmética en la oficina de farmacia</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+        <!-- Web Font / @font-face : BEGIN -->
+        <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+        <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+        <!--[if mso]>
+        <style>
+        * {
+        font-family: sans-serif !important;
+        }
+        </style>
+        <![endif]-->
+        <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+        <!--[if !mso]><!-->
+        <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+        <!--<![endif]-->
+        <!-- Web Font / @font-face : END -->
+        <!-- CSS Reset -->
+        <style>
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/http://www.eventosyconferenciasue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/Faktsoftpro-Blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td {
+        transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+        cursor: pointer;
+        background: #555555 !important;
+        border-color: #555555 !important;
+        }
+        .show-xs {
+        display: none;
+        }
+        .hidden-xs {
+        display: inline-block;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 50% !important;
+            float: left !important;
+        }
+        .two-columns > tbody > tr > td > table img {
+            width: 150px;
+            height: auto;
+        }
+        @media only screen and (max-width: 360px) {
+        .show-xs {
+        display: block;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 10px 0!important;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .two-columns > tbody > tr > td > table td.img-right-xs {
+            text-align: right !important;
+            padding-top: 15px !important;
+        }
+        .two-columns > tbody > tr > td > table td.img-right-xs > img {
+            margin-right: 0 !important;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        }
+        @media only screen and (max-width: 600px) {
+        .show-xs {
+        display: block;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .two-columns > tbody > tr > td > table td.img-right-xs {
+            text-align: right !important;
+            padding-top: 15px !important;
+        }
+        .two-columns > tbody > tr > td > table td.img-right-xs > img {
+            margin-right: 0 !important;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 20px 10px !important;
+        }
+        }
+        </style>
+    </head>
+    <body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7;width:100%">
+            <tr>
+                <td>
+                    <!-- Visually Hidden Preheader Text : BEGIN -->
+                    <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'FaktProSoft', sans-serif;">  
+                    </div>
+                    <!-- Visually Hidden Preheader Text : END -->
+                    <!--
+                    Set the email width. Defined in two places:
+                    1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
+                    2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+                    -->
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                            <tr>
+                                <td>
+                                    <![endif]-->
+                                    <!-- Email Header : BEGIN -->
+                        <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2018/11/escuelacf/dermocosmetica-ecf/index.html?utm_source=ue&utm_medium=mailing&utm_campaign=dermocosmetica-nov18">aquí.</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td height="8" style="font-size: 0; line-height: 0;">
+                                    &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" class="two-columns">
+                            <tbody>
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                            <tr>
+                                                <td style="width: 100%;max-width: 600px;text-decoration:none;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #000000;" height="20" valign="midle" width="600">
+                                                ORGANIZA:
+                                                </td>
+                                             </tr>
+                                            <tr>
+                                                <td style="text-align: center; padding: 0 5px;">
+                                                <a href="http://escuela.correofarmaceutico.com/formacion-online/gestion-de-la-categoria-de-dermocosmetica-en-la-oficina-de-farmacia?id=1965?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=dermocosmetica-nov18"> <img src="http://emailing.eventosue.com/2018/11/escuelacf/dermocosmetica-ecf/img/logo-head-01.gif?v=2" alt="escuela correo farmacéutico" style=";width: 100%; max-width: 280px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="280"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                                <!--[if mso]>
+                                                </td>
+                                                <td align="center" valign="top">
+                                                    <![endif]-->
+                                        <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                            <tr>
+                                                <td style="width: 100%;max-width: 600px;text-decoration:none;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #000000;" height="20" valign="midle" width="600">
+                                                PATROCINA:
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center; padding: 0 5px;">
+                                                <a href="http://escuela.correofarmaceutico.com/formacion-online/gestion-de-la-categoria-de-dermocosmetica-en-la-oficina-de-farmacia?id=1965?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=dermocosmetica-nov18"> <img src="http://emailing.eventosue.com/2018/11/escuelacf/dermocosmetica-ecf/img/logo-head-02.gif?v=2" alt="bida" style=";width: 100%; max-width: 280px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="280"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="max-width: 100%; margin: 0px auto; background-color: #d7dbe8;">
+                        <div style="max-width: 600px; margin: 0px auto;">
+                            <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                                <tr>
+                                    <td bgcolor="#ffffff">
+                                        <a href="http://escuela.correofarmaceutico.com/formacion-presencial/gestion-de-la-categoria-de-dermocosmetica-en-la-oficina-de-farmacia?id=1965&utm_source=ue&utm_medium=mailing&utm_campaign=dermocosmetica-nov18">
+                                            <img src="http://emailing.eventosue.com/2018/11/escuelacf/dermocosmetica-ecf/img/img-main-01.jpg?v=1" width="600" height="" alt="Gestión de la categoría de Dermocosmética en la oficina de farmacia" border="0" align="center" style="width: 100%; max-width: 600px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #FFFFFF;">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div style="max-width: 100%; margin: 0px auto; background-color: #c2d216;">
+                        <div style="max-width: 600px; margin: 0px auto;">
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#64656a">
+                                <tr>
+                                    <td style="padding: 15px 20px; font-family: 'FaktProSoft', sans-serif; font-size: 18px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #FFFFFF; background-color: #64656a; text-align:center;"><span style="font-family: 'FaktProSoft', sans-serif; font-weight:500; mso-height-rule: exactly;">Inscripción gratuita<br />Abierto plazo de inscripción hasta el 13 de diciembre de 2018</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div style="max-width: 600px; margin: 0 auto;">
+                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr><td style="font-size: 10px;">&nbsp;</td></tr>
+                        <tr>
+                            <td bgcolor="#FFFFFF" align="center" height="100%" valign="top" width="100%">
+                                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;">
+                                    <tr>
+                                        <td style="padding: 20px 20px 10px 20px; font-family: 'FaktProSoft', sans-serif; font-size: 24px; mso-height-rule: exactly; line-height: 28px; color: #000000; text-align:center; text-decoration: none;">
+                                            <span style="font-size: 18px; mso-height-rule: exactly; line-height: 20px; color: #c2d216; text-align:center; text-decoration: none;">AUTORES:</span>
+                                            <br />
+                                            <span style="font-size: 17px; mso-height-rule: exactly; line-height: 18px; color: #OOOOOO; text-align:center; text-decoration: none;">Noemi Molina<br /></span> <span style="font-size: 15px; mso-height-rule: exactly; line-height: 18px; color: #000000; text-align:center; text-decoration: none;">Formadora-Consultora. Escuela de Farmacia</span>
+                                            <br />
+                                            <br />
+                                            <span style="font-size: 17px; mso-height-rule: exactly; line-height: 18px; color: #OOOOOO; text-align:center; text-decoration: none;">Carolina Tejera<br /></span> <span style="font-size: 15px; mso-height-rule: exactly; line-height: 18px; color: #000000; text-align:center; text-decoration: none;">Directora Académica. Escuela de Farmacia</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px 20px 20px 20px; font-family: 'FaktProSoft', sans-serif; font-size: 24px; mso-height-rule: exactly; line-height: 28px; color: #A71924; text-align:center; text-decoration: none;">
+                                            <span style="font-size: 18px; mso-height-rule: exactly; line-height: 20px; color: #c2d216; text-align:center; text-decoration: none;">CONTENIDOS:</span>
+                                            <br />
+                                            <span style="font-size: 15px; mso-height-rule: exactly; line-height: 18px; color: #000000; text-align:center; text-decoration: none;">INTRODUCCIÓN<br /><br />CATEGORIZACIÓN FÍSICA<br /><br />GESTIÓN DE LA CATEGORÍA DE 
+DERMOFARMACIA CON EL EQUIPO<br /><br />PLAN DE MARKETING<br /><br />PLAN DE ACCIÓN<br /><br />MÉTODO CANVAS</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                    <tr>
+                        <td>
+                            <![endif]-->
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td height="20" style="font-size: 0; line-height: 0;">
+                                    &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                                                    <tr>
+                                                        <td height="60" style="border-radius: 15px; background: #c2d216; text-align: center;" class="button-td">
+                                                            <a href="http://escuela.correofarmaceutico.com/formacion-online/gestion-de-la-categoria-de-dermocosmetica-en-la-oficina-de-farmacia?id=1965&utm_source=ue&utm_medium=mailing&utm_campaign=dermocosmetica-nov18" style="font-family: 'FaktProSoft', sans-serif; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#64656a; border-radius: 15px;">
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inscríbete aqu&iacute;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius: 0 0 18px 18px" bgcolor="#ffffff">
+                                                    <tr>
+                                                        <td bgcolor="#FFFFFF" height="40">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                              <!--[if mso]>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="top">
+                                    <![endif]-->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px;">
+                            <tr>
+                                <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;">
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="100%">
+                                                    <tr>
+                                                        <td style="text-align: center; padding: 0 10px; vertical-align: middle;">
+                                                            <img src="http://emailing.eventosue.com/2018/11/escuelacf/dermocosmetica-ecf/img/tw_200x50.gif" width="200" height="" alt="Hastag #CursosCF" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 0; vertical-align: middle;">
+                                                            <a style="font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align:left; text-decoration: none;" href="https://twitter.com/@escuelacf">@escuelacf</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius: 0 0 18px 18px" bgcolor="#ffffff">
+                                                    <tr>
+                                                        <td bgcolor="#FFFFFF" height="40">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius: 0 0 18px 18px" bgcolor="#ffffff">
+                            <tr>
+                                <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#f4f4f4" style="border-radius: 0 0 18px 18px;">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" >
+                                        <tr>
+                                            <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                                Inscríbete aquí:<br />
+                                                <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #1A9981; text-align:center;font-weight: 500;" href="http://escuela.correofarmaceutico.com/formacion-online/gestion-de-la-categoria-de-dermocosmetica-en-la-oficina-de-farmacia?id=1965&utm_source=ue&utm_medium=mailing&utm_campaign=dermocosmetica-nov18">www.escuelacf.es/dermocosmetica</a><br><br>
+                                                Información y matrículas: <strong>91 443 53 36<br><a style="font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #1A9981; text-align:center;font-weight: 500;" href="http://escuela.correofarmaceutico.com/">www.escuela.correofarmaceutico.com</strong> <br class="show-xs" /><span class="hidden-xs"></span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="width: 100%;max-width: 600px; border-radius:8px;" bgcolor="#eff2f7">
+                            <tr>
+                                <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                    © Unidad Editorial, 2018<br>Si no desea seguir recibiendo esta informaci&oacute;n de <a style="color:#1A9981;" href=" http://escuela.correofarmaceutico.com/">escuela.correofarmaceutico.com</a>
+                                    <br> por favor haga clic <a style="font-family: 'OpenSans', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #1A9981; text-align:center;" href="{[Opt-Out Baja_Escuela_CorreoFarmaceutico|95258]}">aquí</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" width="600" height="30" bgcolor="#EFF2F7" style="font-size:0;line-height:0;">&nbsp;</td>
+                            </tr>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius: 0px 0px 8px 8px; " bgcolor="#EFF2F7">
+                            <tr>
+                                <td bgcolor="#EFF2F7" height="40">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius: 0px 0px 8px 8px; " bgcolor="#EFF2F7">
+                            <tr>
+                                <td bgcolor="#EFF2F7" height="40">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+            <img src="http://www.google-analytics.com/collect?v=1&tid=UA-4155518-54&cid={(user_id)}&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=dermocosmetica-nov18" style="visibility: hidden;" />
+    </body>
+</html>

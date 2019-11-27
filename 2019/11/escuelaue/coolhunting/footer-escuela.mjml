@@ -1,0 +1,9 @@
+<mj-wrapper full-width="full-width">
+    <mj-section padding-top="0">
+        <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+                © Unidad Editorial, 2019 <br>Si no desea seguir recibiendo esta información de <a href="https://www.escuelaunidadeditorial.es/" class="text-color">www.escuelaunidadeditorial.es</a> por favor haga clic <a href="{[Opt-Out Baja CRM_Escuela|136934]}" class="text-color">aquí</a>
+            </mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>

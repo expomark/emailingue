@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+
+        <title>El futuro de la investigación biomédica</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+
+   <style>
+ @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+        margin: 0 auto !important;
+        height: 100% !important;
+        width: 100% !important;
+        letter-spacing: .5px;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        letter-spacing: .85px;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-td a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+            cursor: pointer;
+            background: #282828 !important;
+            border-color: #282828 !important;
+        }
+        .button-td:hover a {
+            color: #eaeaea !important;
+        }
+        .two-columns table {
+            width: 50%!important;
+            max-width: 50%!important;
+            float: left;
+        }
+        .three-columns table {
+            width: 33.3%!important;
+            max-width: 33.3%!important;
+            float: left;
+        }
+        .four-columns table{
+            width: 25%!important;
+            max-width: 25%!important;
+            float: left;
+        }
+        @media only screen and (max-width: 600px) {
+            .show-xs {
+                display: block;
+                font-style: 1em;
+            }
+            .hidden-xs {
+                display: none;
+                font-style: 0;
+            }
+            .three-columns table, .two-columns table, .four-columns table, .w100-xs {
+                width: 100%!important;
+                max-width: 100%!important;
+                float: none;
+                margin-bottom: 30px!important;
+            }
+            .three-columns table:last-child, .two-columns table:last-child, .four-columns table:last-child {
+                margin-bottom: 0px!important;
+            }
+
+            * {
+                text-align: center !important;
+            }
+        }
+        @media (min-width: 601px) {
+            .show-xs {
+                display: block;
+                font-style: 0;
+            }
+            .hidden-xs {
+                display: none;
+                font-style: 1em;
+            }
+            .w100-xs {
+                width: auto !important;
+                max-width: auto !important;
+            }
+            * {
+                text-align: auto !important;
+            }
+        }
+        /* video styles */
+        #MessageViewBody .video-wrapper { display:block!important; }
+        #MessageViewBody .video-fallback { display:none!important; }
+
+         .video-wrapper {display:none;}
+
+        @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:1024px) 
+        {
+          .video-wrapper { display:block!important; }
+          .video-fallback { display:none!important; }
+        }
+        @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
+          div[class^=video-wrapper] { display:block!important; }
+          div[class^=video-fallback] { display:none!important; }
+        }
+        </style>
+    </head>
+    <body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7; width:100%">
+            <tr>
+                <td>
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td height="20">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'OpenSans', sans-serif, Arial; font-weight: 300; mso-height-rule: exactlsy; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'OpenSans', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2019/01/eventosue/investigacion-biomedica/index-dm.html?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=investigacion-biomedica-enero2019">aquí</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+        <!--[if mso]>
+        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+                <td>
+                    <![endif]-->
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+                        <tr>
+                            <td>
+                                <a href="http://www.eventosyconferenciasue.com/eventos/foro-el-futuro-de-la-investigacion-biomedica?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=investigacion-biomedica-enero2019">
+                                <img style="width: 100%; max-width: 600px; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" src="http://emailing.eventosue.com/2019/01/eventosue/investigacion-biomedica/img/img-main-01.jpg?v=2" alt="El futuro de la investigación biomédica" border="0" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#FFFFFF" width="100%" valign="middle">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#005481">
+                                    <tr>
+                                        <td style="padding: 15px 20px; font-family: 'OpenSans', sans-serif, Arial; font-size: 17px; font-weight:300; mso-height-rule: exactly; line-height: 24px; color: #FFFFFF; background-color: #005481; text-align:center;"><span style="font-family: 'OpenSans', sans-serif, Arial; font-weight:500; mso-height-rule: exactly;">BARCELONA 30 enero 2019</span><br>EDIFICIO BBVA - SALA MEDITERRÀNIA (Plaça Antoni Maura, 6)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; background-color: #FFF;">
+                        <tr>
+                            <td width="100%" style="width: 100%; max-width:540px;">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align: justify; letter-spacing: .5px">
+                                        
+
+                                        Estimado/a amigo/a,<br/><br/>
+
+                                        
+                                        El Diario <strong>EXPANSIÓN</strong> y <strong>BBVA</strong> organizan, dentro de los actos del 20 aniversario de la edición en Catalunya del periódico, el Foro “<strong>El futuro de la investigación biomédica</strong>”.<br /><br />
+
+                                        La conferencia inaugural, a cargo del <strong>Dr. Josep Tabernero, Jefe del Servicio de Oncología Médica del HOSPITAL UNIVERSITARIO VALL D’HEBRON</strong>, explicará “Hacia dónde va el futuro de la Investigación Oncológica”.<br /><br />
+
+                                        Este foro, asimismo, convoca a importantes personalidades del sector quienes analizarán la importancia del sector biomédico y farmacéutico que, con sus avances científicos y tecnológicos, permiten que se pueda desarrollar una atención sanitaria de calidad.
+                                        </td>
+                                    </tr>
+                                </table>
+                         <!--[if mso]>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top">
+                                <![endif]-->   
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto;">
+                                    <tr>
+                                        <td height="60" style="border-radius: 3px; background: #005481; text-align: center;" class="button-td">
+                                            <a href="http://www.eventosyconferenciasue.com/eventos/foro-el-futuro-de-la-investigacion-biomedica?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=investigacion-biomedica-enero2019" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#FFFFFF; border-radius: 3px;">&nbsp;&nbsp;&nbsp;&nbsp;Solicitar invitación aquí&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                              <!--[if mso]>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="top">
+                                    <![endif]-->
+                    <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td height="20" style="font-size: 0; line-height: 0;">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                                                  <!--[if mso]>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="top">
+                                    <![endif]-->
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px;">
+                        <tr>
+                            <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+                                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="two-columns">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                <tr>
+                                                    <td style="text-align: center; padding: 0 10px;">
+                                                        <img src="http://emailing.eventosue.com/2019/01/eventosue/investigacion-biomedica/img/tw_200x50.gif" width="200" height="" alt="Hastag #Exp_biomedica" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 5px 0;" class="stack-column-center">
+                                                        <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="https://twitter.com/hashtag/Exp_biomedica">#Exp_biomedica</a>
+                                                        <br />
+                                                        <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="https://twitter.com/hashtag/Eventos_EXP">@Eventos_EXP</a>
+                                                        <br />
+                                                        <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="https://twitter.com/hashtag/expansioncom">@expansioncom</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <td align="center" valign="top">
+                                        <![endif]-->
+                                            <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                <tr>
+                                                    <td style="text-align: center; padding: 0 10px;">
+                                                        <img src="http://emailing.eventosue.com/2019/01/eventosue/investigacion-biomedica/img/agenda_200x50.gif" width="200" height="" alt="Descargar Agenda" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                        <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="http://www.eventosyconferenciasue.com/eventos/foro-el-futuro-de-la-investigacion-biomedica/agenda?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=investigacion-biomedica-enero2019">Descargar agenda</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; background-color: #f5f5f5;">
+                        <tr>
+                            <td bgcolor="#f4f4f4">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                            <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                                Inscripciones a través de la web:
+                                                <br>
+                                                <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #337ABB; text-align:center;font-weight: 500; word-break:break-all" href="http://www.eventosyconferenciasue.com/eventos/foro-el-futuro-de-la-investigacion-biomedica?utm_source=ue&utm_medium=mailing&utm_campaign=investigacion-biomedica-enero2019">www.eventosue.com/biomedica</a>
+                                                <br>
+                                                <br> Para más información: <strong>91 443 53 36</strong>
+                                                <br class="show-xs" /><span class="hidden-xs">–</span> Aforo limitado.
+                                                <br>Imprescindible confirmación por parte de la organización
+                                            </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                        <td style="padding: 0px 10px;width: 100%; max-width: 600px;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #000000">
+                                            <br />    © Unidad Editorial, 2018<br>Ha recibido este e-mail porque es usuario registrado de <a style="color:#5A9883;" href="http://www.diariomedico.com/">
+                                                    DiarioMedico.com
+                                                </a>
+                            y ha aceptado recibir comunicaciones electr&oacute;nicas relacionadas con nuestros productos o servicios y de terceros.
+                            <br/>Si desea modificar sus datos <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #5A9883; text-align:center;" href="http://www.diariomedico.com/index.php/services/registro?opcion=1">pinche aqu&iacute;</a>,<br> y dir&iacute;jase a la secci&oacute;n preferencias, dentro de su men&uacute; personal.
+                            <br/>
+                            Si desea darse de baja de la base de datos por favor pinche en el siguiente enlace <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #5A9883; text-align:center;" href="http://www.diariomedico.com/index.php/services/registro?opcion=2">pulse aqu&iacute;</a><br />
+                                        </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-1&cid=&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=investigacion-biomedica-enero2019" style="visibility: hidden;"/>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+<mjml>
+  <mj-head>
+    <mj-title>Harán historia</mj-title>
+    <mj-preview>Harán historia</mj-preview>
+    <mj-attributes>
+      <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto" />
+      <mj-all font-family="Roboto, Helvetica, Arial, sans-serif"></mj-all>
+      <mj-text font-weight="400" letter-spacing=".5px" font-size="16px" color="#000000" line-height="24px" font-family="Roboto, Helvetica, Arial, sans-serif"></mj-text>
+    </mj-attributes>
+    <mj-style inline="inline">
+      .body-section {
+        -webkit-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .text-link {
+        color: #5e6ebf
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .footer-link {
+        color: #888888
+      }
+    </mj-style>
+
+  </mj-head>
+  <mj-body background-color="#eaeaea" width="600px">
+    <mj-section full-width="full-width" background-color="#eaeaea" padding-bottom="0">
+      <mj-column width="100%">
+        <mj-text align="center" font-size="11px" padding-bottom="20px" padding-top="0" color="#000000">Si no visualiza correctamente este correo haga clic <a href="http://emailing.eventosue.com/2019/10/eventosue/huawei/" style="color: #000000; font-weight: 500; text-decoration: none;">aquí</a>.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#eaeaea" padding="0">
+      <mj-column width="100%">
+        <mj-image src="http://emailing.eventosue.com/2019/10/eventosue/huawei/img/img-main01.jpg?v4
+    5" width="600px" alt="Un pacto de estado por las infraestructuras y la movilidad" padding="0"  />
+      </mj-column>
+    </mj-section>
+    <mj-wrapper padding-top="0" padding-bottom="0" css-class="body-section">
+    <mj-section background-color="#e85e63" padding="5px">
+        <mj-column width="100%">
+            <mj-text color="#FFF" font-size="25px" align="center">
+                <b>24 octubre 2019</b> <br><span style="font-size: 20px;">En Espacio Huawei (C/Gran Vía 48) Madrid</p>
+            </mj-text>
+            
+        </mj-column>
+    </mj-section>
+      <mj-section background-color="#ffffff" padding-bottom="0px" padding-left="15px" padding-right="15px">
+        <mj-column width="100%">
+          <mj-text color="#637381" font-size="16px">
+            Estimado amigo:
+          </mj-text>
+          <mj-text color="#637381" font-size="16px" align="justify">
+            Los <b>diarios MARCA</b> y <b>EL MUNDO</b> y <b>HUAWEI</b> te invitan a la presentación de <b>#HaránHistoria</b>, el evento donde tendrás la oportunidad de conocer a <b>7 de nuestros olímpicos de Tokio 2020</b>.</b>
+          </mj-text>
+          <mj-text color="#637381" font-size="16px" align="justify">
+              Te esperamos el próximo 24 de octubre a las 19.45 h. en la calle Gran Vía, 48 en Madrid.
+          </mj-text>
+          <mj-text color="#637381" font-size="16px" align="justify">
+              ¡No faltes!
+          </mj-text>
+        </mj-column>
+      </mj-section>
+        </mj-section>
+      <mj-section background-color="#ffffff" background-repeat="repeat" padding-top="0px" padding="20px 0 0" text-align="center" vertical-align="top">
+      <mj-column>
+        <mj-button align="center" background-color="#e85e63" border-radius="0px" color="#ffffff" font-size="16px" font-weight="bold" inner-padding="20px 30px" padding="10px 25px" text-decoration="none" text-transform="none" vertical-align="middle" href="http://www.eventosyconferenciasue.com/eventos/haran-historia-huawei?p=2230&redirect=http%3A%2F%2Fwww.escuelaunidadeditorial.es%2Fgracias-por-tu-compra%2F">Confirma tu asistencia</mj-button>
+      </mj-column>
+    </mj-section>
+    
+  <mj-section background-color="#fff" padding-bottom="0px" padding-top="0px">
+        <mj-column width="25%"></mj-column>
+        <mj-column width="50%">
+            <mj-text color="#637381" font-size="18px" align="center" padding-bottom="0">
+                SÍGUENOS
+            </mj-text> 
+            <mj-image src="http://emailing.eventosue.com/2019/10/eventosue/huawei/img/tw_55x55.png?v=" width="45px" align="center" alt="Síguenos en Twitter" padding="0" href="https://twitter.com/hashtag/Har%C3%A1nHistoria" />
+            <mj-text color="#637381" padding-top="0px" font-size="16px" align="center">
+                <a style="color:#637381; text-decoration: none;" href="https://twitter.com/hashtag/HaránHistoria"> #HaránHistoria</a>
+                <!--<a style="color:#637381; text-decoration: none;" href="https://twitter.com/Eventos_EXP">
+                @Eventos_EXP</a><br>
+                <a style="color:#637381; text-decoration: none;" href="https://twitter.com/expansioncom">
+                @expansioncom</a>-->
+            </mj-text>
+        </mj-column>
+        <mj-column width="25%"></mj-column>
+    </mj-section>
+    <mj-section background-color="#eaeaea">
+        <mj-column width="100%">
+            <mj-text color="#637381" padding-top="0px" font-size="16px" align="center">
+                <span style="font-size:14px;">
+                Para más información: <b>91 443 53 36</b>
+                <br>Aforo limitado.
+                <br>Imprescindible confirmación por parte de la organización </span>
+            </mj-text>
+        </mj-column> 
+      </mj-section>  
+
+      
+    </mj-wrapper>
+
+    <mj-wrapper full-width="full-width">
+      <mj-section padding="0px">
+        <mj-column width="80%" padding="0">
+          
+        </mj-column>
+        </mj-section>
+        <mj-section>
+        <mj-column width="100%" padding="0">
+          <mj-text color="#A1A0A0" font-size="16px" align="center" line-height="24px">
+            Unidad Editorial S.A.
+          </mj-text>
+          <mj-social font-size="15px" icon-size="30px" mode="horizontal" padding="0" align="center">
+            <mj-social-element name="twitter" href="https://twitter.com/EventosUE" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="facebook" href="https://www.facebook.com/eventosyconferenciasue" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="linkedin" href="https://www.linkedin.com/groups/2722989/" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="instagram" href="https://www.instagram.com/eventosunidadeditorial/" background-color="#A1A0A0">
+            </mj-social-element>
+          </mj-social>
+          <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+            &copy; Unidad Editorial, 2019.
+          </mj-text>
+          <mj-text color="#000000" font-size="10px" align="center" line-height="14px">
+           
+														Ha recibido este e-mail porque es usuario registrado de "Unidad Editorial Informaci&oacute;n Deportiva S.L.U." y ha aceptado recibir comunicaciones electr&oacute;nicas relacionadas con nuestros productos o servicios. Si desea dejar de recibir este tipo concreto de comunicaci&oacute;n <a style="color:#aa0000;" target="_blank" href="{[Opt_Out Baja Marca Consumer|46124]}">pulse aqu&iacute;</a>. Si desea modificar sus datos <a style="color:#aa0000;" target="_blank" href="https://seguro.marca.com/registro/v2/zona-usuario.html">pulse aqu&iacute;</a>.
+													</td>.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      
+    </mj-wrapper>
+    <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-1&cid=&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=pacto-infraestructuras-oct19" style="visibility: hidden;" />
+  </mj-body>
+</mjml>

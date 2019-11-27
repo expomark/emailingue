@@ -1,0 +1,134 @@
+<mjml>
+  <mj-head>
+    <mj-title>II Edición de los Premios Expansión Compliance</mj-title>
+    <mj-preview>II Edición de los Premios Expansión Compliance</mj-preview>
+    <mj-attributes>
+      <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto" />
+      <mj-all font-family="Roboto, Helvetica, Arial, sans-serif"></mj-all>
+      <mj-text font-weight="400" letter-spacing=".5px" font-size="16px" color="#000000" line-height="24px" font-family="Roboto, Helvetica, Arial, sans-serif"></mj-text>
+    </mj-attributes>
+    <mj-style inline="inline">
+      .body-section { -webkit-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15); -moz-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15); box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15); }
+    </mj-style>
+    <mj-style inline="inline">
+      .text-link { color: #5e6ebf }
+    </mj-style>
+    <mj-style inline="inline">
+      .footer-link { color: #888888 }
+    </mj-style>
+
+  </mj-head>
+  <mj-body background-color="#eaeaea" width="600px">
+    <mj-section full-width="full-width" background-color="#eaeaea" padding-bottom="0">
+        <mj-column width="100%">
+            <mj-text align="center" font-size="11px" padding-bottom="20px" padding-top="0" color="#000000">Si no visualiza correctamente este correo haga clic <a href="http://emailing.eventosue.com/2019/09/eventosue/compliance/index-exp.html?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=premios-compliance-expansion-sept19" style="color: #000000; font-weight: 500; text-decoration: none;">aquí</a>.</mj-text>
+        </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFF" padding="0" >
+        <mj-column width="100%" >
+            <mj-image src="http://emailing.eventosue.com/2019/09/eventosue/compliance/img/img-main.jpg?v=4" width="600px" alt="Presentación de candidaturas hasta el 30 de septiembre" padding="0" href="https://premioscompliance.expansion.com/" />
+        </mj-column>
+    </mj-section>
+    <mj-wrapper padding-top="0" padding-bottom="0" css-class="body-section" background-color="#eaeaea">
+        <mj-section background-color="#ffffff" padding-left="15px" padding-right="15px">
+            <mj-column width="100%">
+                <mj-text color="#637381" font-size="16px">
+                    Estimad@ amig@:
+                </mj-text>
+                <mj-text color="#637381" font-size="16px" align="left">
+                    Te animamos a participar en la <span style="color: #0075be"><strong>II Edición de los Premios Expansión Compliance 2019</strong></span>, organizados por el diario <strong>Expansión</strong> con la colaboración de <strong>Deloitte Legal</strong>, <strong>RSA</strong> y <strong>ESADE</strong> como colaborador académico. Puedes presentar tu candidatura hasta el <strong>4 de octubre</strong> a través de la web: <a href="https://premioscompliance.expansion.com/" style="color: #0075be; text-decoration:none;"><strong>premioscompliance.expansion.com</strong></a>
+                </mj-text>
+                <mj-text color="#637381" font-size="16px" align="left">
+                    <strong style="color: #0075be">¿QUÉ BUSCAMOS?</strong><br>
+                    <span style="color: #0075be">1.</span> Empresa más innovadora en materia de compliance<br>
+                    <span style="color: #0075be">2.</span> Mejor iniciativa ética en materia de compliance<br>
+                    <span style="color: #0075be">3.</span> Mejor proyecto internacional en materia de compliance<br>
+                    <span style="color: #0075be">4.</span> Pyme del año en compliance<br>
+                    <span style="color: #0075be">5.</span> Empresa con mejores prácticas en compliance 2018/2019 (IBEX)<br>
+                    <span style="color: #0075be">6.</span> Empresa con mejores prácticas en compliance 2018/2019 (NO IBEX)<br>
+                    <span style="color: #0075be">7.</span> Premio especial: compliance officer del año<br>
+                </mj-text>
+                <mj-text color="#637381" font-size="16px" padding-top="20px" align="justify">
+                    <strong style="color: #0075be"> ¿QUIÉN PUEDE PRESENTARSE? </strong><br>
+                    Cualquier empresa que cumpla con los requisitos y los criterios contenidos en las <a href="https://premioscompliance.expansion.com/bases-legales.pdf?v5" style="color: #0075be">Bases Legales</a>.
+                </mj-text>
+                <mj-text color="#637381" font-size="16px" padding-top="20px" align="justify">
+                    Esperamos poder contar con tu participación.
+                </mj-text>
+                <mj-text color="#637381" font-size="16px" align="justify">
+                    Un abrazo
+                </mj-text>
+                <mj-text color="#637381" font-size="16px" font-weight="bold" align="justify">
+                    Expansión
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section background-color="#ffffff" padding-left="15px" padding-right="15px">
+            <mj-column width="50%">
+                <mj-text color="#637381" font-size="18px" align="center" padding-bottom="0">
+                    SÍGUENOS
+                </mj-text> 
+                <mj-image src="http://emailing.eventosue.com/2019/09/eventosue/compliance/img/tw_55x55.png?v=5" width="45px" align="center" alt="Síguenos en Twitter" padding="0" href="https://twitter.com/hashtag/PremiosCompliance" />
+                <mj-text color="#637381" padding-top="0px" font-size="16px" align="center">
+                    <a style="color:#637381; text-decoration: none;" href="https://twitter.com/hashtag/PremiosCompliance">#PremiosCompliance</a>
+                </mj-text>
+            </mj-column>
+            <mj-column width="50%">
+                <mj-text color="#637381" font-size="18px" align="center" padding-bottom="0">
+                    CONSULTAS
+                </mj-text>
+                <mj-image src="http://emailing.eventosue.com/2019/09/eventosue/compliance/img/phone_55x55.png?v=6" width="45px" align="center" alt="Síguenos en Twitter" padding="0" href="https://twitter.com/hashtag/PremiosCompliance" />             
+                <mj-text color="#637381" padding-top="0px" font-size="18px" align="center">
+                    91 443 53 36
+                </mj-text> 
+            </mj-column>
+        </mj-section>
+        <mj-section background-color="#ffffff" padding-left="15px" padding-right="15px">            
+            <mj-column width="100%">   
+                <mj-image src="http://emailing.eventosue.com/2019/09/eventosue/compliance/img/patros.png?v=4" width="600px" alt="II Edición de los Premios Expansión Compliance" padding="0" padding-top="20px"
+                    padding-bottom="20px" href="https://premioscompliance.expansion.com/" />
+            </mj-column>
+        </mj-section>
+    </mj-wrapper>
+
+    <mj-wrapper full-width="full-width" background-color="#eaeaea">
+        <mj-section>   
+        <mj-column width="80%" padding="0">
+          <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+          Ha recibido este e-mail porque es usuario registrado de &quot;Unidad Editorial Informaci&oacute;n Econ&oacute;mica S.L.&quot; y ha aceptado recibir comunicaciones electr&oacute;nicas relacionadas con nuestros productos o servicios.<br>Si desea dejar de recibir este tipo concreto de comunicación, por favor <a style="color:#007abd; text-decoration: none;" href="{[Opt_Out Baja Expansion Consumer|46151]}" target="_blank">pulse aqu&iacute;</a>.<br />Si desea modificar sus datos <a style="color:#007abd; text-decoration: none;" href="https://seguro.expansion.com/registro/v2/zona-usuario.html" target="_blank">pulse aqu&iacute;</a>.
+          </mj-text>      
+        </mj-column>
+        </mj-section>
+        <mj-section>
+        <mj-column width="100%" padding="0">
+          <mj-text color="#A1A0A0" font-size="16px" align="center" line-height="24px">
+            Unidad Editorial S.A. 
+          </mj-text>
+          <mj-social font-size="15px" icon-size="30px" mode="horizontal" padding="0" align="center">
+            <mj-social-element name="twitter" href="https://twitter.com/EventosUE" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="facebook" href="https://www.facebook.com/eventosyconferenciasue" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="linkedin" href="https://www.linkedin.com/groups/2722989/" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="instagram" href="https://www.instagram.com/eventosunidadeditorial/" background-color="#A1A0A0">
+            </mj-social-element>
+          </mj-social>
+          <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+            &copy; Unidad Editorial, 2019.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="0">
+        <mj-group>
+          <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px" font-weight="bold">
+              <a class="footer-link" href="https://www.expansion.com/registro/registro-proteccion-datos.html">Privacidad</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <a class="footer-link" href="{[Opt_Out Baja Expansion Consumer|46151]}">Darse de baja</a>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+    <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-1&cid=&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=premios-compliance-sep19" style="visibility: hidden;"/>
+  </mj-body>
+</mjml>

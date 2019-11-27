@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>Celebra con nosotros el Día Mundial del Farmacéutico</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+        <style>
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+         html,
+            body {
+            margin: 0 auto !important;
+            height: 100% !important;
+            width: 100% !important;
+            letter-spacing: .5px;
+            }
+            /* What it does: Stops email clients resizing small text. */
+            * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            letter-spacing: .85px;
+            }
+            /* What is does: Centers email on Android 4.4 */
+            div[style*="margin: 16px 0"] {
+            margin:0 !important;
+            }
+            /* What it does: Stops Outlook from adding extra spacing to tables. */
+            table,
+            td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+            }
+            /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+            table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+            }
+            table table table {
+            table-layout: auto;
+            }
+            /* What it does: Uses a better rendering method when resizing images in IE. */
+            img {
+            -ms-interpolation-mode:bicubic;
+            height:auto !important;
+            }
+            /* What it does: A work-around for iOS meddling in triggered links. */
+            .mobile-link--footer a,
+            a[x-apple-data-detectors] {
+            color:inherit !important;
+            text-decoration: underline !important;
+            }
+            /* What it does: Hover styles for buttons */
+            .button-td,
+            .button-td a {
+                transition: all 100ms ease-in;
+            }
+            .button-td:hover {
+                cursor: pointer;
+                background: #282828 !important;
+                border-color: #282828 !important;
+            }
+            .button-td:hover a {
+                color: #eaeaea !important;
+            }
+            .two-columns > table {
+                width: 50%!important;
+                max-width: 50%!important;
+                float: left;
+            }
+            .three-columns > table {
+                width: 33.3%!important;
+                max-width: 33.3%!important;
+                float: left;
+            }
+            .three-columns-asymmetric > table {
+                width: auto!important;
+                max-width: auto!important;
+                float: left;
+            }
+            .four-columns > table{
+                width: 25%!important;
+                max-width: 25%!important;
+                float: left;
+            }
+            @media only screen and (max-width: 600px) {
+                .show-xs {
+                    display: block;
+                }
+                .hidden-xs {
+                    display: none;
+                }
+                .three-columns-asymmetric > table, .three-columns > table, .two-columns > table, .w100-xs {
+                    width: 100%!important;
+                    max-width: 100%!important;
+                    float: none;
+                    margin-bottom: 30px!important;
+                }
+                .three-columns-asymmetric > table:last-child, .three-columns > table:last-child, .two-columns > table:last-child {
+                    margin-bottom: 0px!important;
+                }
+                .four-columns > table{
+                    width: 50%!important;
+                    max-width: 50%!important;
+                    float: none;
+                }
+                .four-columns > table:nth-child(2) {
+                    margin-bottom: 30px!important;
+                }
+
+                * {
+                    text-align: center !important;
+                }
+            }
+            @media (min-width: 601px) {
+                .show-xs {
+                    display: none;
+                }
+                .hidden-xs {
+                    display: table-cell;
+                }
+                .w100-xs {
+                    width: auto !important;
+                    max-width: auto !important;
+                }
+                * {
+                    text-align: auto !important;
+                }
+            }
+            /* video styles */
+            #MessageViewBody .video-wrapper { display:block!important; }
+            #MessageViewBody .video-fallback { display:none!important; }
+
+             .video-wrapper {display:none;}
+
+            @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:1024px)
+            {
+              .video-wrapper { display:block!important; }
+              .video-fallback { display:none!important; }
+            }
+            @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
+              div[class^=video-wrapper] { display:block!important; }
+              div[class^=video-fallback] { display:none!important; }
+            }
+        </style>
+    </head>
+    <body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7;width:100%">
+            <tr>
+                <td>
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="text-decoration:none;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2017/09/escuelacf/dia-mundial-farmaceutico/index.html">aquí.</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+<!--[if mso]>
+        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+                <td>
+                    <![endif]-->                    
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                        <tr>
+                            <td bgcolor="#ffffff">
+                                <a href="http://escuela.correofarmaceutico.com/?utm_source=ue&utm_medium=mailing&utm_campaign=dia-mundial-farmaceutico-2017">
+                                    <img src="http://emailing.eventosue.com/2017/09/escuelacf/dia-mundial-farmaceutico/img/img-main-01.jpg?v=1" width="600" height="" alt="Celebra con nosotros el Día Mundial del Farmacéutico" border="0" align="center" style="width: 100%; max-width: 600px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;">
+                                    <tbody>
+                                        <tr>
+                                            <td height="40">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;">
+                                    <tbody>
+                                        <tr>
+                                            <td width="40">&nbsp;</td>
+                                            <td style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 16px; font-weight:300; mso-height-rule: exactly; line-height: 24px; color: #000000; text-align:left; text-decoration: none;">
+                                                Estimado <span style="text-transform: capitalize;">[NOMBRE]</span>, <br /><br />Este próximo <strong>25 de septiembre de 2017</strong> se celebra el <strong>Día Mundial del Farmacéutico</strong>, para celebrarlo contigo no hay mejor modo que ofrecerte un <strong>descuento</strong> del <strong>25%</strong> en todos nuestros cursos de la <strong>Escuela de Correo Farmacéutico</strong>.
+                                            </td>
+                                            <td width="40">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;">
+                                    <tbody>
+                                        <tr>
+                                            <td height="20">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>                                
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;" bgcolor="#e3eeea">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td height="20">&nbsp;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;">
+                                                    <tr>
+                                                        <td width="40">&nbsp;</td>
+                                                        <td style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 14px; font-weight:300; mso-height-rule: exactly; line-height: 16px; color: #000000; text-align:right; text-decoration: none;">Es muy sencillo solo tienes que introducir el código promocional a la hora de realizar la inscripción *</td>
+                                                        <td width="20">&nbsp;</td>
+                                                        <td height="30" style="background: #d9e794; text-align: center;">
+                                                            <span height="30" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; line-height: 30px; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#282828; border-radius: 10px; width: 100%; margin: 0 auto;">
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;DIAMUNDIAL&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </span>
+                                                        </td>
+                                                        <td width="40">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td height="20">&nbsp;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>                                                 
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;" bgcolor="#FFFFFF">
+                                    <tr>
+                                        <td width="40">&nbsp;</td>
+                                        <td></td>
+                                        <td width="20">&nbsp;</td>
+                                        <td height="10" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 10px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #000000; text-align:right; text-decoration: none;">* Fin de promoción 28 de septiembre</td>
+                                        <td width="40">&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;" bgcolor="#FFFFFF">
+                                    <tbody>
+                                        <tr>
+                                            <td height="20">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;" bgcolor="#FFFFFF">
+                                    <tr>
+                                        <td align="center"  valign="top" width="100%">
+                                            <table cellspacing="0" cellpadding="0" border="0" align="center">
+                                                <tr>
+                                                    <td height="60" style="border-radius: 3px; background: #008e73; text-align: center;" class="button-td">
+                                                        <a href="http://escuela.correofarmaceutico.com/?utm_source=ue&utm_medium=mailing&utm_campaign=dia-mundial-farmaceutico-2017" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#FFFFFF; border-radius: 3px;">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;VEA NUESTROS CURSOS&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                         </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#FFFFFF">
+                        <tbody>
+                            <tr>
+                                <td height="20">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#FFFFFF" align="center" style="max-width: 600px;" class="three-columns-asymmetric">
+                        <tr>
+                            <td align="center" valign="top">
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" valing="top" width="180" style="float:left;">
+                                    <tr>
+                                        <td width="20" valing="top" class="hidden-xs">&nbsp;</td>
+                                        <td valing="top" width="160" style="max-width: 160px;">
+                                            <img src="http://emailing.eventosue.com/2017/09/escuelacf/dia-mundial-farmaceutico/img/logo-pie.png?v=2" alt="Celebra con nosotros el Día Mundial del Farmacéutico" valing="top" border="0" align="center" style="border: 0 none; display: block; width: 100%; max-width: 160px;"  width="160" >
+                                        </td>
+                                    </tr>
+                                </table>   
+                            <!--[if mso]>
+                                    </td>
+                                    <td align="center" valign="top" width="130">
+                            <![endif]--> 
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" valing="top" width="130" style="float:left;">
+                                    <tr>
+                                        <td width="20" valing="top" class="hidden-xs">&nbsp;</td>
+                                        <td valing="top" width="90">
+                                            <img src="http://emailing.eventosue.com/2017/09/escuelacf/dia-mundial-farmaceutico/img/qr.png?v=4" alt="Celebra con nosotros el Día Mundial del Farmacéutico" style="border: 0 none; display: block; width: 100%; max-width: 90px; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" align="center" border="0" width="90">
+                                        </td>
+                                        <td width="20" valing="top" class="hidden-xs">&nbsp;</td>
+                                    </tr>
+                                </table>
+                            <!--[if mso]>
+                                    </td>
+                                    <td align="center" valign="top" width="290">
+                            <![endif]--> 
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" valing="top" width="290" style="float:left;">
+                                    <tr>
+                                        <td width="270">
+                                            <table cellspacing="0" cellpadding="0" border="0" align="center" valing="top" width="100%" style="width: 100%; max-width: 270px;">
+                                                <tr>
+                                                    <span style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 13px; mso-height-rule: exactly; line-height: 20px; color: #000000;">MÁS INFORMACIÓN:</span><br />
+                                                    <span style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 13px; mso-height-rule: exactly; line-height: 20px; color: #008e73;"><a href="http://escuela.correofarmaceutico.com/?utm_source=ue&utm_medium=mailing&utm_campaign=dia-mundial-farmaceutico-2017" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 13px; mso-height-rule: exactly; line-height: 20px; color: #008e73; text-decoration: none;">escuela.correofarmaceutico.com</a></span><br />
+                                                    <span style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 13px; mso-height-rule: exactly; line-height: 20px; color: #000000;">ATENCIÓN AL CLIENTE:</span><br />
+                                                    <span><a href="mailto:info@escuela.correofarmaceutico.com" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #008e73; text-decoration: none;">info@escuela.correofarmaceutico.com</a></span><br />
+                                                    <span style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 20px; mso-height-rule: exactly; line-height: 20px; color: #000000;">91 443 53 36</span>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="20" valing="top" class="hidden-xs">&nbsp;</td>
+                                    </tr>
+                                </table>
+                             </td>
+                        </tr>
+                    </table>                      
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#FFFFFF" style="max-width: 600px;">
+                        <tbody>
+                            <tr>
+                                <td height="20">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>                                    
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#FFFFFF" style="max-width: 600px;">
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#edefc4" style="max-width: 600px;">
+                                    <tr>
+                                        <td style="font-size: 10px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table cellspacing="0" cellpadding="0" border="0" align="center" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 20px; mso-height-rule: exactly; line-height: 20px; color: #000000;">
+                                                <tr>
+                                                    <td><img src="http://emailing.eventosue.com/2017/09/escuelacf/dia-mundial-farmaceutico/img/twitter.png?v=2" alt="Celebra con nosotros el Día Mundial del Farmacéutico" /></td>
+                                                    <td><a href="https://twitter.com/hashtag/CursosCF?src=hash" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 20px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-decoration: none;">#CursosCF</a></td>
+                                                    <td>/</td>
+                                                    <td><a href="https://twitter.com/escuelacf?lang=es" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 20px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-decoration: none;">@EscuelaCF</a></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" bgcolor="#FFFFFF" style="max-width: 600px;">
+                                    <tbody>
+                                        <tr>
+                                            <td height="20">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>                                    
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if mso]>
+                            </td>
+                        </tr>
+                    </table>
+                    <![endif]--> 
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                    <tr>
+                    <td height="50">
+                    &nbsp;
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                            © Unidad Editorial, 2017
+                            <br>Si no desea seguir recibiendo esta información de <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.eventosyconferenciasue.com/?utm_source=ue&utm_medium=mailing&utm_campaign=dia-mundial-farmaceutico-2017">www.eventosyconferenciasue.com</a>,
+                            <br> por favor envíe un e-mail a <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td height="20">
+                    &nbsp;
+                    </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

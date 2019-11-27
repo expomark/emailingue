@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+
+        <title>Curso de Comunicación Interna: La diferencia entre Informar y Comunicar</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+
+        <style>
+ @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+        margin: 0 auto !important;
+        height: 100% !important;
+        width: 100% !important;
+        letter-spacing: .5px;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        letter-spacing: .85px;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-td a,
+        .button-td-2,
+        .button-td-2 a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+            cursor: pointer;
+            background: #282828 !important;
+        }
+        .button-td-2:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            background: #232323 !important;
+        }
+        .button-td:hover a {
+            color: #eaeaea !important;
+        }
+        .two-columns table {
+            width: 50%!important;
+            max-width: 50%!important;
+            float: left;
+        }
+        .three-columns table {
+            width: 33.3%!important;
+            max-width: 33.3%!important;
+            float: left;
+        }
+        .four-columns table{
+            width: 25%!important;
+            max-width: 25%!important;
+            float: left;
+        }
+        .two-columns.right table {
+            text-align: right !important;
+        }   
+        @media only screen and (max-width: 600px) {
+
+            table {
+                text-align: center !important;
+                line-height: 1.4em !important;
+            }
+            .show-xs {
+                display: block;
+            }
+            .hidden-xs {
+                display: none;
+            } 
+            .three-columns table, .two-columns table, .w100-xs {
+                width: 100%!important;
+                max-width: 100%!important;
+                float: none;
+                margin-bottom: 30px!important;
+            }
+            .three-columns table:last-child, .two-columns table:last-child {
+                margin-bottom: 0px!important;
+            }
+            .four-columns table{
+                width: 50%!important;
+                max-width: 50%!important;
+                float: none;
+            }
+            .four-columns table:nth-child(2) {
+                margin-bottom: 30px!important;
+            }
+        }
+        @media (min-width: 601px) {
+            .show-xs {
+                display: none;
+            }
+            .hidden-xs {
+                display: table-cell;
+            }
+            .w100-xs {
+                width: auto !important;
+                max-width: auto !important;
+            }
+            * {
+                text-align: auto !important;
+            }
+        }
+        /* video styles */
+        #MessageViewBody .video-wrapper { display:block!important; }
+        #MessageViewBody .video-fallback { display:none!important; }
+
+         .video-wrapper {display:none;}
+
+        @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:1024px)
+        {
+          .video-wrapper { display:block!important; }
+          .video-fallback { display:none!important; }
+        }
+        @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
+          div[class^=video-wrapper] { display:block!important; }
+          div[class^=video-fallback] { display:none!important; }
+        }
+        </style>
+    </head>
+    <body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7; width:100%">
+            <tr>
+                <td>
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td height="20">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'OpenSans', sans-serif, Arial; font-weight: 400; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'OpenSans', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2017/07/escuelaue/cursos-de-especializacion/comunicacion-interna-aportacion-de-valor-y-tendencias/emailing2-rest/index-nouser.html">aquí.</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+        <!--[if mso]>
+        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+                <td>
+                    <![endif]-->
+                    <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                   <a href="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/comunicacion-interna-aportacion-de-valor-y-tendencias/?cid=&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-2-com-int-rest"> 
+                                    <img src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/digital/header-com-int-mailing-2.jpg?v=3" alt="¿Trabajas con contenidos digitales o te gustaría hacerlo? Ésto te interesa (y mucho" style="width: 100%; max-width: 600px; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" align="middle" border="0" width="600"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; background-color: #FFFFFF;">
+                        <tr>
+                            <td width="30">
+                                &nbsp;
+                            </td>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width:540px; background-color: #FFFFFF; font-family: 'OpenSans', sans-serif; font-size: 16px; font-weight:300; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align:left; text-decoration: none;">
+                                    <tr>
+                                        <td>
+                                            <br />
+                                            Hola <span style="text-transform: capitalize;">[NOMBRE]</span>, <br /><br />¿Podrías identificar la diferencia fundamental entre estas dos frases?<br /> <br />
+                                        </td>
+                                    </tr>                                
+                                </table>
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:540px; text-align: left; font-family: 'OpenSans', sans-serif; font-size: 16px; font-weight:300; line-height: 1.5; letter-spacing: .5px; text-decoration: none; color: #333;">
+                                    <tr>
+                                        <td width="10" valign="top">&#x2022;</td>
+                                        <td width="5" valign="top">&nbsp;</td>
+                                        <td>Te informamos que el 20 de noviembre cierra el plazo de inscripción para el curso de Comunicación Interna</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10" valign="top">&#x2022;</td>
+                                        <td width="5" valign="top">&nbsp;</td>
+                                        <td>Domina las claves para diseñar el 'Plan de Comunicación Interna' que contribuya a la competitividad de tu empresa</td>
+                                    </tr>
+                                </table>
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width:540px; background-color: #FFFFFF; font-family: 'OpenSans', sans-serif; font-size: 16px; font-weight:300; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align:left; text-decoration: none;">
+                                    <tr>
+                                        <td> <br />
+                                            Mientras que la primera frase sólo te informa, la segunda intenta motivarte. Y es importante resaltar esta diferencia porque <b>una de las claves para la alta competitividad de las empresas es la motivación de sus trabajadores</b>, la cual se logra con una comunicación interna que vaya en todas las direcciones; y no sólo de arriba hacia abajo.<br /> <br />
+                                        </td>
+                                    </tr>                                
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 100%; max-width:600px; background-color: #FFFFFF;">
+                        <tr>
+                            <td width="40" height="40">
+                                &nbsp;
+                            </td>
+                            <td>
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 100%; max-width:520px; background-color: #FFFFFF;">
+                                    <tr>
+                                        <td style="background: #015077; text-align: center;" class="button-td" height="60">
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 100%; max-width:520px;">
+                                                <tr>
+                                                    <td height="5" width="30" style="font-size: 5px;">&nbsp;</td>
+                                                    <td>
+                                                        <a href="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/comunicacion-interna-aportacion-de-valor-y-tendencias/?cid=&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-2-com-int-rest#contactForm" style="font-family: 'OpenSans', sans-serif, Arial; font-size: 18px;letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color: #FFFFFF; width: 100%;">
+                                                            Comunicación Interna: Aportación de Valor
+                                                        </a>
+                                                    </td>
+                                                    <td height="5" width="30" style="font-size: 5px;">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="40" height="40">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; background-color: #FFFFFF;">
+                        <tr>
+                            <td width="30">
+                                &nbsp;   
+                            </td>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 540px; font-family: 'OpenSans', sans-serif; font-size: 16px; font-weight:300; mso-height-rule: exactly; line-height: 20px; color: #000000; background-color: #FFFFFF; text-align:left; text-decoration: none;">
+                                    <tr>
+                                        <td>
+                                            <br />
+                                            También puedes descargarte el programa para conocer los objetivos del curso y ver el temario en profundidad, del cual puedes ver aquí los 5 módulos: <br /><br />
+                                    </tr>
+                                </table>
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family: 'OpenSans', sans-serif; font-size: 16px; font-weight:300; letter-spacing: .5px; text-decoration: none; color: #333;">
+                                    <tr>
+                                        <td width="10" valign="top">&#x2022;</td>
+                                        <td width="5" valign="top">&nbsp;</td>
+                                        <td>Nuevas estrategias de Comunicación Interna y tendencias</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10" valign="top">&#x2022;</td>
+                                        <td width="5" valign="top">&nbsp;</td>
+                                        <td>Análisis y planificación</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10" valign="top">&#x2022;</td>
+                                        <td width="5" valign="top">&nbsp;</td>
+                                        <td>Comunicación directiva: comunicación como herramienta de liderazgo</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10" valign="top">&#x2022;</td>
+                                        <td width="5" valign="top">&nbsp;</td>
+                                        <td>Los empleados como embajadores de la marca. Branding interno</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10" valign="top">&#x2022;</td>
+                                        <td width="5" valign="top">&nbsp;</td>
+                                        <td>El reto de la movilización de los profesionales en los canales sociales internos digitales</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="30">
+                                &nbsp;   
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 100%; max-width:600px; background-color: #FFFFFF;">
+                        <tr>
+                            <td height="20">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 100%; max-width:600px; background-color: #FFFFFF;">
+                        <tr>
+                            <td width="40" height="40">
+                                &nbsp;
+                            </td>
+                            <td>
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 100%; max-width:520px; background-color: #80acc2;">
+                                    <tr>
+                                        <td style="background: #80acc2; text-align: center;" class="button-td" height="60">
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="right" style="width: 100%; max-width:520px;">
+                                                <tr>
+                                                    <td height="5" width="30" style="font-size: 5px;">&nbsp;</td>
+                                                    <td>
+                                                        <a href="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/comunicacion-interna-aportacion-de-valor-y-tendencias/?cid=&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-2-com-int-rest" style="font-family: 'OpenSans', sans-serif, Arial; font-size: 18px;letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color: #FFFFFF; width: 100%;">
+                                                            Sí, quiero descargarme el programa
+                                                        </a>
+                                                    </td>
+                                                    <td height="5" width="30" style="font-size: 5px;">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="40" height="40">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 100%; max-width:600px; background-color: #FFFFFF;">
+                        <tr>
+                            <td height="20">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; background-color: #FFFFFF;">
+                        <tr>
+                            <td width="30">
+                                &nbsp;
+                            </td>
+                            <td>                                     
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 540px;  background-color: #FFFFFF; font-family: 'OpenSans', sans-serif; font-size: 16px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #000000; background-color: #FFFFFF; text-align:left; text-decoration: none;">
+                                    <tr>
+                                        <td><br />
+                                            Recibe un cordial saludo<br /><br />
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 540px;  background-color: #FFFFFF">
+                                    <tr>
+                                        <td width="25%" valign="top">
+                                            <img width="150" style="width: 100%; max-width: 150px; display: block; margin: 0 auto;" border="0" src="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/emailings/assets/img/elena-rodriguez.jpg" alt="Elena Rodríguez de Arriba" />
+                                        </td>
+                                        <td width="5%">
+                                            &nbsp;
+                                        </td>
+                                        <td width="70%" style="font-family: 'OpenSans', sans-serif; font-size: 16px; font-weight:300; mso-height-rule: exactly; line-height: 1.3; color: #000000; background-color: #FFFFFF; text-align:left; text-decoration: none;">
+                                            <span style="font-size: 20px; line-height: 1.6; font-weight: 700; color: #494949">Elena Rodríguez de Arriba</span> <br />Unidad Editorial <br />Coordinadora Cursos de Especialización<br /><a href="mailto:erodriguez@unidadeditorial.es?Subject=Hola" style="font-family: 'OpenSans', sans-serif; text-decoration: none; color:#282828; font-size:14px; font-weight:400;">erodriguez@unidadeditorial.es</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="30">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                           <td colspan="3" height="30">&nbsp;</td>
+                        </tr>
+                    </table>
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 100%; max-width:600px; background-color: #eaeaea;">
+                        <tr>
+                            <td height="20" style="font-size: 10px;">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>                    
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 100%; max-width:600px; background-color: #eaeaea;">
+                        <tr>
+                            <td>
+                            </td>
+                            <td width="450" valign="top" style="font-family: 'OpenSans', sans-serif; font-size: 18px; mso-height-rule: exactly; line-height: 23px;font-weight: 200; color: #000; text-align: center;">    También te puede interesar...<br /><span style="font-family: 'OpenSans', sans-serif; color: #015077; font-size: 20px; font-weight: 700;">Comunicación Corporativa Digital</span><br />IV EDICIÓN ONLINE<br /><br />
+                                <a href="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/comunicacion-corporativa-digital/?cid=&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-2-com-int-rest">
+                                <img  width="350" style="width: 100%; max-width: 350px; display: block; margin: 0 auto;" border="0"  src="https://cursos.escuelaunidadeditorial.es/formacion-online/cursos-de-especializacion/assets/images/cursos/md-comunicacion-corporativa-digital.jpg" alt="Módulo III" /></a><br />
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 100%; max-width:600px; background-color: #eaeaea;">
+                        <tr>
+                            <td height="20" style="font-size: 10px;">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size:14px;text-align:left;">
+                                        <tr>
+                                            <td style="text-align: center;">
+                                               <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size:14px;text-align:left;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            &nbsp;
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="text-align: center;">
+                                                                            <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" class="three-columns">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="center" valign="top">
+                                                                                       <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                                                                <tr>
+                                                                                                    <td style="text-align: center;">
+                                                                                                        <img src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/logos/logo-escuela.png?v=2" alt="Escuela de Unidad Editorial" style="width: 100%; max-width: 200px; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" align="middle" border="0" width="200">
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                            <!--[if mso]>
+                                                                                        </td>
+                                                                                        <td align="center" valign="top">
+                                                                                            <![endif]-->
+                                                                                            <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                                                                <tr>
+                                                                                                    <td style="text-align: center;">
+                                                                                                        <img src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/logos/logo-elmundo.png?v=2" alt="Marca" style="width: 100%; max-width: 200px; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                            <!--[if mso]>
+                                                                                        </td>
+                                                                                        <td align="center" valign="top">
+                                                                                            <![endif]-->
+                                                                                            <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                                                                <tr>
+                                                                                                    <td style="text-align: center;">
+                                                                                                        <img src="http://emailing.eventosue.com/2017/07/escuelaue/assets/img/logos/logo-expansion.png?v=2" alt="CEU San Pablo" style="width: 100%; max-width: 200px; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" align="middle" border="0" width="200">
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            &nbsp;
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; background-color: #FFFFFF; border-radius: 0 0 9px 9px; box-shadow: 0px 13px 18px rgba(0, 0, 0, .08);">
+                        <tr>
+                            <td width="100%" height="10" valign="middle">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if mso]>
+                            </td>
+                        </tr>
+                    </table>
+                    <![endif]-->
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td height="50">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100%;font-size: 12px; font-family: 'OpenSans', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center;">
+                                    © Unidad Editorial, 2017<br>Si no desea seguir recibiendo esta información de <a style="font-family: 'OpenSans', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.escuelaunidadeditorial.es/?cid=&utm_source=ue&utm_medium=emailing&utm_campaign=cursos-de-especializacion-septiembre-2017&utm_content=Email-2-com-int-rest">www.escuelaunidadeditorial.es</a>,<br> por favor envíe un e-mail a <a style="font-family: 'OpenSans', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-11&cid=&t=event&ec=email&ea=open&el=estrategia-you&cs=trackitsuite&cm=Email-2-com-int&cn=cursos-de-especializacion-septiembre-2017&utm_content=Email-2-com-int" style="visibility: hidden;"/>
+    </body>
+</html>

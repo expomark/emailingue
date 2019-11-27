@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Form</title>
+<script language="javascript" src="http://x.e.conferenciasyformacion.com/ats/js/lib.js"></script>
+<script language="javascript">
+var hasFocus = false;
+var pass = true;
+function atsValidate()
+{
+	//SET PASS
+	hasFocus = false;
+	pass = true;
+	
+	//HIDE ERROR ROWS
+	hideRow("user_id"); //User_Id
+	hideRow("company"); //Company
+	hideRow("position"); //Position
+	hideRow("province_id"); //Province_Id
+	hideRow("sector"); //Sector
+	hideRow("phone_1"); //Phone_1
+	hideRow("phone_2"); //Phone_2
+	
+	//VALIDATE SIMPLE FIELDS
+	validateText("user_id"); //User_Id
+	validateText("company"); //Company
+	validateText("position"); //Position
+	validateText("province_id"); //Province_Id
+	validateText("sector"); //Sector
+	validateText("phone_1"); //Phone_1
+	validateText("phone_2"); //Phone_2
+	
+	//RETURN SUCCESS OR FAILURE
+	return pass;
+}
+function prefFieldCalc(cb)
+{
+	// Set Preference field value, Opt-in 100, Opt-out 1500
+	if (cb.checked === true){
+		document.getElementById(cb.getAttribute("id").replace("cb", "s")).value = 100;
+	}
+	else{
+		document.getElementById(cb.getAttribute("id").replace("cb", "s")).value = 1500;
+	}
+}
+</script>
+</head>
+<body>
+<form method="post" onsubmit="return atsValidate();" action="go.aspx">
+	<input type="hidden" name="cr" value="100252" />
+	<input type="hidden" name="fm" value="202" />
+	<input type="hidden" name="sb" value="{(SubmissionID)}" />
+	<input type="hidden" name="ri" value="{(PkID)}" />
+	<input type="hidden" name="mg" value="{(MessageID)}" />
+	<input type="hidden" name="cn" value="{(CampaignID)}" />
+	<input type="hidden" name="s_user_id" value="{(u_id)}" />
+	
+	<table cellspacing="0" cellpadding="3" border="0">
+		<tr>
+			<td>Property</td>
+			<td>Value</td>
+		</tr>
+		<tr>
+			<td align="right">Company</td>
+			<td align="left"><input type="text" id="s_company" name="s_company" value="{(company)}" /></td>
+		</tr>
+		<tr id="row_company" style="display:none;">
+			<td valign="middle">&#160;</td>
+			<td valign="middle"><span class="required">(Company is required)</span></td>
+		</tr>
+		<tr>
+			<td align="right">Position</td>
+			<td align="left"><input type="text" id="s_position" name="s_position" value="{(position)}" /></td>
+		</tr>
+		<tr id="row_position" style="display:none;">
+			<td valign="middle">&#160;</td>
+			<td valign="middle"><span class="required">(Position is required)</span></td>
+		</tr>
+		<tr>
+			<td align="right">Province_Id</td>
+			<td align="left"><input type="text" id="s_province_id" name="s_province_id" value="{(province_id)}" /></td>
+		</tr>
+		<tr id="row_province_id" style="display:none;">
+			<td valign="middle">&#160;</td>
+			<td valign="middle"><span class="required">(Province_Id is required)</span></td>
+		</tr>
+		<tr>
+			<td align="right">Sector</td>
+			<td align="left"><input type="text" id="s_sector" name="s_sector" value="{(sector)}" /></td>
+		</tr>
+		<tr id="row_sector" style="display:none;">
+			<td valign="middle">&#160;</td>
+			<td valign="middle"><span class="required">(Sector is required)</span></td>
+		</tr>
+		<tr>
+			<td align="right">Phone_1</td>
+			<td align="left"><input type="text" id="s_phone_1" name="s_phone_1" value="{(phone_1)}" /></td>
+		</tr>
+		<tr id="row_phone_1" style="display:none;">
+			<td valign="middle">&#160;</td>
+			<td valign="middle"><span class="required">(Phone_1 is required)</span></td>
+		</tr>
+		<tr>
+			<td align="right">Phone_2</td>
+			<td align="left"><input type="text" id="s_phone_2" name="s_phone_2" value="{(phone_2)}" /></td>
+		</tr>
+		<tr id="row_phone_2" style="display:none;">
+			<td valign="middle">&#160;</td>
+			<td valign="middle"><span class="required">(Phone_2 is required)</span></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" value="Submit" /></td>
+		</tr>
+	</table>
+</form>
+</form>
+</body>
+</html>

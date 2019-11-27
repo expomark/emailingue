@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>Actualice sus datos de Eventos y Conferencias</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+        * {
+        font-family: sans-serif !important;
+        }
+        </style>
+        <![endif]-->
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+    <!-- Web Font / @font-face : END -->
+    <!-- CSS Reset -->
+    <style>
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+
+    html,
+    body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+    }
+    /* What it does: Stops email clients resizing small text. */
+
+    * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    /* What is does: Centers email on Android 4.4 */
+
+    div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+    }
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+
+    table,
+    td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+    }
+    /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+
+    table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+    }
+
+    table table table {
+        table-layout: auto;
+    }
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+
+    img {
+        -ms-interpolation-mode: bicubic;
+        height: auto !important;
+    }
+    /* What it does: A work-around for iOS meddling in triggered links. */
+
+    .mobile-link--footer a,
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: underline !important;
+    }
+    /* What it does: Hover styles for buttons */
+
+    .button-td {
+        transition: all 100ms ease-in;
+    }
+
+    .button-td:hover {
+        cursor: pointer;
+        background: #555555 !important;
+        border-color: #555555 !important;
+    }
+
+    .three-columns table {
+        width: 33.3%!important;
+        float: left;
+    }
+
+    .two-columns-40-60 table {
+        width: 60% !important;
+        float: left;
+    }
+
+    .two-columns-40-60 table:first-child {
+        width: 40% !important;
+    }
+
+    .show-xs {
+        display: none;
+    }
+
+    .hidden-xs {
+        display: inline-block;
+    }
+
+    @media only screen and (max-width: 360px) {
+        .show-xs {
+            display: block;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+            padding: 10px 0!important;
+        }
+        .two-columns>tbody>tr>td>table,
+        .two-columns-40-60 table,
+        .three-columns table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .hidden-xs {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .show-xs {
+            display: block;
+        }
+        .hidden-xs {
+            display: none;
+        }
+        .two-columns>tbody>tr>td>table,
+        .two-columns-40-60 table,
+        .three-columns table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+            padding: 20px 10px !important;
+        }
+    }
+    </style>
+
+    <script language="javascript" src="http://x.e.conferenciasyformacion.com/ats/js/lib.js"></script>
+    <script language="javascript">
+    var hasFocus = false;
+    var pass = true;
+
+    function atsValidate() {
+        //HIDE ERROR ROWS
+        hideRow("company"); //Company
+        hideRow("position"); //Position
+        hideRow("province_id"); //Province_Id
+        hideRow("sector"); //Sector
+        hideRow("phone_1"); //Phone_1
+        hideRow("phone_2"); //Phone_2
+
+        //VALIDATE SIMPLE FIELDS
+        validateText("company"); //Company
+        validateText("position"); //Position
+        validateText("province_id"); //Province_Id
+        validateText("sector"); //Sector
+        validateText("phone_1"); //Phone_1
+
+        //RETURN SUCCESS OR FAILURE
+        return pass;
+    }
+
+    function prefFieldCalc(cb) {
+        // Set Preference field value, Opt-in 100, Opt-out 1500
+        if (cb.checked === true) {
+            document.getElementById(cb.getAttribute("id").replace("cb", "s")).value = 100;
+        } else {
+            document.getElementById(cb.getAttribute("id").replace("cb", "s")).value = 1500;
+        }
+    }
+
+    window.onload = function() {
+        ['company', 'position', 'h_province_id', 'h_sector', 'phone_1', 'phone_2'].forEach(function(el) {
+            var element = document.getElementById("s_"+el);
+
+            if (/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(element.value)) {
+                element.value = decodeURIComponent(Array.prototype.map.call(atob(element.value), function(c) {
+                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                }).join(''));
+            }
+        });
+
+        ['province_id', 'sector'].forEach(function(el) {
+            var element = document.getElementById("s_h_"+el);
+            var selected = element.value;
+
+            var collection = document.getElementById("s_"+el).options;
+            for (var i=0; i < collection.length; i++) {
+                if (collection[i].value == selected) {
+                    collection[i].selected = true;
+                }
+            }
+        });
+    };
+    </script>
+</head>
+
+<body bgcolor="#EFF2F7" text="#000000">
+    <table style="background:#EFF2F7; width:100%" align="center" bgcolor="#EFF2F7">
+        <tbody>
+            <tr>
+                <td>
+                    <!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="600">
+                            <tr>
+                                <td>
+                    <![endif]-->
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="max-width: 600px;" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.conferenciasyformacion.com/">
+                                                            <img src="http://emailing.eventosue.com/2018/02/eventosue/verificacion-datos/img/img-main-01.jpg" alt="Unidad Editorial" style="width: 100%;max-width: 600px; mso-height-rule:exactly; color: #000000;" height="" align="middle" border="0" width="600">
+                                                        </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="max-width: 600px;" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.conferenciasyformacion.com/">
+                                                        <img src="http://emailing.eventosue.com/2018/02/eventosue/verificacion-datos/img/img-main-02.png" alt="Logos UE" style="width: 100%;max-width: 600px; mso-height-rule:exactly; color: #000000;" height="" align="middle" border="0" width="600">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="max-width: 600px;" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <table style="max-width: 600px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 16px;mso-height-rule: exactly;line-height: 20px; color:#555555; text-align:center;">
+                                                                                    <br>
+                                                                                    <br> <span style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 18px;mso-height-rule: exactly;line-height: 20px; color:#555555; text-align:center; font-weight: 700">Escribe tus datos correctos para actualizar tu registro</span><br><br>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table style="max-width: 600px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <form method="post" onsubmit="return atsValidate();" action="">
+                                                                                    <!-- <form method="post" onsubmit="return atsValidate();" action="go.aspx"> -->
+                                                                                        <input type="hidden" name="cr" value="100252" />
+                                                                                        <input type="hidden" name="fm" value="202" />
+                                                                                        <input type="hidden" name="sb" value="{(SubmissionID)}" />
+                                                                                        <input type="hidden" name="ri" value="{(PkID)}" />
+                                                                                        <input type="hidden" name="mg" value="{(MessageID)}" />
+                                                                                        <input type="hidden" name="cn" value="{(CampaignID)}" />
+                                                                                        <input type="hidden" id="s_user_id" name="s_user_id" value="{(u_id)}" />
+                                                                                        <input type="hidden" id="s_h_province_id" name="s_h_province_id" value="{(province_id)}" />
+                                                                                        <input type="hidden" id="s_h_sector" name="s_h_sector" value="{(sector)}" />
+                                                                                        <table style="max-width: 600px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                            <tr>
+                                                                                                <td width="35%" align="right" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555;">Empresa</td>
+                                                                                                <td align="left" width="65%">
+                                                                                                    <input type="text" id="s_company" name="s_company" value="{(company)}" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555; width:70%; margin-left:10px;margin-bottom:10px" />
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr id="row_company" style="display:none;">
+                                                                                                <td valign="middle">&#160;</td>
+                                                                                                <td valign="middle"><span class="required" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#FF3500; padding-left:10px;">(Empresa es obligatorio)</span></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="35%" align="right" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555;">Cargo</td>
+                                                                                                <td align="left" width="65%">
+                                                                                                    <input type="text" id="s_position" name="s_position" value="{(position)}" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555; width:70%; margin-left:10px;margin-bottom:10px" />
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr id="row_position" style="display:none;">
+                                                                                                <td valign="middle">&#160;</td>
+                                                                                                <td valign="middle"><span class="required" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#FF3500; padding-left:10px;">(Cargo es obligatorio)</span></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="35%" align="right" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555;">Provincia</td>
+                                                                                                <td align="left" width="65%">
+                                                                                                    <!-- <input type="text" id="s_province_id" name="s_province_id" value="{(province_id)}" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555; width:70%; margin-left:10px;margin-bottom:10px" /> -->
+                                                                                                    <select style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555; width:70%; margin-left:10px;margin-bottom:10px"id="s_province_id" name="s_province_id">
+                                                                                                        <option value="" selected>Ninguna (Extranjeros)</option>
+                                                                                                        <option value="Álava">Álava</option>
+                                                                                                        <option value="Albacete">Albacete</option>
+                                                                                                        <option value="Alicante">Alicante</option>
+                                                                                                        <option value="Almería">Almería</option>
+                                                                                                        <option value="Ávila">Ávila</option>
+                                                                                                        <option value="Badajoz">Badajoz</option>
+                                                                                                        <option value="Baleares, Islas">Baleares, Islas</option>
+                                                                                                        <option value="Barcelona">Barcelona</option>
+                                                                                                        <option value="Burgos">Burgos</option>
+                                                                                                        <option value="Cáceres">Cáceres</option>
+                                                                                                        <option value="Cádiz">Cádiz</option>
+                                                                                                        <option value="Castellón">Castellón</option>
+                                                                                                        <option value="Ciudad Real">Ciudad Real</option>
+                                                                                                        <option value="Córdoba">Córdoba</option>
+                                                                                                        <option value="Coruña, A">Coruña, A</option>
+                                                                                                        <option value="Cuenca">Cuenca</option>
+                                                                                                        <option value="Girona">Girona</option>
+                                                                                                        <option value="Granada">Granada</option>
+                                                                                                        <option value="Guadalajara">Guadalajara</option>
+                                                                                                        <option value="Gipuzkoa">Gipuzkoa</option>
+                                                                                                        <option value="Huelva">Huelva</option>
+                                                                                                        <option value="Huesca">Huesca</option>
+                                                                                                        <option value="Jaén">Jaén</option>
+                                                                                                        <option value="León">León</option>
+                                                                                                        <option value="Lleida">Lleida</option>
+                                                                                                        <option value="Rioja, La">Rioja, La</option>
+                                                                                                        <option value="Lugo">Lugo</option>
+                                                                                                        <option value="Madrid">Madrid</option>
+                                                                                                        <option value="Málaga">Málaga</option>
+                                                                                                        <option value="Murcia">Murcia</option>
+                                                                                                        <option value="Navarra">Navarra</option>
+                                                                                                        <option value="Ourense">Ourense</option>
+                                                                                                        <option value="Asturias">Asturias</option>
+                                                                                                        <option value="Palencia">Palencia</option>
+                                                                                                        <option value="Palmas, Las">Palmas, Las</option>
+                                                                                                        <option value="Pontevedra">Pontevedra</option>
+                                                                                                        <option value="Salamanca">Salamanca</option>
+                                                                                                        <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+                                                                                                        <option value="Cantabria">Cantabria</option>
+                                                                                                        <option value="Segovia">Segovia</option>
+                                                                                                        <option value="Sevilla">Sevilla</option>
+                                                                                                        <option value="Soria">Soria</option>
+                                                                                                        <option value="Tarragona">Tarragona</option>
+                                                                                                        <option value="Teruel">Teruel</option>
+                                                                                                        <option value="Toledo">Toledo</option>
+                                                                                                        <option value="Valencia">Valencia</option>
+                                                                                                        <option value="Valladolid">Valladolid</option>
+                                                                                                        <option value="Vizcaya">Vizcaya</option>
+                                                                                                        <option value="Zamora">Zamora</option>
+                                                                                                        <option value="Zaragoza">Zaragoza</option>
+                                                                                                        <option value="Ceuta">Ceuta</option>
+                                                                                                        <option value="Melilla">Melilla</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr id="row_province_id" style="display:none;">
+                                                                                                <td valign="middle">&#160;</td>
+                                                                                                <td valign="middle"><span class="required" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#FF3500; padding-left:10px;">(Provincia es obligatorio)</span></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="35%" align="right" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555;">Sector</td>
+                                                                                                <td align="left" width="65%">
+                                                                                                    <!-- <input type="text" id="s_sector" name="s_sector" value="{(sector)}" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555; width:70%; margin-left:10px;margin-bottom:10px" /> -->
+                                                                                                    <select style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555; width:70%; margin-left:10px;margin-bottom:10px" id="s_sector" name="s_sector">
+                                                                                                        <option disabled="" selected="" value="">-- Seleccione el Sector --</option>
+                                                                                                        <option value="Administración Pública">Administración Pública</option>
+                                                                                                        <option value="Aeronáutico">Aeronáutico</option>
+                                                                                                        <option value="Agroalimentario">Agroalimentario</option>
+                                                                                                        <option value="Agua">Agua</option>
+                                                                                                        <option value="Audiovisual y Diseño Gráfico">Audiovisual y Diseño Gráfico</option>
+                                                                                                        <option value="Automoción">Automoción</option>
+                                                                                                        <option value="Banca y Finanzas">Banca y Finanzas</option>
+                                                                                                        <option value="Consultoría">Consultoría</option>
+                                                                                                        <option value="Cursos Cortos">Cursos Cortos</option>
+                                                                                                        <option value="Cursos Experto">Cursos Experto</option>
+                                                                                                        <option value="Cursos Gratuitos">Cursos Gratuitos</option>
+                                                                                                        <option value="Deporte">Deporte</option>
+                                                                                                        <option value="Educación y Cultura">Educación y Cultura</option>
+                                                                                                        <option value="Empleo">Empleo</option>
+                                                                                                        <option value="Energía">Energía</option>
+                                                                                                        <option value="Farmacéutico - Farmacia">Farmacéutico - Farmacia</option>
+                                                                                                        <option value="Farmacéutico - Industria">Farmacéutico - Industria</option>
+                                                                                                        <option value="Funerario">Funerario</option>
+                                                                                                        <option value="Hostelería y Turismo">Hostelería y Turismo</option>
+                                                                                                        <option value="Industria y Calidad">Industria y Calidad</option>
+                                                                                                        <option value="Infraestructuras y Construcción">Infraestructuras y Construcción</option>
+                                                                                                        <option value="Inmobiliaria">Inmobiliaria</option>
+                                                                                                        <option value="Joyería">Joyería</option>
+                                                                                                        <option value="Juego">Juego</option>
+                                                                                                        <option value="Jurídico">Jurídico</option>
+                                                                                                        <option value="Logistica y Distribución">Logistica y Distribución</option>
+                                                                                                        <option value="Marketing y Comunicación">Marketing y Comunicación</option>
+                                                                                                        <option value="Masterclass">Masterclass</option>
+                                                                                                        <option value="Másteres">Másteres</option>
+                                                                                                        <option value="Medioambiente">Medioambiente</option>
+                                                                                                        <option value="Moda / Cosmética">Moda / Cosmética</option>
+                                                                                                        <option value="Portuario">Portuario</option>
+                                                                                                        <option value="Publicidad">Publicidad</option>
+                                                                                                        <option value="Químico">Químico</option>
+                                                                                                        <option value="Recursos Humanos y Formación">Recursos Humanos y Formación</option>
+                                                                                                        <option value="Sanitario">Sanitario</option>
+                                                                                                        <option value="Seguridad/Defensa">Seguridad/Defensa</option>
+                                                                                                        <option value="Seguros">Seguros</option>
+                                                                                                        <option value="Tecnología e Innovación">Tecnología e Innovación</option>
+                                                                                                        <option value="Telecomunicaciones">Telecomunicaciones</option>
+                                                                                                        <option value="Transporte">Transporte</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr id="row_sector" style="display:none;">
+                                                                                                <td valign="middle">&#160;</td>
+                                                                                                <td valign="middle"><span class="required" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#FF3500; padding-left:10px;">(Sector es obligatorio)</span></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="35%" align="right" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555;">Teléfono</td>
+                                                                                                <td align="left" width="65%">
+                                                                                                    <input type="text" id="s_phone_1" name="s_phone_1" value="{(phone_1)}" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555; width:70%; margin-left:10px;margin-bottom:10px" />
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr id="row_phone_1" style="display:none;">
+                                                                                                <td valign="middle">&#160;</td>
+                                                                                                <td valign="middle"><span class="required" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#FF3500; padding-left:10px;">(Teléfono es obligatorio)</span></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td width="35%" align="right" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555;">Teléfono 2</td>
+                                                                                                <td align="left" width="65%">
+                                                                                                    <input type="text" id="s_phone_2" name="s_phone_2" value="{(phone_2)}" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#555555; width:70%; margin-left:10px;margin-bottom:10px" />
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr id="row_phone_2" style="display:none;">
+                                                                                                <td valign="middle">&#160;</td>
+                                                                                                <td valign="middle"><span class="required" style="font-family:'FaktProSoft', sans-serif,Arial; font-size: 14px; color:#FF3500; padding-left:10px;">(Teléfono 2 es obligatorio)</span></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td align="center" style="text-align: center;" colspan="2">
+                                                                                                    <button type="submit" style="padding: 0 20px 20px; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none; border: 0 none; background: #fff" />
+                                                                                                        <img src="http://emailing.eventosue.com/2018/02/eventosue/verificacion-datos/img/actualizar_200x50.gif?v1" alt="actualizar datos" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'OpenSans', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;" width="200" height="50">
+                                                                                                        <br>
+                                                                                                        Guardar Datos
+                                                                                                    </button>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </form>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 0; line-height: 0;" height="4" bgcolor="#f0f0f0">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'OpenSans', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                                    © Unidad Editorial, 2018
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]>
+                                    </td>
+                                </tr>
+                            </table>
+                        <![endif]-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>Oferta formativa másteres</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+        <!-- Web Font / @font-face : BEGIN -->
+        <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+        <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+        <!--[if mso]>
+        <style>
+        * {
+        font-family: sans-serif !important;
+        }
+        </style>
+        <![endif]-->
+        <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+        <!--[if !mso]><!-->
+        <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+        <!--<![endif]-->
+        <!-- Web Font / @font-face : END -->
+        <!-- CSS Reset -->
+        <style>
+      @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td {
+        transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+        cursor: pointer;
+        background: #555555 !important;
+        border-color: #555555 !important;
+        }
+        .three-columns table {
+            width: 33.3%!important;
+            float: left;
+        }        .show-xs {
+        display: none;
+        }
+        .hidden-xs {
+        display: inline-block;
+        }
+        .two-columns > tbody > tr > td > table,
+        .two-columns-67-33 > tbody > tr > td > table {
+            width: 50% !important;
+            float: left !important;
+        }
+        .two-columns > tbody > tr > td > table img {
+            width: 150px;
+            height: auto;   
+        }
+        .two-columns-67-33 > tbody > tr > td > table {
+            float: left !important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table:first-child {
+            width: 67% !important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table:last-child {
+            width: 33% !important;
+        }
+        .two-columns-67-33  > tbody > tr > td > table img {
+            width: 200px;
+            height: auto;   
+        }
+        @media only screen and (max-width: 360px) {
+        .show-xs {
+        display: block;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 10px 0!important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table,
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .three-columns table {
+            width: 100%!important;
+            float: left!important;
+        }
+        .three-columns table td {
+            padding: 5px 0px!important;    
+            text-align: center!important;
+        }      
+        .hidden-xs {
+        display: none;
+        }
+        }
+        @media only screen and (max-width: 600px) {
+        .show-xs {
+        display: block;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        .center-div, .center-div div, .center-div, .center-div div img {
+            margin: 0 auto !important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table,
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .three-columns table {
+            width: 100% !important;
+            float: left !important;
+        }
+        .three-columns table td {
+            padding: 5px 0px!important;    
+            text-align: center!important;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 20px 10px !important;
+        }
+        }
+        </style>
+    </head>
+    <body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7;width:100%">
+            <tr>
+                <td>
+                    <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'FaktProSoft', sans-serif, Arial;">
+                        
+                    </div>
+                    <div style="max-width: 600px; margin: auto;">
+                        <!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                            <tr>
+                                <td>
+                                    <![endif]-->
+                                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/index.html">aquí.</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="max-width: 600px; " align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td height="8" style="font-size: 0; line-height: 0;">
+                                                &nbsp;
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                                        <tr>
+                                            <td bgcolor="#ffffff">
+                                                <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018">
+                                                    <img src="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/img/logo-head.gif?v=2" width="600" height="" alt="escuela unidad editorial" border="0" align="center" style="width: 100%; max-width: 600px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                                <!--[if mso]>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                                        <tr>
+                                            <td>
+                                    <![endif]-->
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="three-columns" bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td>
+                                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018">
+                                                                <img src="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/img/logo-head-01.gif?v=3" alt="el mundo" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if mso]>
+                                                        </td>
+                                                        <td>
+                                                <![endif]-->
+                                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018">
+                                                                <img src="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/img/logo-head-02.gif?v=2" alt="expansión" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if mso]>
+                                                        </td>
+                                                        <td>
+                                                <![endif]-->
+                                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018">
+                                                                <img src="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/img/logo-head-03.gif?v=3" alt="marca" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                                <!--[if mso]>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                                        <tr>
+                                            <td>
+                                    <![endif]-->
+                                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" class="two-columns">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" valign="top">
+                                                    <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                        <tr>
+                                                            <td style="text-align: center; padding: 0 5px;">
+                                                                <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018"> <img src="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/img/logo-head-04.gif?v=4" alt="telva" style=";width: 100%; max-width: 280px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="280"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <!--[if mso]>
+                                                </td>
+                                                <td align="center" valign="top">
+                                                    <![endif]-->
+                                                    <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                        <tr>
+                                                            <td style="text-align: center; padding: 0 5px;">
+                                                                <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018"> <img src="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/img/logo-head-05.gif?v=3" alt="yodona" style=";width: 100%; max-width: 280px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="280"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="center-div" style="max-width: 100%; margin: 0 auto; background-color: #D0DBE0;">
+                                <!--[if mso]>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#D0DBE0">
+                                        <tr>
+                                            <td>
+                                    <![endif]-->
+                                    <div style="max-width: 600px; text-align: center; margin: 0 auto;">
+                                    <!--[if mso]>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                                        <tr>
+                                            <td>
+                                    <![endif]-->
+                                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018">
+                                                        <img src="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/img/img-main-01.jpg?v=9" width="600" height="" alt="Marketing y comunicación digital para marcas de perfumería y cosmética" border="0" align="center" style="width: 100%; max-width: 600px; mso-height-rule: exactly; color: #000000;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                            <!--[if mso]>
+                                                    </td>
+                                                </tr>
+                                        </table>
+                                        <![endif]-->
+                                    </div>
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="three-columns" bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td>
+                                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018">
+                                                                <img src="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/img/logo-head-06.gif?v=3" alt="ceu" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if mso]>
+                                                        </td>
+                                                        <td>
+                                                <![endif]-->
+                                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018">
+                                                                <img src="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/img/logo-head-07.gif?v=2" alt="universidad Rey Juan Carlos" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if mso]>
+                                                        </td>
+                                                        <td>
+                                                <![endif]-->
+                                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018">
+                                                                <img src="http://emailing.eventosue.com/2017/04/escuelaue/master-oferta/img/logo-head-08.gif?v=3" alt="universidad Carlos III" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                                </td>
+                                            </tr>
+                                    </table>
+                                    <![endif]-->
+                                </div>
+                                <div style="max-width: 600px; margin: 0 auto;">
+                                    <!--[if mso]>
+                                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                                            <tr>
+                                                <td>
+                                    <![endif]-->
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                                        <tr>
+                                            <td bgcolor="#ffffff">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align: center;">
+                                                        	<a  style="font-family: 'FaktProSoft'; text-decoration: none; sans-serif, Arial; font-size: 32px; mso-height-rule: exactly; line-height: 42px; color: #005783; text-align: center;" href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018" > Oferta Formativa <br><strong style="color: #838186; font-size: 25px;">Másteres 2017-2018</strong></a><br/ ><br/ >
+                                                            <a style="font-family: 'FaktProSoft'; text-decoration: none; sans-serif, Arial; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align: center;" href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres/master-en-comunicacion-corporativa-e-institucional-cci-2017?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018"><strong>Máster en Comunicación Corporativa e Institucional (CCI)</strong></a><br/ >
+															XII EDICIÓN - 6 de octubre de 2017 <br/ ><br/ >
+
+															<a style="font-family: 'FaktProSoft'; text-decoration: none; sans-serif, Arial; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align: center;" href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres/master-oficial-en-comunicacion-de-moda-y-belleza-telva-yo-dona-2017?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018"><strong>Máster Oficial en Comunicación de Moda y Belleza Telva & Yo Dona</strong></a><br/ >
+															IX EDICIÓN - 20 de octubre de 2017<br/ ><br/ >
+
+															<a style="font-family: 'FaktProSoft'; text-decoration: none; sans-serif, Arial; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align: center;" href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres/master-oficial-en-periodismo-el-mundo-2017?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018"><strong>Máster Oficial en Periodismo El Mundo</strong></a><br/ >
+															XVII EDICIÓN - 24 de octubre de 2017<br/ ><br/ >
+
+															<a style="font-family: 'FaktProSoft'; text-decoration: none; sans-serif, Arial; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align: center;" href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres/master-en-periodismo-deportivo-marca-presencial?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018"><strong>Máster en Periodismo Deportivo MARCA (Presencial)</strong></a><br/ >
+															V EDICIÓN - 25 de octubre de 2017<br/ ><br/ >
+
+															<a style="font-family: 'FaktProSoft'; text-decoration: none; sans-serif, Arial; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align: center;" href="http://www.escuelaunidadeditorial.es/formacion-online/masteres/master-en-periodismo-deportivo-marca-online?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018"><strong>Máster en Periodismo Deportivo MARCA (Online)</strong></a><br/ >
+															IX EDICIÓN ONLINE - 26 de octubre de 2017<br/ ><br/ >
+															
+															 
+															<a style="font-family: 'FaktProSoft'; text-decoration: none; sans-serif, Arial; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align: center;" href="http://www.escuelaunidadeditorial.es/formacion-presencial/masteres/master-en-periodismo-de-investigacion-datos-y-visualizacion?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018"><strong>Máster en Periodismo de Investigación, Datos y Visualización</strong></a><br/ >
+															VI EDICIÓN - 30 de octubre de 2017
+															
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                        <!--[if mso]>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td align="center" valign="top">
+                                            <![endif]-->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#ffffff" height="40">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#f4f4f4">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%" >
+                                                    <tr>
+                                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                                            M&Aacute;S INFORMACI&Oacute;N: <br />
+                                                            <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00527B; text-align:center;font-weight: 500;word-break:break-all" href="http://www.escuelaunidadeditorial.es?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018">www.escuelaunidadeditorial.es</a><br><br>
+                                                            Para más información: <strong>91 443 51 67</strong> <br/> <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00527B; text-align:center;font-weight: 500;" href="mailto:informacion@escuelaunidadeditorial.es"> informacion@escuelaunidadeditorial.es</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; " bgcolor="#ffffff">
+                                        <tr>
+                                            <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                                © Unidad Editorial, 2017<br>Si no desea seguir recibiendo esta información de <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.escuelaunidadeditorial.es/?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=oferta-masters2017-2018">www.escuelaunidadeditorial.es</a>,<br> por favor envíe un e-mail a <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                </td>
+                            </tr>
+                        </table>
+                        <![endif]-->
+                    </div>
+                </td>
+            </tr>
+        </table>
+                <img src="http://www.google-analytics.com/collect?v=1&tid=UA-4155518-57&cid={(user_id)}&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=oferta-masters2017-2018" style="visibility: hidden;" />
+        </body>
+    </html>

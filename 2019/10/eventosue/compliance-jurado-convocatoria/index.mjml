@@ -1,0 +1,111 @@
+<mjml>
+  <mj-head>
+    <mj-title>II Edición de los Premios Expansión Compliance</mj-title>
+    <mj-preview>II Edición de los Premios Expansión Compliance</mj-preview>
+    <mj-attributes>
+      <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto" />
+      <mj-all font-family="Roboto, Helvetica, Arial, sans-serif"></mj-all>
+      <mj-text font-weight="400" letter-spacing=".5px" font-size="16px" color="#000000" line-height="24px" font-family="Roboto, Helvetica, Arial, sans-serif"></mj-text>
+    </mj-attributes>
+    <mj-style inline="inline">
+      .body-section {
+        -webkit-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .text-link {
+        color: #5e6ebf
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .footer-link {
+        color: #888888
+      }
+    </mj-style>
+
+  </mj-head>
+  <mj-body background-color="#eaeaea" width="600px">
+    <mj-section full-width="full-width" background-color="#eaeaea" padding-bottom="0">
+      <mj-column width="100%">
+        <mj-text align="center" font-size="11px" padding-bottom="20px" padding-top="0" color="#000000">Si no visualiza correctamente este correo haga clic <a href="http://emailing.eventosue.com/2019/10/eventosue/compliance-jurado-convocatoria/index.html" style="color: #000000; font-weight: 500; text-decoration: none;">aquí</a>.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#eaeaea" padding="0">
+      <mj-column width="100%">
+        <mj-image src="http://emailing.eventosue.com/2019/10/eventosue/compliance-jurado-convocatoria/img/img-main.jpg?v12
+    5" width="600px" alt="II Edición de los Premios Expansión Compliance" padding="0" href="https://premioscompliance.expansion.com/" />
+      </mj-column>
+    </mj-section>
+    <mj-wrapper padding-top="0" padding-bottom="0" css-class="body-section">
+      <mj-section background-color="#ffffff" padding-left="15px" padding-right="15px">
+        <mj-column width="100%">
+          <mj-text color="#637381" font-size="16px">
+            Estimado XXX,
+          </mj-text>
+          <mj-text color="#637381" font-size="16px" align="justify">
+             En primer lugar, agradecerte tu participación como jurado en la II Edición de los Premios Expansión Compliance. La reunión del jurado tendrá lugar el próximo jueves 10 de octubre de 9.30 a 12.00h en Torre Picasso, (plaza Pablo Ruiz Picasso 1, planta 43). Para agilizar la entrada en la Torre Picasso, necesitamos que nos facilites el DNI.
+          </mj-text>
+          <mj-text color="#637381" font-size="16px" align="justify">
+            El funcionamiento de la reunión será el siguiente: os recibiremos a las 9.30h, tendréis asignado un sitio nominativo donde encontraréis una carpeta con el resumen de finalistas y las papeletas de votación. Tras la foto de familia, Esade, como asesor técnico de los premios, explicará el funcionamiento de la votación y hará un resumen de los finalistas de cada categoría, a continuación se procederá a la votación. Los ganadores no se conocerán hasta el 6 de noviembre en el acto de entrega de los Premios.
+          </mj-text>
+          <mj-text color="#637381" font-size="16px" align="justify">
+               <strong>Adjunto el listado y resumen de finalistas por categoría.</strong>
+          </mj-text>
+          <mj-text color="#637381" font-size="16px" padding-top="20px" align="justify">
+            Unos días antes, te enviaremos una invitación doble para asistir a la entrega de premios y posterior cóctel que se celebrará a las 19.30h en el Palacio de Linares (Casa de América).
+          </mj-text>
+          <mj-text color="#637381" font-size="16px" align="justify">
+             Un abrazo 
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#fff" padding="0">
+        <mj-column width="100%">
+          <mj-image src="http://emailing.eventosue.com/2019/10/eventosue/compliance-jurado-convocatoria/img/patros.png?v=4" width="600px" alt="II Edición de los Premios Expansión Compliance" padding="0" padding-bottom="20px" href="https://premioscompliance.expansion.com/" />
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-wrapper full-width="full-width">
+      <mj-section>
+        <mj-column width="80%" padding="0">
+          <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+            Si no desea seguir recibiendo esta información de <a style="color:#444444; text-decoration:none;" href="http://www.eventosyconferenciasue.com/?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=premios-compliance-jurado-convocatoria-oct19">www.eventosyconferenciasue.com</a>, por favor haga clic <a style="color:#444444; text-decoration:underline;" href="{[Opt-Out Baja_Eventos_y_Conferencias|95257]}">aquí</a>.
+          </mj-text>
+        </mj-column>
+        </mj-section>
+        <mj-section>
+        <mj-column width="100%" padding="0">
+          <mj-text color="#A1A0A0" font-size="16px" align="center" line-height="24px">
+            Unidad Editorial S.A.
+          </mj-text>
+          <mj-social font-size="15px" icon-size="30px" mode="horizontal" padding="0" align="center">
+            <mj-social-element name="twitter" href="https://twitter.com/EventosUE" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="facebook" href="https://www.facebook.com/eventosyconferenciasue" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="linkedin" href="https://www.linkedin.com/groups/2722989/" background-color="#A1A0A0">
+            </mj-social-element>
+            <mj-social-element name="instagram" href="https://www.instagram.com/eventosunidadeditorial/" background-color="#A1A0A0">
+            </mj-social-element>
+          </mj-social>
+          <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+            &copy; Unidad Editorial, 2019.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="0">
+        <mj-group>
+          <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px" font-weight="bold">
+              <a class="footer-link" href="https://www.eventosyconferenciasue.com/corporativo/aviso-legal">Privacidad</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <a class="footer-link" href="{[Opt-Out Baja_Eventos_y_Conferencias|95257]}">Darse de baja</a>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+    <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-1&cid=&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=premios-compliance-jurado-convocatoria-oct19" style="visibility: hidden;" />
+  </mj-body>
+</mjml>

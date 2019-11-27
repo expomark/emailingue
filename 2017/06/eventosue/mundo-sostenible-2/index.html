@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <base href="https://raw.githubusercontent.com/TedGoas/Cerberus/master/cerberus-fluid.html">
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>El mundo sostenible</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+        * {
+        font-family: sans-serif !important;
+        }
+        </style>
+        <![endif]-->
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+    <!-- Web Font / @font-face : END -->
+    <!-- CSS Reset -->
+    <style>
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+    
+    html,
+    body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+    }
+    /* What it does: Stops email clients resizing small text. */
+    
+    * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    /* What is does: Centers email on Android 4.4 */
+    
+    div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+    }
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    
+    table,
+    td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+    }
+    /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+    
+    table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+    }
+    
+    table table table {
+        table-layout: auto;
+    }
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    
+    img {
+        -ms-interpolation-mode: bicubic;
+        height: auto !important;
+    }
+    /* What it does: A work-around for iOS meddling in triggered links. */
+    
+    .mobile-link--footer a,
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: underline !important;
+    }
+    /* What it does: Hover styles for buttons */
+    
+    .button-td {
+        transition: all 100ms ease-in;
+    }
+    
+    .button-td:hover {
+        cursor: pointer;
+        background: #555555 !important;
+        border-color: #555555 !important;
+    }
+    
+    .three-columns table {
+        width: 33.3%!important;
+        float: left;
+    }
+    
+    .show-xs {
+        display: none;
+    }
+    
+    .hidden-xs {
+        display: inline-block;
+    }
+    
+    .two-columns > tbody > tr > td > table {
+        width: 50% !important;
+        float: left !important;
+    }
+    
+    .two-columns > tbody > tr > td > table img {
+        width: 150px;
+        height: auto;
+    }
+    
+    @media only screen and (max-width: 360px) {
+        .show-xs {
+            display: block;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+            padding: 10px 0!important;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .three-columns table {
+            width: 100%!important;
+            float: left!important;
+        }
+        .three-columns table td {
+            padding: 5px 0px!important;
+            text-align: center!important;
+        }
+        .hidden-xs {
+            display: none;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .show-xs {
+            display: block;
+        }
+        .hidden-xs {
+            display: none;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .three-columns table {
+            width: 100%!important;
+            float: left!important;
+        }
+        .three-columns table td {
+            padding: 5px 0px!important;
+            text-align: center!important;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+            padding: 20px 10px !important;
+        }
+    }
+    </style>
+</head>
+
+<body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+    <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7;width:100%">
+        <tr>
+            <td>
+                <!-- Visually Hidden Preheader Text : BEGIN -->
+                <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'FaktProSoft', sans-serif, Arial;">
+                </div>
+                <!-- Visually Hidden Preheader Text : END -->
+                <!--
+                    Set the email width. Defined in two places:
+                    1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
+                    2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+                    -->
+                <div style="max-width: 600px; margin: auto;">
+                    <!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                            <tr>
+                                <td>
+                                    <![endif]-->
+                    <!-- Email Header : BEGIN -->
+                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga click <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2017/06/eventosue/mundo-sostenible-2/index.html">aquí.</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td height="8" style="font-size: 0; line-height: 0;">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="padding-top: 20px; width: 100%;max-width: 600px;text-decoration:none;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #000000;" valign="midle" width="600">
+                                    ORGANIZAN:
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="three-columns" bgcolor="#FFFFFF">
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                    <tr>
+                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'FaktProSoft', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                            <a href="http://www.eventosyconferenciasue.com/eventos/ii-foro-mundo-sostenible?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=mundo-sostenible-jun2017">
+                                                <img src="http://emailing.eventosue.com/2017/06/eventosue/mundo-sostenible-2/img/logo-01.gif?v=5" alt="Expansión" style=";width: 100%; max-width: 200px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if mso]>
+                                                    </td>
+                                                    <td>
+                                            <![endif]-->
+                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                    <tr>
+                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'FaktProSoft', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                            <a href="http://www.eventosyconferenciasue.com/eventos/ii-foro-mundo-sostenible?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=mundo-sostenible-jun2017">
+                                                <img src="http://emailing.eventosue.com/2017/06/eventosue/mundo-sostenible-2/img/logo-02.gif?v=3" alt="El Mundo" style=";width: 100%; max-width: 200px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if mso]>
+                                                    </td>
+                                                    <td>
+                                            <![endif]-->
+                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                    <tr>
+                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'FaktProSoft', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                            <a href="http://www.eventosyconferenciasue.com/eventos/ii-foro-mundo-sostenible?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=mundo-sostenible-jun2017">
+                                                <img src="http://emailing.eventosue.com/2017/06/eventosue/mundo-sostenible-2/img/logo-03.gif?v=5" alt="Marca" style=";width: 100%; max-width: 200px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="padding-top: 20px; width: 100%;max-width: 600px;text-decoration:none;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #000000;" valign="midle" width="600">
+                                    PATROCINAN:
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" class="two-columns">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                                                <tr>
+                                <td height="20" style="font-size: 0; line-height: 0;" bgcolor="#FFFFFF">
+                &nbsp;
+                                </td>
+                            </tr>
+                                        <tr>
+                                            <td style="text-align: center; padding: 0 5px;">
+                                                <a href="http://www.eventosyconferenciasue.com/eventos/ii-foro-mundo-sostenible?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=mundo-sostenible-jun2017">
+                                                <img src="http://emailing.eventosue.com/2017/06/eventosue/mundo-sostenible/img/logo-04.gif?v=4" alt="Inditex" style=";width: 100%; max-width: 200px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                            </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                </td>
+                                <td align="center" valign="top">
+                                    <![endif]-->
+                                    <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                                                <tr>
+                                <td height="20" style="font-size: 0; line-height: 0;" bgcolor="#FFFFFF">
+                &nbsp;
+                                </td>
+                            </tr>
+                                        <tr>
+                                            <td style="text-align: center; padding: 0 5px;">
+                                                <a href="http://www.eventosyconferenciasue.com/eventos/ii-foro-mundo-sostenible?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=mundo-sostenible-jun2017">
+                                                <img src="http://emailing.eventosue.com/2017/06/eventosue/mundo-sostenible/img/logo-05.gif?v=5" alt="Engie" style=";width: 100%; max-width: 200px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                            </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--[if mso]>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
+                      <tr>
+                        <td align="center" valign="top" bgcolor="#EFF2F7">
+                            <table cellspacing="0" cellpadding="0" border="0" width="600" align="center" bgcolor="#FFFFFF">
+                                <tr>
+                                    <td align="center" valign="top" width="100%" bgcolor="#FFFFFF">
+                            <![endif]-->
+                <div style="max-width: 600px; margin: auto;">
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                        <tr>
+                            <td bgcolor="#ffffff">
+                                <a href="http://www.eventosyconferenciasue.com/eventos/ii-foro-mundo-sostenible?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=mundo-sostenible-jun2017">
+                                    <img src="http://emailing.eventosue.com/2017/06/eventosue/mundo-sostenible-2/img/img-main-01.jpg?v=4" width="600" height="" alt="El mundo sostenible" border="0" align="center" style="width: 100%; max-width: 600px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="max-width:600px; margin: 0px auto; background-color: #8fc32a;">
+                    <div style="max-width: 600px; margin: 0px auto;">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#dbdce0">
+                            <tr>
+                                <td style="padding: 15px 20px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #000000; background-color: #8fc32a; text-align:center;"><span style="font-family: 'FaktProSoft', sans-serif, Arial; font-weight:500; mso-height-rule: exactly;">MADRID 5 junio 2017</span>. Fundación Giner de los Ríos
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div style="max-width: 600px; margin: auto;">
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#fff;">
+                        <tr>
+                            <td bgcolor="#ffffff">
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                                    <tr>
+                                        <td bgcolor="#ffffff" height="40">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="60" style="border-radius: 15px; background: #8fc32a; text-align: center;" class="button-td">
+                                        <a href="http://www.eventosyconferenciasue.com/eventos/ii-foro-mundo-sostenible?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=mundo-sostenible-jun2017" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#FFFFFF; border-radius: 15px;">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inscr&iacute;base Aqu&iacute;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </a>
+                                        </td>
+                                    </tr>
+                                 </table>
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align: justify;">
+                                            Estimado amigo:
+                                            <br />
+                                            <br /> Es un placer para nosotros informarle de la celebración del evento <b>“El Mundo Sostenible”</b> organizado por El Mundo, Expansión y Marca, que se celebrará en Madrid el próximo día <b>5 de junio</b> en <b>Fundación Giner de los Ríos</b> (Paseo del General Martínez Campos, 14).
+                                            <br />
+                                            <br /> El objetivo del evento es alentar a la implantación de modelos responsables de gestión y buscar oportunidades y realizar cambios transformacionales que ayuden a la consecución de los ODS (Objetivos de Desarrollo Sostenible de la ONU).
+                                            <br />
+                                            <br /> Para ello reunimos a las empresas españolas referentes en este ámbito que no sólo están preparadas para adaptarse a los cambios si no que los anticipan e, incluso, los generan.
+                                            <br />
+                                            <br /> En la confianza de que esta jornada será de su interés
+                                            <br/>Reciba un cordial saludo
+                                            <br/>
+                                            <br/>EL MUNDO, EXPANSIÓN Y MARCA
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- 1 Column Text + Button : BEGIN -->
+                        <!-- 2 Even Columns : BEGIN -->
+                        <tr>
+                            <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+                                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;" >
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                <tr>
+                                                     <td style="text-align: center; padding: 0 10px;">
+                                                       <img src="http://emailing.eventosue.com/2017/06/eventosue/mundo-sostenible-2/img/tw_200x50.gif" width="200" height="" alt="Hastag #mundosostenibleue" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                        <a style="padding: 40px 20px 20px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="https://twitter.com/hashtag/mundosostenibleue?f=tweets">#mundosostenibleue</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!--[if mso]>
+                                                            </td>
+                                                            <td align="center" valign="top">
+                                                        <![endif]-->   
+                                            <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="text-align: center; padding: 0 10px;">
+                                                            <img src="http://emailing.eventosue.com/2017/06/eventosue/mundo-sostenible-2/img/agenda_200x50.gif" width="200" height="" alt="Descargar Agenda" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                            <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="http://emailing.eventosue.com/2017/06/eventosue/mundo-sostenible-2/img/agenda.pdf?v=16">Descargar agenda</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>                                   
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                        <!-- Two Even Columns : END -->
+                        <!-- Clear Spacer : BEGIN -->
+                        <tr>
+                            <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <!-- Clear Spacer : END -->
+                        <!-- 1 Column Text + Button : BEGIN -->
+                        <tr>
+                            <td bgcolor="#f4f4f4" style="border-radius: 0 0 18px 18px;">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                            Inscripciones a través de la web:
+                                            <br>
+                                            <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #30509a; text-align:center;font-weight: 500;" href="http://www.eventosyconferenciasue.com/eventos/ii-foro-mundo-sostenible?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=mundo-sostenible-jun2017">www.eventosue.com/Mundosostenible</a>
+                                            <br>
+                                            <br> Para más información: <strong>91 443 53 36</strong>
+                                            <br class="show-xs" /><span class="hidden-xs">–</span>Aforo limitado.
+                                            <br>Imprescindible confirmación por parte de la organización
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- 1 Column Text + Button : BEGIN -->
+                    </table>
+                    <br />
+                    <!-- Email Body : END -->
+                    <!-- Email Footer : BEGIN -->
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius:8px;" bgcolor="#ffffff">
+                        <tr>
+                            <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                © Unidad Editorial, 2017
+                                <br>Si no desea seguir recibiendo esta información de <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.eventosyconferenciasue.com/">www.eventosyconferenciasue.com</a>,
+                                <br> por favor envíe un e-mail a <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <!-- Email Footer : END -->
+                    <!--[if mso]>
+                            </td>
+                        </tr>
+                    </table>
+                    <![endif]-->
+                </div>
+            </td>
+        </tr>
+    </table>
+    <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-1&cid={(user_id)}&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=mundo-sostenible-jun2017" style="visibility: hidden;" />
+</body>
+
+</html>

@@ -1,0 +1,975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Bloguero Gold</title>
+    <style type="text/css">
+    a {
+        text-decoration: none !important;
+    }
+
+    .AnnouncementTD {
+        color: #4D4F53;
+        font-family: sans-serif;
+        font-size: 17px;
+        text-align: right;
+        line-height: 150%;
+    }
+
+    .AnnouncementTD a {
+        color: #4D4F53 !important;
+        text-decoration: none !important;
+    }
+
+    .viewOnline td {
+        text-align: center;
+        width: 100%;
+    }
+
+    .viewOnlineTD {
+        color: #808080;
+        font-family: sans-serif;
+        font-size: 12px;
+        text-align: center;
+        line-height: 22px;
+        max-width: 610px;
+    }
+
+    .viewOnlineTD a {
+        color: #808080 !important;
+        text-decoration: underline !important;
+        text-align: center;
+    }
+
+    .td528Button,
+    .td528Buttonb,
+    .td528Buttonc {
+        color: #FFFFFF;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+        line-height: 23px;
+    }
+
+    .td528Button a,
+    .td528Buttonb a,
+    .td528Buttonc a {
+        color: #FFFFFF !important;
+        display: block !important;
+        text-decoration: none !important;
+    }
+
+    .headerTD {
+        color: #4D4F53;
+        font-family: sans-serif;
+        font-size: 18px;
+        text-align: center;
+        line-height: 27px;
+        font-weight: bold;
+    }
+
+    .headerTD a {
+        color: #67BFFD !important;
+        text-decoration: none !important;
+    }
+
+    .header3TD,
+    .header3TDz {
+        color: #4D4F53;
+        font-family: sans-serif;
+        font-size: 16px;
+        text-align: center;
+        line-height: 27px;
+        font-weight: 400;
+    }
+
+    .header3TD .titular,
+    .header3TDz .titular {
+        color: #4D4F53;
+        font-family: sans-serif;
+        font-size: 22px !important;
+        text-align: center;
+        line-height: 27px;
+        font-weight: 400;
+    }
+
+    .header3TD a,
+    .header3TDz a {
+        color: #006890 !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+    }
+
+    .header3TD a:hover,
+    .header3TDz a:hover {
+        color: #F2AF00 !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+    }
+
+    .header3TD .blogueroGold,
+    .header3TDz .blogueroGold {
+        color: #F2AF00 !important;
+        font-size: 20px;
+    }
+
+    .footerCap {
+        color: #FFFFFF;
+        font-family: sans-serif;
+        font-size: 23px;
+        text-align: center;
+        line-height: 31px;
+        font-weight: bold;
+    }
+
+    .footerCap a {
+        color: #323945 !important;
+        text-decoration: none !important;
+    }
+
+    .headerPrcTD {
+        color: #56C895;
+        font-family: sans-serif;
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .headerPrcTD a {
+        color: #56C895 !important;
+        text-decoration: none !important;
+    }
+
+    .headerPrc2TD {
+        color: #67BFFD;
+        font-family: sans-serif;
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .headerPrc2TD a {
+        color: #67BFFD !important;
+        text-decoration: none !important;
+    }
+
+    .RegularText4TD,
+    .RegularText5TD {
+        color: #4D4F53;
+        font-family: sans-serif;
+        font-size: 13px;
+        text-align: left;
+        line-height: 21px;
+    }
+
+    .RegularText5TD {
+        text-align: center;
+    }
+
+    .RegularText4TD a,
+    .RegularText5TD a {
+        color: #67BFFD !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+    }
+
+    .RegularTextTD,
+    .RegularText6TD {
+        color: #4D4F53;
+        font-family: sans-serif;
+        font-size: 13px;
+        text-align: left;
+        line-height: 22px;
+    }
+
+    .RegularText6TD {
+        text-align: center;
+    }
+
+    .RegularTextTD a,
+    .RegularText6TD a {
+        color: #67BFFD !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+    }
+
+    .proposalTDb {
+        color: #4D4F53;
+        font-family: sans-serif;
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+        font-weight: lighter;
+    }
+
+    .proposalTDb a {
+        color: #4D4F53 !important;
+        text-decoration: none !important;
+    }
+
+    .proposalTD {
+        color: #4D4F53;
+        font-family: sans-serif;
+        font-size: 17px;
+        text-align: left;
+        line-height: 25px;
+    }
+
+    .proposalTD a {
+        color: #006890 !important;
+        text-decoration: none !important;
+    }
+
+    .proposalTD a:hover {
+        color: #F2AF00 !important;
+        text-decoration: none !important;
+    }
+
+    .proposalTD .amarilloBold {
+        color: #F2AF00 !important;
+        font-weight: bold !important;
+    }
+
+    .proposalTD .azulBold-centrado {
+        color: #F2AF00 !important;
+        font-weight: bold !important;
+        text-align: center !important;
+    }
+
+    .proposalTD .backgroundAmarillo {
+        color: #FFFFFF !important;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .proposalTD .backgroundAmarillo-amex:hover {
+        color: #F2AF00 !important;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .proposalTD .backgroundAmarillo-amex {
+        color: #FFFFFF !important;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    td a img {
+        text-decoration: none;
+        border: none;
+    }
+
+    .companyAddressTD,
+    .companyAddress2TD {
+        color: #FFFFFF;
+        font-family: sans-serif;
+        font-size: 13px;
+        text-align: center;
+        font-weight: lighter;
+        line-height: 190%;
+    }
+
+    .companyAddressTD a {
+        color: #FFFFFF !important;
+        text-decoration: none !important;
+    }
+
+    .companyAddress2TD a {
+        color: #FFFFFF !important;
+        pointer-events: none !important;
+        text-decoration: none !important;
+    }
+
+    .mailingOptionsTD {
+        color: #d5dbe6;
+        font-family: sans-serif;
+        font-size: 12px;
+        text-align: center;
+        line-height: 170%;
+    }
+
+    .mailingOptionsTD a {
+        color: #FFFFFF !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+    }
+
+    .ReadMsgBody {
+        width: 100%;
+    }
+
+    .ExternalClass {
+        width: 100%;
+    }
+
+    .proposalTD .hashtag {
+        color: #4D4F53;
+        font-weight: bold;
+    }
+
+    body {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-width: 100% !important;
+    }
+
+    @media only screen and (max-width: 599px) {
+        body {
+            min-width: 100% !important;
+        }
+        td[class=viewOnlineTD] {
+            text-align: center !important;
+            width: 440px !important;
+        }
+        table[class=table600Logo] {
+            width: 440px !important;
+            border-bottom-style: solid !important;
+            border-bottom-color: #ccd4db !important;
+            border-bottom-width: 1px !important;
+        }
+        table[class=table600Menu] {
+            width: 440px !important;
+        }
+        table[class=table600Menu] td {
+            height: 20px !important;
+        }
+        td[class=AnnouncementTD] {
+            width: 440px !important;
+            text-align: center !important;
+            font-size: 17px !important;
+        }
+        td[class=table600st] {
+            width: 440px !important;
+            min-width: 440px !important;
+        }
+        table[class=eraseForMobile] {
+            width: 0 !important;
+            display: none !important;
+        }
+        td[class=header3TD] {
+            height: 0 !important;
+        }
+        td[class=header3TDz] {
+            height: 0 !important;
+            width: 398px !important;
+        }
+        td[class=proposalTD] {
+            height: 0 !important;
+            width: 398px !important;
+        }
+        table[class=table600] {
+            width: 440px !important;
+        }
+        table[class=table600Min] {
+            width: 440px !important;
+            min-width: 440px !important;
+        }
+        table[class=image600] img {
+            width: 440px !important;
+            height: auto !important;
+        }
+        table[class=AnncTable] {
+            width: 100% !important;
+            border: none !important;
+            border-radius: 0 !important;
+        }
+        table[class=table280d] {
+            width: 440px !important;
+            border-radius: 0 0 0 0 !important;
+        }
+        td[class=LMrg] {
+            height: 8px !important;
+        }
+        td[class=LMrg2] {
+            height: 6px !important;
+        }
+        td[class=wz] {
+            height: 10px !important;
+            width: 20px !important;
+        }
+        td[class=taz] {
+            height: 10px !important;
+        }
+        table[class=tblRgBrdr] {
+            border-right: none !important;
+        }
+        td[class=td147] {
+            width: 215px !important;
+        }
+        table[class=table147] {
+            width: 215px !important;
+        }
+        td[class=mrgnHrzntlMdl] {
+            width: 10px !important;
+        }
+        td[class=mvd] {
+            height: 30px !important;
+            width: 440px !important;
+        }
+        table[class=centerize] {
+            margin: 0 auto 0 auto !important;
+        }
+        table[class=tblBtnCntr2] {
+            width: 400px !important;
+            margin: 0 auto 0 auto !important;
+        }
+        td[class=table28Sqr] img {
+            width: 440px !important;
+            height: auto !important;
+            margin: 0 auto 0 auto !important;
+            border-radius: 6px 6px 0 0 !important;
+        }
+        td[class=table28SqrZ] img {
+            width: 440px !important;
+            height: auto !important;
+            margin: 0 auto 20px auto !important;
+            border-radius: 6px 6px 6px 6px !important;
+        }
+        td[class=TD18Sqr] img {
+            width: 440px !important;
+            height: auto !important;
+            margin: 0 auto 0 auto !important;
+            border-radius: 0 0 0 0 !important;
+        }
+        td[class=TD18Sqr2] img {
+            width: 440px !important;
+            height: auto !important;
+            margin: 0 auto 0 auto !important;
+            border-radius: 6px 6px 6px 6px !important;
+        }
+        td[class=TD18Sqr3] img {
+            width: 440px !important;
+            height: auto !important;
+            margin: 30px auto 0 auto !important;
+            border-radius: 6px 6px 6px 6px !important;
+        }
+        table[class=table60018] {
+            margin: 21px auto 0 auto !important;
+        }
+        table[class=table60018t] {
+            width: 440px !important;
+            border-radius: 0 0 6px 6px !important;
+        }
+        table[class=table60018b] {
+            width: 440px !important;
+            border-radius: 6px 6px 0 0 !important;
+        }
+        table[class=table60018c] {
+            width: 440px !important;
+            margin-top: 8px !important;
+        }
+        td[class=tbl28Rctngl] img {
+            width: 215px !important;
+            height: auto !important;
+            margin: 0 auto 0 auto !important;
+        }
+        td[class=RegularTextTD] {
+            height: 0 !important;
+        }
+        td[class=RegularText4TD] {
+            height: 0 !important;
+        }
+        td[class=esFrMb] {
+            width: 0 !important;
+            height: 0 !important;
+            display: none !important;
+        }
+        table[class=table608] {
+            width: 438px !important;
+        }
+        td[class=td528Button] {
+            width: 358px !important;
+        }
+        table[class=socialCntrBtn] {
+            margin: 0 auto 0 auto !important;
+        }
+        table[class=table528Button] {
+            width: 400px !important;
+        }
+        table[class=icMrgnTp] {
+            margin-top: 30px !important;
+        }
+        table[class=table608b] {
+            width: 398px !important;
+        }
+        td[class=td528Buttonb] {
+            width: 400px !important;
+        }
+        td[class=td528Buttonc] {
+            width: 360px !important;
+        }
+        table[class=table528Social] {
+            width: 440px !important;
+        }
+        td[class=buttonVrt] {
+            height: 21px !important;
+        }
+        td[class=headerTD] {
+            font-weight: lighter !important;
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        body {
+            min-width: 100% !important;
+        }
+        td[class=viewOnlineTD] {
+            text-align: center !important;
+            width: 300px !important;
+        }
+        table[class=table600Logo] {
+            width: 300px !important;
+            border-bottom-style: solid !important;
+            border-bottom-color: #ccd4db !important;
+            border-bottom-width: 1px !important;
+        }
+        table[class=table600Menu] {
+            width: 300px !important;
+        }
+        table[class=table600Menu] td {
+            height: 20px !important;
+        }
+        td[class=AnnouncementTD] {
+            width: 300px !important;
+            text-align: center !important;
+            font-size: 17px !important;
+        }
+        td[class=table600st] {
+            width: 300px !important;
+            min-width: 300px !important;
+        }
+        table[class=eraseForMobile] {
+            width: 0 !important;
+            display: none !important;
+        }
+        td[class=header3TD] {
+            height: 0 !important;
+        }
+        td[class=header3TDz] {
+            height: 0 !important;
+            width: 268px !important;
+        }
+        td[class=proposalTD] {
+            height: 0 !important;
+            width: 268px !important;
+        }
+        table[class=table600] {
+            width: 300px !important;
+        }
+        table[class=table600Min] {
+            width: 300px !important;
+            min-width: 300px !important;
+        }
+        table[class=image600] img {
+            width: 300px !important;
+            height: auto !important;
+        }
+        table[class=table608] {
+            width: 298px !important;
+        }
+        table[class=centerize] {
+            margin: 0 auto 0 auto !important;
+        }
+        table[class=tblBtnCntr2] {
+            width: 270px !important;
+            margin: 0 auto 0 auto !important;
+        }
+        table[class=AnncTable] {
+            width: 100% !important;
+            border: none !important;
+            border-radius: 0 !important;
+        }
+        table[class=table280d] {
+            width: 300px !important;
+            border-radius: 0 0 0 0 !important;
+        }
+        td[class=LMrg] {
+            height: 8px !important;
+        }
+        td[class=LMrg2] {
+            height: 6px !important;
+        }
+        td[class=wz] {
+            width: 15px !important;
+            height: 10px !important;
+        }
+        td[class=taz] {
+            height: 10px !important;
+        }
+        table[class=tblRgBrdr] {
+            border-right: none !important;
+        }
+        td[class=td147] {
+            width: 147px !important;
+        }
+        table[class=table147] {
+            width: 147px !important;
+        }
+        td[class=mrgnHrzntlMdl] {
+            width: 6px !important;
+        }
+        td[class=mvd] {
+            height: 30px !important;
+            width: 300px !important;
+        }
+        td[class=table28Sqr] img {
+            width: 300px !important;
+            height: auto !important;
+            margin: 0 auto 0 auto !important;
+            border-radius: 6px 6px 0 0 !important;
+        }
+        td[class=table28SqrZ] img {
+            width: 300px !important;
+            height: auto !important;
+            margin: 0 auto 20px auto !important;
+            border-radius: 6px 6px 6px 6px !important;
+        }
+        td[class=TD18Sqr] img {
+            width: 300px !important;
+            height: auto !important;
+            margin: 0 auto 0 auto !important;
+            border-radius: 0 0 0 0 !important;
+        }
+        td[class=TD18Sqr2] img {
+            width: 300px !important;
+            height: auto !important;
+            margin: 0 auto 0 auto !important;
+            border-radius: 6px 6px 6px 6px !important;
+        }
+        td[class=TD18Sqr3] img {
+            width: 300px !important;
+            height: auto !important;
+            margin: 30px auto 0 auto !important;
+            border-radius: 6px 6px 6px 6px !important;
+        }
+        td[class=tbl28Rctngl] img {
+            width: 147px !important;
+            height: auto !important;
+            margin: 0 auto 0 auto !important;
+        }
+        table[class=table60018] {
+            margin: 15px auto 0 auto !important;
+        }
+        table[class=table60018t] {
+            width: 300px !important;
+            border-radius: 0 0 6px 6px !important;
+        }
+        table[class=table60018b] {
+            width: 300px !important;
+            border-radius: 6px 6px 0 0 !important;
+        }
+        table[class=table60018c] {
+            width: 300px !important;
+            margin-top: 8px !important;
+        }
+        td[class=footerCap] {
+            font-size: 18px !important;
+        }
+        td[class=RegularTextTD] {
+            height: 0 !important;
+        }
+        td[class=RegularText4TD] {
+            height: 0 !important;
+        }
+        td[class=esFrMb] {
+            width: 0 !important;
+            height: 0 !important;
+            display: none !important;
+        }
+        td[class=buttonVrt] {
+            height: 16px !important;
+        }
+        td[class=buttonVrt2] {
+            height: 12px !important;
+        }
+        td[class=buttonVrt3] {
+            height: 10px !important;
+        }
+        td[class=td528Button] {
+            width: 270px !important;
+        }
+        table[class=table528Button] {
+            width: 300px !important;
+        }
+        table[class=table608b] {
+            width: 268px !important;
+        }
+        td[class=td528Buttonb] {
+            width: 270px !important;
+        }
+        td[class=td528Buttonc] {
+            width: 240px !important;
+        }
+        table[class=table528Social] {
+            width: 300px !important;
+        }
+        table[class=icMrgnTp] {
+            margin-top: 30px !important;
+        }
+        table[class=socialCntrBtn] {
+            margin: 0 auto 0 auto !important;
+        }
+        td[class=headerTD] {
+            font-weight: lighter !important;
+        }
+    }
+    </style>
+</head>
+
+<body style="background-color:#e6ecf1; margin:0 auto; padding:0;">
+    <center>
+        <!-- HEADER "Si no visualiza correctamente este correo..."-->
+        <div bgcolor="#e6ecf1" style="background-color:#e6ecf1;">
+            <table style="table-layout:fixed;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#e6ecf1;" cellspacing="0" cellpadding="0" border="0" bgcolor="#e6ecf1" align="center">
+                <tbody>
+                    <tr>
+                        <td class="viewOnlineTD" align="center" height="30"> Si no visualiza correctamente este correo haga
+                            <a style="color:#006890;" href="http://emailing.eventosue.com/2016/10/eventosue/bloguerogold2016/index.html" target="_blank">clic aqu&iacute;.</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style="table-layout:fixed;mso-table-lspace:0pt;mso-table-rspace:0pt;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#e6ecf1" align="center">
+                <tbody>
+                    <tr>
+                        <td class="mvd" style="font-size:0;line-height:0;" height="30" width="610" bgcolor="#e6ecf1" align="center">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--FIN HEADER-->
+        <!--CUERPO-->
+        <div mc:repeatable="">
+            <table style="table-layout:fixed;margin:0 auto;mso-table-lspace:0pt;mso-table-rspace:0pt;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#e6ecf1" align="center">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <table class="table600" style="mso-table-lspace:0pt;mso-table-rspace:0pt;" width="618" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <table class="table600Min" style="min-width:610px;mso-table-lspace:0pt;mso-table-rspace:0pt; border-radius:6px;" width="610" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="left">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="min-width:610px;" class="table600st" align="center">
+                                                            <!--LOGO-->
+                                                            <table class="table600Logo" style="mso-table-lspace:0pt;mso-table-rspace:0pt;" width="600" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table class="image600" style="mso-table-lspace:0pt;mso-table-rspace:0pt;" cellspacing="0" cellpadding="0" border="0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="line-height:1px;" valign="middle" align="center">
+                                                                                            <a style="color:#006890 !importante; text-decoration:none!important;" href="https://www.latitudamex.es/bloguerogold/2016/" target="_blank">
+                                                                                                <img mc:edit="sectA7" src="http://emailing.eventosue.com/2016/10/eventosue/bloguerogold2016/img/logo.png" style="display:block;" alt="Logo Image" hspace="0" vspace="0" border="0" align="top" class="img-responsive" />
+                                                                                            </a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="table608" style="mso-table-lspace:0pt;mso-table-rspace:0pt;" cellspacing="0" cellpadding="0" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="font-size:0;line-height:0;" height="21">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table class="table600" style="mso-table-lspace:0pt;mso-table-rspace:0pt;" width="610" cellspacing="0" cellpadding="0" border="0">
+                                                                                <tbody>
+                                                                                    <!--PRIMER PÁRRAFO-->
+                                                                                    <tr>
+                                                                                        <td class="wz" width="30"></td>
+                                                                                        <td class="header3TDz" mc:edit="sectA12" width="548">
+                                                                                            <p class="titular"><strong>10 blogueros de viajes compiten por llevarse 1.000.000 de puntos Membership Rewards del programa de fidelización de American Express.</strong></p>
+                                                                                            <p>Todos ellos nos cuentan su experiencia de viaje en <a style="color:#006890 !importante; text-decoration:none!important;" href="https://www.latitudamex.es/bloguerogold/2016/">www.latitudamex.es</a>.
+                                                                                                <br> Vota por tu artículo preferido y elige al ganador de
+                                                                                                <br><a class="blogueroGold" href="https://twitter.com/hashtag/BlogueroGold">#BlogueroGold</a></p>
+                                                                                        </td>
+                                                                                        <td class="wz" width="30"></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="3" style="font-size:0;line-height:0;" height="20">&nbsp;</td>
+                                                                                    </tr>
+                                                                                    <!--IMAGEN-->
+                                                                                    <tr>
+                                                                                        <td colspan="3">
+                                                                                            <table class="image600" style="mso-table-lspace:0pt;mso-table-rspace:0pt;" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td style="line-height:1px;" align="center">
+                                                                                                            <a style="color:#006890 !importante; text-decoration:none!important;" href="https://www.latitudamex.es/bloguerogold/2016/" target="_blank"><img mc:edit="sectA13" src="http://emailing.eventosue.com/2016/10/eventosue/bloguerogold2016/img/image_610x350.jpg" class="img-responsive" style="display:block;" alt="IMG" hspace="0" vspace="0" border="0" align="top"></a>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="3" style="font-size:0;line-height:0;" height="21">&nbsp;</td>
+                                                                                    </tr>
+                                                                                    <!--LISTA-->
+                                                                                    <tr>
+                                                                                        <td class="wz" width="30"></td>
+                                                                                        <td class="proposalTD" mc:edit="sectA14" width="548">10 blogueros de viajes han sido seleccionados por American Express para viajar alrededor del mundo utilizando 200.000 puntos MR en su Tarjeta Gold, equivalentes a 1.000&euro;. Pero solo uno de ellos se llevará el premio final: 1.000.000 de puntos MR, equivalentes a 5.000&euro;.
+                                                                                            <br>
+                                                                                            <p class="azulBold-centrado">&iquest;Conoces los destinos elegidos por los finalistas?
+                                                                                                <br>&iexcl;Vota por tu favorito!</p>
+                                                                                            <ul>
+                                                                                                <li>Sabela Montero de <em>Viajando imágenes y sensaciones</em> ha viajado a <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/sabela-montero/?utm_source=unidad_editorial&amp;utm_medium=email&amp;utm_campaign=bloguero_gold&amp;utm_term=sabela_montero">Om&aacute;n</a></li>
+                                                                                                <li>Marta Goikoetxea de <em>Rojo Cangrejo</em> ha viajado a <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/marta-goikoetxea/?utm_source=unidad_editorial&amp;utm_medium=email&amp;utm_campaign=bloguero_gold&amp;utm_term=marta_goikoetxea">Marruecos</a></li>
+                                                                                                <li>Eva y Carmelo de <em>Dónde vamos Eva</em> han viajado a <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/eva-y-carmelo/?utm_source=unidad_editorial&amp;utm_medium=email&amp;utm_campaign=bloguero_gold&amp;utm_term=eva_carmelo">Cerdeña</a></li>
+                                                                                                <li>Regina Fernández de <em>Imanes de viaje</em> ha viajado a <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/regina-fernandez/?utm_source=unidad_editorial&amp;utm_medium=email&amp;utm_campaign=bloguero_gold&amp;utm_term=regina_fernandez">Rusia</a></li>
+                                                                                                <li>Pau G. Solbes de <em>El Pachinko</em> ha viajado a <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/pau-g-solbes/?utm_source=unidad_editorial&amp;utm_medium=email&amp;utm_campaign=bloguero_gold&amp;utm_term=paula_g_solbes">Japón</a></li>
+                                                                                                <li>Miryam Tejada de <em>A donde quiera que vaya</em> ha viajado a <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/myriam-tejada/?utm_source=unidad_editorial&amp;utm_medium=email&amp;utm_campaign=bloguero_gold&amp;utm_term=myriam_tejada">Islandia</a></li>
+                                                                                                <li>Manu García de <em>Secretos de Madrid</em> ha viajado a <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/manu-garcia/?utm_source=unidad_editorial&amp;utm_medium=email&amp;utm_campaign=bloguero_gold&amp;utm_term=manu_garcia">Ciudad de México</a></li>
+                                                                                                <li>José Ángel Franco de <em>KrrteAndo</em> ha viajado a <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/jose-a-franco/">Suecia</a></li>
+                                                                                                <li>Olga Grijalva de <em>Charcotrip</em> ha viajado a <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/olga-grijalva/?utm_source=unidad_editorial&amp;utm_medium=email&amp;utm_campaign=bloguero_gold&amp;utm_term=olga_grijalva">Panamá</a></li>
+                                                                                                <li>Joana Saldón de <em>Mamás viajeras</em> ha viajado a <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/joana-saldon/?utm_source=unidad_editorial&amp;utm_medium=email&amp;utm_campaign=bloguero_gold&amp;utm_term=joana_saldon">Miami</a></li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                        <td class="wz" width="30"></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="3" style="font-size:0;line-height:0;" height="21">&nbsp;</td>
+                                                                                    </tr>
+                                                                                    <!--BLOQUE FONDO DE COLOR-->
+                                                                                    <tr style="background-color:#0d2663 !important; border-radius:6px;">
+                                                                                        <td colspan="3" align="center">
+                                                                                            <table style="mso-table-lspace:0pt;mso-table-rspace:0pt; border-radius:6px; padding-top:10px;" cellspacing="0" cellpadding="0" border="0" bgcolor="#0d2663" align="center">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td class="wz" width="30"></td>
+                                                                                                        <td class="proposalTD" mc:edit="sectA14" width="528"><span class="backgroundAmarillo"><p style="color:#FFFFFF; text-align:center;font-weight:lighter;">Tienes hasta el 24 de octubre para votar y el 27 de octubre conoceremos al ganador de la edición 2016 <br>que se llevará 5.000€</p></span></td>
+                                                                                                        <td class="wz" width="30"></td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr style="background-color:#0d2663 !important; border-radius:6px;">
+                                                                                        <td colspan="3" align="center">
+                                                                                            <table style="mso-table-lspace:0pt;mso-table-rspace:0pt; border-radius:6px; padding-bottom:10px;" cellspacing="0" cellpadding="0" border="0" bgcolor="#0d2663" align="center">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td class="wz" width="30"></td>
+                                                                                                        <td class="proposalTD" mc:edit="sectA14" width="528"><span class="backgroundAmarillo"><p style="color:#FFFFFF; text-align:center;font-weight:lighter;">Entra en <a style="color:#FFFFFF !important; text-decoration:none !important; font-weight:lighter;" class="backgroundAmarillo-amex" href="https://www.latitudamex.es/bloguerogold/2016/participantes/">www.latitudamex.es</a>, <br>conoce sus viajes y elige a tu favorito.</p></span></td>
+                                                                                                        <td class="wz" width="30"></td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--ENLACES TWIITER Y URL-->
+            <table style="table-layout:fixed;margin:0 auto;mso-table-lspace:0pt;mso-table-rspace:0pt;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#e6ecf1" align="center">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <table class="table600" style="mso-table-lspace:0pt;mso-table-rspace:0pt;" width="618" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <table class="table600Min" style="min-width:610px;mso-table-lspace:0pt;mso-table-rspace:0pt; border-bottom-left-radius: 6px;order-bottom-right-radius: 6px; " width="610" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="left">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="wz" width="30"></td>
+                                                        <td>
+                                                            <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="left">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="font-size:0;line-height:0;" height="21">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table class="table608b" style="mso-table-lspace:0pt;mso-table-rspace:0pt;" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="header3TD" mc:edit="sectA25">
+                                                                                            <a style="color:#006890;" href="https://twitter.com/hashtag/BlogueroGold"><img src="http://emailing.eventosue.com/2016/10/eventosue/bloguerogold2016/img/socialTwitter.png" alt="bloguero gold 2016" />
+                                                                                                <br>#BlogueroGold</a>
+                                                                                        </td>
+                                                                                        <td class="header3TD" mc:edit="sectA28">
+                                                                                            <a style="color:#006890;" href="https://www.latitudamex.es/bloguerogold/2016/participantes/"><img src="http://emailing.eventosue.com/2016/10/eventosue/bloguerogold2016/img/icon-3.png" alt="bloguero gold 2016" />
+                                                                                                <br>BlogueroGold</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                        <td class="wz" width="20"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-size:0;line-height:0;" height="21">&nbsp;</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                             </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                         </td>
+                                         <td class="wz" width="20"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                 </tbody>
+             </table>
+            <!--FIN ENLACES TWIITER Y URL-->
+            <!--FOOTER © Unidad Editorial, 2016-->
+            <table style="table-layout:fixed;mso-table-lspace:0pt;mso-table-rspace:0pt;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#e6ecf1" align="center">
+                <tbody>
+                    <tr>
+                        <td class="mvd" style="font-size:0;line-height:0;" height="30" width="610" bgcolor="#e6ecf1" align="center">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div bgcolor="#e6ecf1" style="background-color:#e6ecf1;">
+                <table style="background-color:#e6ecf1; table-layout:fixed;mso-table-lspace:0pt;mso-table-rspace:0pt;" cellspacing="0" cellpadding="0" border="0" bgcolor="#e6ecf1" align="center">
+                    <tbody>
+                        <tr>
+                            <td class="viewOnlineTD" align="center" height="30">
+                                &copy; Unidad Editorial, 2016
+                                <br> Si no desea seguir recibiendo esta informaci&oacute;n de <a style="color:#006890;" href="http://www.eventosyconferenciasue.com/">www.eventosyconferenciasue.com</a>,
+                                <br>por favor env&iacute;e un e-mail a <a style="color:#006890;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--FIN FOOTER © Unidad Editorial, 2016-->
+        </div>
+    </center>
+</body>
+
+</html>

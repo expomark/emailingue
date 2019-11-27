@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>CURSO DE ESPECIALIZACIÓN  - Periodismo Social. IV edición</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+        <!-- Web Font / @font-face : BEGIN -->
+        <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+        <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+        <!--[if mso]>
+        <style>
+        * {
+        font-family: sans-serif !important;
+        }
+        </style>
+        <![endif]-->
+        <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+        <!--[if !mso]><!-->
+        <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+        <!--<![endif]-->
+        <!-- Web Font / @font-face : END -->
+        <!-- CSS Reset -->
+        <style>
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/http://www.eventosyconferenciasue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "Oswall";
+        src: url("http://emailing.eventosue.com/fonts/oswall-regular.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/oswall-regular.woff") format("woff"), url("http://emailing.eventosue.com/fonts/oswall-regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "BreeSerif";
+        src: url("http://emailing.eventosue.com/fonts/breeserif-regular.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/breeserif-regular.woff") format("woff"), url("http://emailing.eventosue.com/fonts/breeserif-regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td {
+        transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+        cursor: pointer;
+        background: #555555 !important;
+        border-color: #555555 !important;
+        }
+        .show-xs {
+        display: none;
+        }
+        .hidden-xs {
+        display: inline-block;
+        }
+        .two-columns > tbody > tr > td > table,
+        .two-columns-67-33 > tbody > tr > td > table {
+            width: 50% !important;
+            float: left !important;
+        }
+        .two-columns > tbody > tr > td > table img {
+            width: 150px;
+            height: auto;   
+        }
+        .two-columns-67-33 > tbody > tr > td > table {
+            float: left !important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table:first-child {
+            width: 67% !important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table:last-child {
+            width: 33% !important;
+        }
+        .two-columns-67-33  > tbody > tr > td > table img {
+            width: 200px;
+            height: auto;   
+        }
+        @media only screen and (max-width: 360px) {
+        .show-xs {
+        display: block;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 10px 0!important;
+        }
+        .two-columns-67-33 > tbody > tr > td > table,
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        }
+        @media only screen and (max-width: 600px) {
+        .show-xs {
+        display: block;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        .two-columns-67-33 > tbody > tr > td > table,
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 20px 10px !important;
+        }
+        }
+        </style>
+    </head>
+    <body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7;width:100%">
+            <tr>
+                <td>
+                    <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'FaktProSoft', sans-serif;">
+                        
+                    </div>
+                    <div style="max-width: 600px; margin: auto;">
+                        <!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                            <tr>
+                                <td>
+                                    <![endif]-->
+                                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2016/11/escuelaue/periodismo-social/index.html">aquí.</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="max-width: 600px; " align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td height="8" style="font-size: 0; line-height: 0;">
+                                                &nbsp;
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td bgcolor="#ffffff" align="center" valign="top" width="100%" style="padding: 10px 0;">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="two-columns-67-33">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <table cellspacing="0" cellpadding="0" border="0" width="67%" style="font-size:14px;text-align:left;float:left;">
+                                                                <tr>
+                                                                    <td style="width: 100%; max-width: 400px;text-decoration:none;font-size: 12px; font-family: 'FaktProSoft', sans-serif; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #000000;" height="20" valign="midle" width="400" colspan="2">
+                                                                        ORGANIZAN:
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="text-align: center;">
+                                                                        <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/periodismo-social-4a-edicion?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=periodismo_social_noviembre2016">
+                                                                            <img src="http://emailing.eventosue.com/2016/11/escuelaue/periodismo-social/img/logo-head-01.gif" alt="Periodismo Social" style=";width: 100%; max-width: 200px; font-family: 'FaktProSoft',  sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                                        </a>
+                                                                    </td>
+                                                                    <td style="text-align: center;">
+                                                                        <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/periodismo-social-4a-edicion?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=periodismo_social_noviembre2016">
+                                                                            <img src="http://emailing.eventosue.com/2016/11/escuelaue/periodismo-social/img/logo-head-02.gif" alt="Periodismo Social" style=";width: 100%; max-width: 200px; font-family: 'FaktProSoft',  sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        <!--[if mso]>
+                                                            </td>
+                                                            <td align="center" valign="top">
+                                                        <![endif]-->
+                                                            <table cellspacing="0" cellpadding="0" border="0" width="33%" style="font-size:14px;text-align:left;float:left;">
+                                                                <tr>
+                                                                    <td style="width: 100%;max-width: 200px;text-decoration:none;text-transform: uppercase;font-size: 10px; font-family: 'FaktProSoft', sans-serif; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #000000;" height="20" valign="midle" width="200">
+                                                                            Con la colaboración de:
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="text-align: center;">
+                                                                        <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/periodismo-social-4a-edicion?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=periodismo_social_noviembre2016"><img src="http://emailing.eventosue.com/2016/11/escuelaue/periodismo-social/img/logo-head-03.gif" alt="Periodismo Social" style=";width: 100%; max-width: 200px; font-family: 'FaktProSoft',  sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200"></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table style="max-width: 600px;" align="left" bgcolor="#222222" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#222222" style="padding: 15px 40px; font-family: 'Oswall', sans-serif; font-size: 14px; font-weight:400; mso-height-rule: exactly; line-height: 14px; color: #FFFFFF; text-align:left; background-color: #222222;">
+                                                    ESCUELA DE PERIODISMO Y COMUNICACIÓN DE UNIDAD EDITORIAL
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                                <!--[if mso]>
+                                                </td>
+                                            </tr>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                                        <tr>
+                                            <td>
+                                    <![endif]-->
+                                </div>
+                                <div style="max-width: 100%; text-align: center; background-color: #D0DBE0;">
+                                <!--[if mso]>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" bgcolor="#D0DBE0">
+                                        <tr>
+                                            <td>
+                                    <![endif]-->
+                                    <div style="max-width: 600px; margin: 0px auto;">
+                                    <!--[if mso]>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                                        <tr>
+                                            <td>
+                                    <![endif]-->
+                                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/periodismo-social-4a-edicion?utm_source=ue&utm_medium=mailing&utm_campaign=periodismo_social_noviembre2016">
+                                                        <img src="http://emailing.eventosue.com/2016/11/escuelaue/periodismo-social/img/img-main-01.jpg?v1" width="600" height="" alt="Periodismo Social" border="0" align="center" style="width: 100%; max-width: 600px; mso-height-rule: exactly; color: #000000;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                            <!--[if mso]>
+                                                    </td>
+                                                </tr>
+                                        </table>
+                                        <![endif]-->
+                                    </div>
+                                    <!--[if mso]>
+                                                </td>
+                                            </tr>
+                                    </table>
+                                    <![endif]-->
+                                </div>
+                                <div style="max-width: 600px; margin: auto;">
+                                    <!--[if mso]>
+                                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                                            <tr>
+                                                <td>
+                                    <![endif]-->
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff">
+                                        <tr>
+                                            <td bgcolor="#ffffff" style="padding: 15px 40px 10px; font-family: 'Oswall', sans-serif; font-size: 18px; font-weight:400; mso-height-rule: exactly; line-height: 18px; color: #000000; text-align:center;background-color: #FFFFFF;">
+                                                4 DE NOVIEMBRE 2016 | MADRID
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="8" style="font-size: 0; line-height: 0;">
+                                            &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#000000" style="padding: 10px 40px 5px; font-family: 'Oswall', sans-serif; font-size: 18px; font-weight:400; mso-height-rule: exactly; line-height: 18px; color: #FFFFFF; text-align:center;background-color: #000000;">
+                                                Dirigido por: Pedro Simón
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="8" style="font-size: 0; line-height: 0;">
+                                            &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#f8ad4b" style="padding: 10px 40px 5px; font-family: 'Oswall', sans-serif; font-size: 24px; font-weight:400; mso-height-rule: exactly; line-height: 24px; color: #FFFFFF; text-align:center;background-color: #f8ad4b;">
+                                                ABIERTO PLAZO DE INSCRIPCIÓN
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="8" style="font-size: 0; line-height: 0;">
+                                            &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#000000" style="padding: 15px 40px 10px; font-family: 'Oswall', sans-serif; font-size: 20px; font-weight:400; mso-height-rule: exactly; line-height: 20px; color: #FFFFFF; text-align:center;background-color: #000000; text-transform: uppercase;">
+                                                <span style="font-family: 'Oswall', sans-serif; font-size: 35px; font-weight:400; mso-height-rule: exactly; line-height: 35px;">25</span> becas del <span style="font-family: 'Oswall', sans-serif; font-size: 35px; font-weight:400; mso-height-rule: exactly; line-height: 35px;">90%</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                                        <tr>
+                                            <td bgcolor="#ffffff" height="40">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#ffffff">
+                                                <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                                                    <tr>
+                                                        <td height="60" style=" background: #F8AD4B; text-align: center;" class="button-td">
+                                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/periodismo-social-4a-edicion?utm_source=ue&utm_medium=mailing&utm_campaign=periodismo_social_noviembre2016" style="font-family: 'FaktProSoft', sans-serif; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#FFFFFF; ">
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inscríbase AQUÍ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                                                    <tr>
+                                                        <td bgcolor="#FFFFFF" style="padding: 40px 40px 5px; font-family: 'BreeSerif', sans-serif; font-size: 18px; font-weight:400; mso-height-rule: exactly; line-height: 32px; color: #f8ad4b; text-align:center;background-color: #FFFFFF;">
+                                                            CURSO DE ESPECIALIZACIÓN <br /><span style="font-family: 'BreeSerif', sans-serif; font-size: 28px; font-weight:400; mso-height-rule: exactly; color: #444444; text-align:center;">Periodismo Social. IV edición</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                    <tr>
+                                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align: justify;">
+                                                            Frente al periodismo de contenido político, económico o deportivo, actualmente sobredimensionado en los medios, existe ese otro periodismo de corte social que, hoy más que nunca, cobra especial relevancia en estos tiempos de creciente tecnología y decreciente humanismo. Es el periodismo que habla de la esfera más cercana al sujeto, de las cuestiones que más le atañen en el día a día, de todo lo que pellizca el alma. Es el periodismo cada vez más demandado que pone el foco en lo ferozmente humano, en todos los que tienen una historia que contar. En definitiva, es el periodismo que habla del hombre. <br /><br /><span style="font-family: 'FaktProSoft', sans-serif; font-weight:500;">LA FUNDACIÓN OBRA SOCIAL DE LA CAIXA</span> colabora con la Escuela de Periodismo y Comunicación de Unidad Editorial en la organización de este programa y ofrece 25 BECAS del 90% del precio de matrícula del curso.</span>.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#f4f4f4">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="100%" >
+                                                    <tr>
+                                                        <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                                            INSCRIPCI&Oacute;N ONLINE: <br />
+                                                            <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00527B; text-align:center;font-weight: 500;" href="http://www.escuelaunidadeditorial.es">www.escuelaunidadeditorial.es</a><br><br>
+                                                            Para más información: <strong>91 443 51 67</strong> <br/> <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00527B; text-align:center;font-weight: 500;" href="mailto:informacion@escuelaunidadeditorial.es"> informacion@escuelaunidadeditorial.es</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; " bgcolor="#ffffff">
+                                        <tr>
+                                            <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                                © Unidad Editorial, 2016<br>Si no desea seguir recibiendo esta información de <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.escuelaunidadeditorial.es/">www.escuelaunidadeditorial.es</a>,<br> por favor envíe un e-mail a <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                </td>
+                            </tr>
+                        </table>
+                        <![endif]-->
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </html>

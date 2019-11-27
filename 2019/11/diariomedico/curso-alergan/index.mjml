@@ -1,0 +1,105 @@
+<mjml>
+  <mj-head>
+    <mj-title>Inicio del curso - Manejo Estrategias de Manejo desde Atención Primaria del paciente espástico</mj-title>
+    <mj-preview>Inicio del curso - Manejo Estrategias de Manejo desde Atención Primaria del paciente espástico</mj-preview>
+    <mj-attributes>
+    	<mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto" />
+      	<mj-all font-family="Roboto, Helvetica, Arial, sans-serif"></mj-all>
+      	<mj-text font-weight="400" letter-spacing=".5px" font-size="16px" color="#000000" line-height="24px" font-family="Roboto, Helvetica, Arial, sans-serif"></mj-text>
+    </mj-attributes>
+    <mj-style inline="inline">
+      .body-section {
+        -webkit-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 1px 4px 11px 0px rgba(0, 0, 0, 0.15);
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .text-link {
+        color: #5e6ebf
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .footer-link {
+        color: #888888
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#eaeaea">
+	<mj-section full-width="full-width" background-color="#eaeaea" padding-bottom="0">
+		<mj-column width="100%">
+			<mj-text align="center" font-size="11px" padding-bottom="20px" padding-top="0" color="#000000">Si no visualiza correctamente este correo haga clic <a href="http://emailing.eventosue.com/2019/11/diariomedico/curso-alergan/index.html?utm_source=dm&amp;utm_medium=mailing&amp;utm_campaign=curso-alergan-expansion-nov19" style="color: #000000; font-weight: 500; text-decoration: none;">aquí</a>.</mj-text>
+		</mj-column>
+	</mj-section>
+
+    <mj-wrapper padding-top="0" padding-bottom="0" css-class="body-section" background-color="#eaeaea">
+      	<mj-section background-color="#FFF" padding="0">
+        	<mj-column>
+          		<mj-image src="http://emailing.eventosue.com/2019/11/diariomedico/curso-alergan/img/img-main.jpg?v=3" width="600px" alt="Inicio del curso" padding="0" href="https://www.diariomedico.com/escuela/cursos/estrategias-de-manejo-desde-atencion-primaria-del-paciente-espastico" />
+          		<mj-text color="#637381" font-size="16px">
+            		Estimado alumno:
+          		</mj-text>
+          		<mj-text color="#637381" font-size="16px" align="left">
+            		Bienvenido al curso <a href="https://www.diariomedico.com/escuela/cursos/estrategias-de-manejo-desde-atencion-primaria-del-paciente-espastico" style="color: #2d9aa1; text-decoration:none; font-weight:700;">Manejo Estrategias de Manejo desde Atención Primaria del paciente espástico</a>.Para superarlo y obtener el certificado es necesario aprobar el <b>examen final</b>, al que sólo se podrá acceder si se realiza todo el itinerario del curso. <em>Es decir, no se podrá pasar al Módulo II sin haber realizado previamente el Módulo I, y así sucesivamente</em>. Al finalizar cada módulo se podrán realizar los ejercicios de autoevaluación, que permitirán aplicar el contenido y preparar el examen final. Estos ejercicios no puntúan para la nota final. En el apartado "<b>Material</b>" está disponible la documentación de cada módulo. <br><br>
+          		</mj-text>
+        	</mj-column>
+		</mj-section>
+		<mj-section background-color="#FFF" padding="0">
+			<mj-column width="80%" background-color="#2d9aa1" padding="10px">
+				<mj-text color="#FFF" font-size="20px" align="center">
+					El examen final estará disponible <br>hasta el <b>13 de diciembre</b>.
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section background-color="#FFF" padding="0">
+			<mj-column>
+				<mj-text color="#637381" font-size="16px" align="left"><br>
+					Las dudas sobre el contenido del curso se resolverán en el apartado <b>Preguntas</b>.
+				</mj-text>
+				<mj-text color="#637381" font-size="20px" align="center">
+					<strong style="color: #2d9aa1">Este curso tiene solicitada acreditación a la Comisión de Formación Continuada de las profesiones sanitarias.</strong><br><span style="font-size: 65%;">El certificado del curso estará disponible una vez se resuelva la acreditación.
+					</span>
+				</mj-text>
+				<mj-text color="#637381" font-size="16px" align="justify">
+					Un saludo<br>
+					<b>Diario Médico</b>
+				</mj-text>
+			</mj-column>
+      	</mj-section>
+    </mj-wrapper>
+
+    <mj-wrapper full-width="full-width" background-color="#eaeaea">
+      <mj-section>
+        <mj-column width="100%" padding="0">
+          <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+            Ha recibido este e-mail porque es usuario registrado de <a href="http://l.e.diariomedico.com/rts/go2.aspx?h=1218133&tp=i-H8B-Q4z-Uqa-QyzLQ-6M-87r9-1c-G-Qz40q-1CKWoB" target="_blank" style="color:#000; ">DiarioMedico.com</a> y ha aceptado recibir comunicaciones electr&#243;nicas relacionadas con nuestros productos o servicios. <br />
+            Si desea modificar sus datos pinche <a href="http://l.e.diariomedico.com/rts/go2.aspx?h=1218134&tp=i-H8B-Q4z-Uqa-QyzLQ-6M-87r9-1c-G-Qz40q-1CKWoB" target="_blank" style="color:#000;">aqu&#237;</a> y dir&#237;jase a la secci&oacute;n preferencias dentro de su men&uacute; personal.<br />
+            Si desea dejar de recibir este tipo concreto de comunicaci&#243;n, por favor pinche <a href="http://l.e.diariomedico.com/rts/go2.aspx?h=1218130&tp=i-H9D-Q4z-Uqa-QyzLQ-6M-87r9-1c-v5v-G-Qz40q-G2DH4&x=dmljdG9yaWEuYWxjYXphckB1bmlkYWRlZGl0b3JpYWwuZXM=%7c2679700%7cMTE4NTgw" target="_blank" style="color:#000; text-decoration: underline; font-weight: bold;">aqu&#237;</a>.</p>
+          </mj-text>
+          <mj-social font-size="15px" icon-size="30px" mode="horizontal" padding="0" align="center">
+            <mj-social-element name="twitter" href="https://twitter.com/diariomedico/" background-color="#2d9aa1">
+            </mj-social-element>
+            <mj-social-element name="facebook" href="http://facebook.com/diariomedico/" background-color="#2d9aa1">
+            </mj-social-element>
+          </mj-social>
+          <mj-text color="#2d9aa1" font-size="16px" align="center" line-height="24px">
+            www.diariomédico.com
+          </mj-text>
+          <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+            &copy; Unidad Editorial, 2019.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding-top="0">
+        <mj-group>
+          <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px" font-weight="bold">
+              <a class="footer-link" href="https://www.diariomedico.com/politica-de-privacidad">Privacidad</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <a class="footer-link" href="http://l.e.diariomedico.com/rts/go2.aspx?h=1218130&tp=i-H9D-Q4z-Uqa-QyzLQ-6M-87r9-1c-v5v-G-Qz40q-G2DH4&x=dmljdG9yaWEuYWxjYXphckB1bmlkYWRlZGl0b3JpYWwuZXM=%7c2679700%7cMTE4NTgw">Darse de baja</a>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    * {
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .collapse {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: none;
+        width: 100%!important;
+        height: 100%;
+    }
+
+    a {
+        color: #2BA6CB;
+    }
+
+    .btn {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: '.$color.';
+        padding: 10px 35px;
+        font-weight: bold;
+        margin: 0 0 15px;
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+
+    a.btn:hover {
+        background-color: #035da3;
+    }
+
+    p.callout {
+        padding: 15px;
+        background-color: #ECF8FF;
+        margin-bottom: 15px;
+    }
+
+    .callout a {
+        font-weight: bold;
+        color: #2BA6CB;
+    }
+
+    table.body-wrap, table.header-wrap, table.info-wrap, table.footer-wrap {
+        width: 100%;
+        clear: both!important;
+        background: #eaeaea;
+    }
+
+    table.header-wrap p, table.footer-wrap p {
+        font-size: 12px;
+    }
+
+    table.body-wrap p {
+        color:#8492a6;
+        font-size:18px;
+        line-height:28px;
+        text-align:justify;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        line-height: 1.1;
+        margin-bottom: 15px;
+        color: #000;
+    }
+
+    h1 small,
+    h2 small,
+    h3 small,
+    h4 small,
+    h5 small,
+    h6 small {
+        font-size: 60%;
+        color: #6f6f6f;
+        line-height: 0;
+        text-transform: none;
+    }
+
+    h1 {
+        font-weight: 200;
+        font-size: 44px;
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: 15px;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 27px;
+        color: '.$color.';
+    }
+
+    h4 {
+        font-weight: 500;
+        font-size: 23px;
+    }
+
+    h5 {
+        font-weight: 900;
+        font-size: 17px;
+    }
+
+    h6 {
+        font-weight: 900;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #444;
+    }
+
+    .collapse {
+        margin: 0!important;
+    }
+
+    p,
+    ul {
+        margin-bottom: 10px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+
+    .message p {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    ul li {
+        margin-left: 5px;
+        list-style-position: inside;
+    }
+
+    ul.sidebar {
+        background: #ebebeb;
+        display: block;
+        list-style-type: none;
+    }
+
+    ul.sidebar li {
+        display: block;
+        margin: 0;
+    }
+
+    ul.sidebar li a {
+        text-decoration: none;
+        color: #666;
+        padding: 10px 16px;
+        margin-right: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #777777;
+        border-top: 1px solid #FFFFFF;
+        display: block;
+        margin: 0;
+    }
+
+    ul.sidebar li a h1,
+    ul.sidebar li a h2,
+    ul.sidebar li a h3,
+    ul.sidebar li a h4,
+    ul.sidebar li a h5,
+    ul.sidebar li a h6,
+    ul.sidebar li a p {
+        margin-bottom: 0!important;
+    }
+
+    .container {
+        background-color: #ffffff;
+        display: block!important;
+        max-width: 600px!important;
+        margin: 0 auto!important;
+        clear: both!important;
+        border-radius: 6px;
+    }
+
+    .container.dark {
+        background-color: #666666;
+        color: #ffffff;
+    }
+
+    .container.transparent {
+        color: #8492a6;
+        background-color: transparent;
+    }
+
+    .content-header {
+        padding: 0 15px;
+        max-width: 600px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .content {
+        padding: 30px 15px;
+        max-width: 600px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .content table {
+        width: 100%;
+    }
+
+    .column-wrap {
+        padding: 0!important;
+        margin: 0 auto;
+        max-width: 600px!important;
+    }
+
+    .column table {
+        width: 100%;
+    }
+
+    .content .column {
+        width: 260px;
+        min-width: 260px;
+        float: left;
+    }
+
+    .clear {
+        display: block;
+        clear: both;
+    }
+
+    @media only screen and (max-width: 600px) {
+        a[class="btn"] {
+            display: block!important;
+            margin-bottom: 10px!important;
+            background-image: none!important;
+            margin-right: 0!important;
+        }
+        div[class="column"] {
+            width: auto!important;
+            float: none!important;
+        }
+        table.social div[class="column"] {
+            width: auto!important;
+        }
+    }
+    </style>
+    <title>EEUU y Europa. The 58th US Presidential Election & The Status Quo of Transatlantic Relations</title>
+</head>
+
+<body bgcolor="#eaeaea" style="font-family:'Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif;height:100%;width:100%!important;background:#eaeaea">
+    <table class="header-wrap" align="center" bgcolor="#eaeaea" style="background:#eaeaea">
+        <tr>
+            <td></td>
+            <td width="600" class="container transparent" bgcolor="#eaeaea" style="background:#eaeaea;color:#8492a6;">
+                <div class="content" style="padding:15px;">
+                    <table>
+                        <tr>
+                            <td>
+                                <p align="center" style="margin-bottom:10px;font-weight:normal;font-size:12px;line-height:1.3em;text-align:center">Si no visualiza correctamente este correo haga <a href="http://emailing.eventosue.com/2016/10/eventosue/transatlantic/index.html" style="color:#8492a6;">clic aquí.</a></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="body-wrap" align="center" bgcolor="#eaeaea" style="background:#eaeaea">
+        <tr>
+            <td></td>
+            <td width="600" class="container" style="background:#ffffff;border-radius:6px;max-width:600px;" bgcolor="#ffffff">
+                <div class="content column-wrap">
+                    <table>
+                        <tr>
+                            <td width="600">
+                                <a href="http://www.eventosyconferenciasue.com/eventos/the-58th-us-presidential-election-the-status-quo-of-transatlantic-relations?utm_source=eventosue&utm_medium=mailing&utm_campaign=transatlantic_octubre2016" target="_blank" border="0" style="color: #2BA6CB;">
+                                    <img src="http://emailing.eventosue.com/2016/10/eventosue/transatlantic/img/logo.png" alt="" width="600" border="0">
+                                </a>
+                                <a href="http://www.eventosyconferenciasue.com/eventos/the-58th-us-presidential-election-the-status-quo-of-transatlantic-relations?utm_source=eventosue&utm_medium=mailing&utm_campaign=transatlantic_octubre2016" target="_blank" border="0" style="color: #2BA6CB;">
+                                    <img src="http://emailing.eventosue.com/2016/10/eventosue/transatlantic/img/logos-imagen.jpg" alt="" width="600" border="0">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content" style="padding: 30px 15px;">
+                    <table>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="50" style="width:50px"></td>
+                                        <td style="background:#337AB7;border-radius:6px;" bgcolor="#337AB7">
+                                            <a href="http://www.eventosyconferenciasue.com/eventos/the-58th-us-presidential-election-the-status-quo-of-transatlantic-relations?utm_source=eventosue&utm_medium=mailing&utm_campaign=transatlantic_octubre2016" style="font-size:16px;color:#ffffff;text-decoration:none;padding:15px 30px;display:block;line-height:28px;" bgcolor="#337AB7">
+                                                SOLICITAR INVITACIÓN AQUÍ
+                                            </a>
+                                        </td>
+                                        <td width="50" style="width:50px"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="font-size:24px;line-height:34px;color:#3c4858;padding-top:30px;margin-bottom:10px;text-align:center;" align="center">
+                                    <a style="color:#337AB7;text-decoration:none;font-weight:700;" href="http://www.eventosyconferenciasue.com/eventos/the-58th-us-presidential-election-the-status-quo-of-transatlantic-relations?utm_source=eventosue&utm_medium=mailing&utm_campaign=transatlantic_octubre2016">
+                                        EEUU y Europa <br>The 58th US Presidential Election & The Status Quo of Transatlantic Relations
+                                    </a>
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- INICIO: Estimado amigo... -->
+                        <tr>
+                            <td>
+                                <p style="padding-top: 30px;margin-bottom: 10px;font-size: 18px;line-height: 28px;color: #8492a6;text-align: justify;">
+                                    Estimado amigo...
+                                    <br>
+                                    <br> Con motivo de las próximas elecciones presidenciales norteamericanas, el diario EXPANSIÓN, en colaboración con la London School of Economics and Political Science (LSE), celebra este 27 de octubre, en Madrid, un encuentro de primer nivel en el que se analizarán las relaciones entre Europa y Estados Unidos. En el curso de esta cita, el estado de la conexión trasatlántica será abordado por relevantes personalidades de la diplomacia, la abogacía y la Universidad como los exministros de Asuntos Exteriores, Ana Palacio y Carlos Westendorp, el letrado Antonio Garrigues Walker y el catedrático de la LSE Mick Cox. Esta cita sigue a la que tuvo lugar en junio sobre el Brexit, con participación, entre otros, del ministro Luis de Guindos y el exeurocomisario Joaquín Almunia.
+                                    <br>
+                                    <br> Confiamos en que este acto sea de su interés, reciba un cordial saludo.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="20" style="width:20px"></td>
+                                        <td width="560" style="max-width:560px">
+                                            <table width="49%" class="column" style="width:49%;">
+                                                <tr>
+                                                    <td width="80" align="right" style="width:80px;min-width:80px;">
+                                                        <a href="https://twitter.com/hashtag/EEUUropaExp">
+                                                            <img src="http://emailing.eventosue.com/2016/10/eventosue/transatlantic/img/twitter.png" width="30">
+                                                        </a>
+                                                    </td>
+                                                    <!-- texto: #hashtag -->
+                                                    <td align="left">
+                                                        <p style="margin-bottom:10px;font-size:18px;line-height:55px;color:#8492a6;">
+                                                            <a href="https://twitter.com/hashtag/EEUUropaExp" style="font-size: 16px;color: #444444;line-height: 48px;text-align: left;text-decoration: none;">
+                                                                #EEUUropaExp
+                                                            </a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table width="49%" class="column" style="width:49%;">
+                                                <tr>
+                                                    <td width="80" align="right" style="width:80px;min-width:80px;">
+                                                        <a href="http://emailing.eventosue.com/2016/10/eventosue/transatlantic/img/agenda.pdf">
+                                                            <img src="http://emailing.eventosue.com/2016/10/eventosue/transatlantic/img/pdf.png" width="30">
+                                                        </a>
+                                                    </td>
+                                                    <!-- texto: Descargar agenda/ Ir a la web -->
+                                                    <td align="left">
+                                                        <p style="margin-bottom:10px;font-size:18px;line-height:55px;color:#8492a6;">
+                                                            <a href="http://emailing.eventosue.com/2016/10/eventosue/transatlantic/img/agenda.pdf" style="font-size: 16px;color: #444444;line-height: 48px;text-align: left;text-decoration: none;">
+                                                                DESCARGAR AGENDA
+                                                            </a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="20" style="width:20px"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="info-wrap" bgcolor="#eaeaea" style="background:#eaeaea;padding-top:30px" align="center">
+        <tr>
+            <td></td>
+            <td width="600" class="container dark" style="background:#666666;color:#ffffff;max-width:600px;" bgcolor="#666666">
+                <div class="content" style="padding:15px;">
+                    <table>
+                        <tr>
+                            <td>
+                                <p style="margin-bottom:10px;font-size:14px;line-height:1.3em;color:#ffffff;text-align:center" align="center">
+                                    Por favor, solicite su invitación a través de la web:
+                                    <a style="color: #ffffff;text-decoration: none;font-size: 16px;" href="http://www.eventosyconferenciasue.com/eventos/the-58th-us-presidential-election-the-status-quo-of-transatlantic-relations?utm_source=eventosue&utm_medium=mailing&utm_campaign=transatlantic_octubre2016">www.eventosue.com/europaeeuu</a>
+                                    <br> <span style="font-size: 10px;">Para más información</span> <span style="font-size: 14px;">91 443 53 36</span><span style="font-size: 10px;"><br>Aforo limitado, imprescindible confirmación por parte de la organización.</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="footer-wrap" align="center" bgcolor="#eaeaea" style="background:#eaeaea">
+        <tr>
+            <td></td>
+            <td width="600" class="container transparent" bgcolor="#eaeaea" style="background:#eaeaea;border-radius:6px;max-width:600px;">
+                <div class="content" style="padding:30px 15px;">
+                    <table>
+                        <tr>
+                            <td>
+                                <p style="margin-bottom: 10px;font-size:12px;line-height:1.3em;color:#8492a6">
+                                    © Unidad Editorial, 2016
+                                    <br><br>Si no desea seguir recibiendo esta información de <a href="http://www.eventosyconferenciasue.com" style="color: #8492a6;">www.eventosyconferenciasue.com</a>
+                                    <br>por favor envíe un e-mail a <a href="mailto:lopd@unidadeditorial.es" style="color: #8492a6;">lopd@unidadeditorial.es</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

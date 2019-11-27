@@ -1,0 +1,9 @@
+<mj-wrapper full-width="full-width">
+    <mj-section padding-top="0">
+        <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+                Ha recibido este e-mail porque es usuario registrado de "Unidad Editorial Informaci&oacute;n Deportiva S.L.U." y ha aceptado recibir comunicaciones electr&oacute;nicas relacionadas con nuestros productos o servicios. Si desea dejar de recibir este tipo concreto de comunicaci&oacute;n <a class="text-color" href="{[Opt_Out Baja Marca Consumer|46124]}">pulse aqu&iacute;</a>. Si desea modificar sus datos <a class="text-color" href="https://seguro.marca.com/registro/v2/zona-usuario.html">pulse aqu&iacute;</a>.
+            </mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>

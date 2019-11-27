@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <base href="https://raw.githubusercontent.com/TedGoas/Cerberus/master/cerberus-fluid.html">
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width">
+        <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">
+        <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>Jornada 30 Aniversario Expansión - Andalucía. Una economía que avanza</title>
+        <!-- The title tag shows in email notifications, like Android 4.4. -->
+        <!-- Web Font / @font-face : BEGIN -->
+        <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+        <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+        <!--[if mso]>
+            <style>
+            * {
+            font-family: sans-serif !important;
+            }
+            </style>
+            <![endif]-->
+        <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+        <!--[if !mso]><!-->
+        <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+        <!--<![endif]-->
+        <!-- Web Font / @font-face : END -->
+        <!-- CSS Reset -->
+        <style>
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+            /* What it does: Remove spaces around the email design added by some email clients. */
+            /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+            html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+            cursor: pointer;
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+        .three-columns table {
+            width: 33.3%!important;
+            float: left;
+        }
+        .show-xs {
+            display: none;
+        }
+        .hidden-xs {
+            display: inline-block;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 50% !important;
+            float: left !important;
+        }
+        .two-columns > tbody > tr > td > table img {
+            width: 150px;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 360px) {
+        .show-xs {
+        display: block;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 10px 0!important;
+            }
+            .two-columns > tbody > tr > td > table {
+                width: 100% !important;
+                float: none !important;
+            }
+            .three-columns table {
+                width: 100%!important;
+                float: left!important;
+            }
+            .three-columns table td {
+                padding: 5px 0px!important;
+                text-align: center!important;
+            }
+            .hidden-xs {
+                display: none;
+            }
+            .text-xs-center {
+                text-align: center !important;
+            }
+            .text-xs-left {
+                text-align: left !important;
+            }
+            .two-columns img {
+                margin: 0;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .show-xs {
+                display: block;
+            }
+            .hidden-xs {
+                display: none;
+            }
+            .two-columns > tbody > tr > td > table {
+                width: 100% !important;
+                float: none !important;
+            }
+            .three-columns table {
+                width: 100% !important;
+                float: left !important;
+            }
+            .three-columns table td {
+                padding: 5px 0px!important;
+                text-align: center!important;
+            }
+            .stack-column-center,
+            .stack-column-center a {
+                padding: 20px 10px !important;
+            }
+            .text-xs-center {
+                text-align: center !important;
+            }
+            .text-xs-left {
+                text-align: left !important;
+            }
+            .two-columns img {
+                margin: 0;
+            }
+        }
+        </style>
+    </head>
+
+    <body width="100%" bgcolor="#D5E9F2" style="margin: 0; background: #EFF2F7;">
+        <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7;width:100%">
+            <tr>
+                <td>
+                    <!-- Visually Hidden Preheader Text : BEGIN -->
+                    <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'Raleway', sans-serif;">
+
+                    </div>
+                    <!-- Visually Hidden Preheader Text : END -->
+                    <!--
+                    Set the email width. Defined in two places:
+                    1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
+                    2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+                    -->
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                            <tr>
+                                <td>
+                                    <![endif]-->
+                                    <!-- Email Header : BEGIN -->
+                                    <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2017/03/eventosue/andalucia-economia-2/index.html">aquí.</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td height="8" style="font-size: 0; line-height: 0;">
+                                                &nbsp;
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="two-columns" bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td>
+                                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                            <a href="http://www.eventosyconferenciasue.com/eventos/andalucia-una-economia-que-avanza?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=andalucia-economia-2_marzo2017">
+                                                                <img src="http://emailing.eventosue.com/2017/03/eventosue/andalucia-economia-2/img/logo-head-01.gif?v=3" alt="expansión" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if mso]>
+                                                        </td>
+                                                        <td>
+                                                <![endif]-->
+                                                <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                            <a href="http://www.eventosyconferenciasue.com/eventos/andalucia-una-economia-que-avanza?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=andalucia-economia-2_marzo2017">
+                                                                <img src="http://emailing.eventosue.com/2017/03/eventosue/andalucia-economia-2/img/logo-head-02.gif?v=2" alt="unicaja" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if mso]>
+                                                        </td>
+                                                        <td>
+                                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                    <!--[if mso]>
+                    <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                        <tr>
+                            <td align="center" valign="top"  bgcolor="#DADEE5">
+                        <![endif]-->
+                            <div style="max-width: 600px; margin: 0 auto; background-color: #DADEE5;">
+                                <div style="max-width: 600px; margin: 0 auto;">
+                                    <!-- Email Body : BEGIN -->
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                                        <tr>
+                                            <td bgcolor="#ffffff">
+                                                <a href="http://www.eventosyconferenciasue.com/eventos/andalucia-una-economia-que-avanza?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=andalucia-economia-2_marzo2017">
+                                                    <img src="http://emailing.eventosue.com/2017/03/eventosue/andalucia-economia-2/img/img-main-01.jpg?v=6" width="600" height="" alt="Andalucía. Una economía que avanza" border="0" align="center" style="width: 100%; max-width: 600px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        <!--[if mso]>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top" bgcolor="#FFFFFF">
+                        <![endif]-->
+                        <div style="max-width: 100%; margin: 0 auto; background-color: #EFF2F7;">
+                            <div style="max-width: 600px; margin: 0 auto; background-color: #D4D8DD">
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#D4D8DD">
+                                    <tr>
+                                        <td style="padding: 15px 20px 0; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #FFFFFF; background-color: #2BA342; text-align:center;">
+                                            <span style="font-family: 'FaktProSoft', sans-serif, Arial; font-weight:500; mso-height-rule: exactly;">MÁLAGA 21 marzo 2017</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0 20px 15px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; font-weight:300; mso-height-rule: exactly; line-height: 18px; color: #FFFFFF; background-color: #2BA342; text-align:center;">
+                                            Auditorio de la Diputación de Málaga <span style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 16px; mso-height-rule: exactly;">C/ Pacífico, 54 - Edificio B. Planta Baja</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
+          <tr>
+            <td align="center" valign="top" bgcolor="#EFF2F7">
+                <table cellspacing="0" cellpadding="0" border="0" width="600" align="center" bgcolor="#FFFFFF">
+                    <tr>
+                        <td align="center" valign="top" width="100%" bgcolor="#FFFFFF">
+                <![endif]-->
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding: 30px 0px;">
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto;">
+                                        <tr>
+                                            <td height="60" style="border-radius: 3px; background: #2BA342; text-align: center;" class="button-td">
+                                                <a href="http://www.eventosyconferenciasue.com/eventos/andalucia-una-economia-que-avanza?utm_source=ue&utm_medium=mailing&utm_campaign=andalucia-economia-2_marzo2017" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#FFFFFF; border-radius: 3px;">&nbsp;&nbsp;&nbsp;&nbsp;Solicitar invitación aquí&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="padding: 40px 20px 10px 20px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 35px; font-weight:500; mso-height-rule: exactly; line-height: 40px; color: #2BA342; text-align:center;">
+                                                <span style="font-size: 20px; font-weight:500; mso-height-rule: exactly; line-height: 40px; color: #000000; text-align:center;">Jornada 30 Aniversario Expansión</span><br />Andalucía<br /><span style="font-size: 20px; font-weight:500; mso-height-rule: exactly; line-height: 40px; color: #000000; text-align:center;">una economía que avanza</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align: justify; letter-spacing: .5px">
+                                                Estimado/a amigo/a:<br /><br />
+
+                                                        Con motivo de la celebración del XXX Aniversario del diario Expansión, es un placer para nosotros invitarle al  evento “Andalucía: una economía que avanza” organizado por el diario EXPANSIÓN y UNICAJA. Tendrá lugar en Málaga, el próximo martes 21 de marzo en el auditorio de la Diputación de Málaga, de 10.00 a 15.00 horas.<br /><br />
+
+                                                        Dña. Fátima Báñez, Ministra de Empleo y Seguridad Social y D. José Sánchez Maldonado, Consejero de Empleo, Empresa y Comercio, realizarán respectivamente la apertura y clausura del acto, en el que contaremos con la participación de los primeros ejecutivos de la economía Andaluza.<br /><br />
+
+
+                                                        Las plazas son limitadas, por lo que le rogamos que si quisiera asistir solicite su reserva de plaza. Recuerde que tras cumplimentar su inscripción, tendremos que confirmarle que tenemos aforo en el momento de su solicitud.
+
+                                                        Confiamos en que este acto sea de su interés, reciba un cordial saludo,<br /><br />
+
+
+                                                        EXPANSIÓN y UNICAJA
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                              <!--[if mso]>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="top">
+                                    <![endif]-->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px;">
+                            <tr>
+                                <td height="50" bgcolor="#FFFFFF">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="two-columns">
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="text-align: center; padding: 0 10px;">
+                                                            <img src="http://emailing.eventosue.com/2017/03/eventosue/andalucia-economia-2/img/tw_200x50.gif" width="200" height="" alt="Hastag #AndaluciaEXP" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 5px 0;" class="stack-column-center">
+                                                            <a style="padding: 40px 20px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="https://twitter.com/hashtag/andaluciaexp?f=tweets">#AndaluciaEXP</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            <!--[if mso]>
+                                            </td>
+                                            <td align="center" valign="top">
+                                            <![endif]-->
+                                                <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="text-align: center; padding: 0 10px;">
+                                                            <img src="http://emailing.eventosue.com/2017/03/eventosue/andalucia-economia-2/img/agenda_200x50.gif" width="200" height="" alt="Descargar Agenda" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center;font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                            <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="http://emailing.eventosue.com/2017/03/eventosue/andalucia-economia-2/img/agenda.pdf?v=6">Descargar agenda</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px;">
+                            <tr>
+                                <td bgcolor="#f4f4f4" style="border-radius: 0 0 18px 18px;">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                                Inscripciones a través de la web:
+                                                <br>
+                                                <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #337ABB; text-align:center;font-weight: 500; word-break:break-all" href="http://www.eventosyconferenciasue.com/eventos/andalucia-una-economia-que-avanza?utm_source=ue&utm_medium=mailing&utm_campaign=andalucia-economia-2_marzo2017">www.eventosue.com/andaluciaavanza</a>
+                                                <br>
+                                                <br> Para más información: <strong>91 443 53 36</strong>
+                                                <br class="show-xs" /><span class="hidden-xs">–</span> Aforo limitado.
+                                                <br>Imprescindible confirmación por parte de la organización
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius:8px;" bgcolor="#ffffff">
+                            <tr>
+                                <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                    © Unidad Editorial, 2017
+                                    <br>Si no desea seguir recibiendo esta información de <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.eventosyconferenciasue.com/?utm_source=ue&utm_medium=mailing&utm_campaign=andalucia-economia-2_marzo2017">www.eventosyconferenciasue.com</a>,
+                                    <br> por favor envíe un e-mail a <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+                <![endif]-->
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

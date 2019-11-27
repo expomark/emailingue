@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+        <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>Estrategia de contenidos para páginas web - Gestión de contenidos digitales</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+        <!-- Web Font / @font-face : BEGIN -->
+        <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+        <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+        <!--[if mso]>
+        <style>
+        * {
+        font-family: sans-serif !important;
+        }
+        </style>
+        <![endif]-->
+        <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+        <!--[if !mso]><!-->
+        <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+        <!--<![endif]-->
+        <!-- Web Font / @font-face : END -->
+        <!-- CSS Reset -->
+        <style>
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+        }
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        }
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+        margin:0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+        }
+        table table table {
+        table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+        -ms-interpolation-mode:bicubic;
+        height:auto !important;
+        }
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+        color:inherit !important;
+        text-decoration: underline !important;
+        }
+        /* What it does: Hover styles for buttons */
+        .button-td {
+        transition: all 100ms ease-in;
+        }
+        .button-td:hover {
+        cursor: pointer;
+        background: #555555 !important;
+        border-color: #555555 !important;
+        }
+        .three-columns table {
+        width: 33.3%!important;
+        float: left;
+        }
+        .show-xs {
+        display: none;
+        }
+        .hidden-xs {
+        display: inline-block;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 50% !important;
+            float: left !important;
+        }
+        .two-columns > tbody > tr > td > table img {
+            width: 150px;
+            height: auto;
+        }
+        @media only screen and (max-width: 360px) {
+        .show-xs {
+        display: block;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 10px 0!important;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .two-columns > tbody > tr > td > table td.img-right-xs {
+            text-align: right !important;
+            padding-top: 15px !important;
+        }
+        .two-columns > tbody > tr > td > table td.img-right-xs > img {
+            margin-right: 0 !important;
+        }
+        .three-columns table {
+        width: 100%!important;
+        float: left!important;
+        }
+        .three-columns table td {
+        padding: 5px 0px!important;    
+        text-align: center!important;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        }
+        @media only screen and (max-width: 600px) {
+        .show-xs {
+        display: block;
+        }
+        .hidden-xs {
+        display: none;
+        }
+        .two-columns > tbody > tr > td > table {
+            width: 100% !important;
+            float: none !important;
+        }
+        .two-columns > tbody > tr > td > table td.img-right-xs {
+            text-align: right !important;
+            padding-top: 15px !important;
+        }
+        .two-columns > tbody > tr > td > table td.img-right-xs > img {
+            margin-right: 0 !important;
+        }
+        .three-columns table {
+        width: 100% !important;
+        float: left !important;
+        }
+        .three-columns table td {
+        padding: 5px 0px!important;    
+        text-align: center!important;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+        padding: 20px 10px !important;
+        }
+        }
+        </style>
+    </head>
+    <body width="100%" bgcolor="#eaeaea" style="margin: 0; background: #eaeaea;">
+        <table align="center" bgcolor="#eaeaea" style="background:#eaeaea;width:100%">
+            <tr>
+                <td>
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                            <tr>
+                                <td>
+                                    <![endif]-->
+                                    <!-- Email Header : BEGIN -->
+                        <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #000;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #000; text-align:center;" href="http://emailing.eventosue.com/2017/02/escuelaue/contenpagweb-gestcondig/index.html">aquí.</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td height="8" style="font-size: 0; line-height: 0;">
+                                    &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="three-columns" bgcolor="#FFFFFF">
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                        <tr>
+                                            <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                <a href="http://escuelaueformaciononline.es/digital/?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=escuela_promofebmarz2017">
+                                                    <img src="http://emailing.eventosue.com/2017/02/escuelaue/contenpagweb-gestcondig/img/logo-head-01.gif?v=5" alt="El Mundo" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                            </td>
+                                            <td>
+                                    <![endif]-->
+                                    <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                        <tr>
+                                            <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                <a href="http://escuelaueformaciononline.es/digital/?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=escuela_promofebmarz2017">
+                                                    <img src="http://emailing.eventosue.com/2017/02/escuelaue/contenpagweb-gestcondig/img/logo-head-02.gif?v=2" alt="Escuela de Periodismo y Comunicación de Unidad Editorial" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                            </td>
+                                            <td>
+                                    <![endif]-->
+                                    <table cellspacing="0" cellpadding="0" border="0" width="33.3%" style="font-size:14px;text-align:left;float:left;">
+                                        <tr>
+                                            <td style="padding: 20px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                                <a href="http://escuelaueformaciononline.es/digital/?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=escuela_promofebmarz2017">
+                                                    <img src="http://emailing.eventosue.com/2017/02/escuelaue/contenpagweb-gestcondig/img/logo-head-03.gif?v=3" alt="CEU" style=";width: 100%; max-width: 200px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="200">
+                                                </a>
+                                            </td>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                            <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                    <tr>
+                        <td>
+                            <![endif]-->
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#111111">
+                            <tr>
+                                <td bgcolor="#111111">
+                                    <a href="http://escuelaueformaciononline.es/digital/?utm_source=ue&utm_medium=mailing&utm_campaign=escuela_promofebmarz2017">
+                                        <img src="http://emailing.eventosue.com/2017/02/escuelaue/contenpagweb-gestcondig/img/img-main-0.jpg?v1" width="600" height="" alt="Estrategia de contenidos para páginas web - Gestión de contenidos digitales" border="0" align="center" style="width: 100%; max-width: 600px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                            <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                    <tr>
+                        <td>
+                            <![endif]-->
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; border-radius: 0 0 18px 18px" bgcolor="#FFFFFF">
+                            <tr>
+                                <td bgcolor="#FFFFFF" height="40">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td bgcolor="#FFFFFF" align="center" height="100%" valign="top" width="100%">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="two-columns">
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <a href="http://escuelaueformaciononline.es/digital/curso/estrategia-de-contenidos-para-paginas-web/?utm_source=ue&utm_medium=mailing&utm_campaign=escuela_promofebmarz2017" style="font-size: 24px; mso-height-rule: exactly; line-height: 28px; color: #222222; text-align:left; text-decoration: none;">
+                                                                <img src="http://emailing.eventosue.com/2017/02/escuelaue/contenpagweb-gestcondig/img/promo-01.jpg?v2" width="280" height="" alt="Estrategia de contenidos para páginas web" style="border: 0;width: 280px;max-width: 280px; background: #FFFFFF; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #222222;">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px; font-family: 'FaktProSoft', sans-serif; font-size: 24px; mso-height-rule: exactly; line-height: 28px; color: #222222; text-align:left; text-decoration: none;">
+                                                            <span style="font-size: 13px; mso-height-rule: exactly; line-height: 20px; color: #4A2A73; text-align:left; text-decoration: none;">CURSO ONLINE DE ESPECIALIZACIÓN</span><br /><a href="http://escuelaueformaciononline.es/digital/curso/estrategia-de-contenidos-para-paginas-web/?utm_source=ue&utm_medium=mailing&utm_campaign=escuela_promofebmarz2017" style="font-size: 26px; mso-height-rule: exactly; line-height: 30px; color: #222222; text-align:left; text-decoration: none;">Estrategia de contenidos para páginas web </a><br />
+                                                            <span style="font-size: 13px; mso-height-rule: exactly; line-height: 18px; color: #4A2A73; text-align:left; text-decoration: none;">Del 28 de febrero al 20 de abril de 2017<br /><br /><br /></span> 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center; padding: 10px;">
+                                                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                                <tr>                              
+                                                                    <td bgcolor="#4A2A73" style="padding: 10px; font-family: 'FaktProSoft', sans-serif; font-size: 24px; mso-height-rule: exactly; line-height: 28px; color: #FFFFFF; text-align: center; text-decoration: none; background-color: ##4A2A73; border-radius: 6px;"><a href="http://escuelaueformaciononline.es/digital/curso/estrategia-de-contenidos-para-paginas-web/?utm_source=ue&utm_medium=mailing&utm_campaign=escuela_promofebmarz2017" style="font-family: 'FaktProSoft', sans-serif; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#FFFFFF; ">
+                                                                        Inscríbase AQUÍ</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            <!--[if mso]>
+                                                </td>
+                                                <td align="center" valign="top">
+                                            <![endif]-->
+                                                <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                    <tr>
+                                                        <td style="text-align: center;">
+                                                            <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/gestion-de-contenidos-digitales-2017?utm_source=ue&utm_medium=mailing&utm_campaign=escuela_promofebmarz2017#inscripcion" style="font-size: 24px; mso-height-rule: exactly; line-height: 28px; color: #222222; text-align:left; text-decoration: none;">
+                                                                <img src="http://emailing.eventosue.com/2017/02/escuelaue/contenpagweb-gestcondig/img/promo-02.jpg?v2" width="280" height="" alt="Gestión de la Oficina de Farmacia" style="border: 0;width: 280px;max-width: 280px; background: #FFFFFF; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #222222;">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px; font-family: 'FaktProSoft', sans-serif; font-size: 24px; mso-height-rule: exactly; line-height: 28px; color: #222222; text-align:left; text-decoration: none;">
+                                                            <span style="font-size: 13px; mso-height-rule: exactly; line-height: 20px; color: #a2a10c; text-align:left; text-decoration: none;">CURSO DE ESPECIALIZACIÓN EN</span><br /><a href="http://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/gestion-de-contenidos-digitales-2017?utm_source=ue&utm_medium=mailing&utm_campaign=escuela_promofebmarz2017#inscripcion" style="font-size: 26px; mso-height-rule: exactly; line-height: 30px; color: #222222; text-align:left; text-decoration: none;">Gestión de contenidos digitales<br /><br /></a>
+                                                            <span style="font-size: 13px; mso-height-rule: exactly; line-height: 18px; color: #a2a10c; text-align:left; text-decoration: none;">MADRID<br />Del 10 de marzo al 1 de abril de 2017<br />40 horas lectivas en la sede de EL MUNDO</span> 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: center; padding: 10px;">
+                                                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                                <tr>
+                                                                    <td bgcolor="#a2a10c" style="padding: 10px; font-family: 'FaktProSoft', sans-serif; font-size: 24px; mso-height-rule: exactly; line-height: 28px; color: #222222; text-align: center; text-decoration: none; background-color: #a2a10c; border-radius: 6px;"><a href="http://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/gestion-de-contenidos-digitales-2017?utm_source=ue&utm_medium=mailing&utm_campaign=escuela_promofebmarz2017#inscripcion" style="font-family: 'FaktProSoft', sans-serif; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#FFFFFF; ">
+                                                                        Inscríbase AQUÍ</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                            <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                    <tr>
+                        <td>
+                            <![endif]-->
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                            <tr>
+                                <td bgcolor="#ffffff" height="40">
+                                                        &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align: justify;">
+                                                <strong>CURSOS PRESENCIALES Y ONLINE<br /><br />
+                                                PROMUEVE TU NEGOCIO O TU MARCA A TRAVÉS DE UNA WEB EFICAZ</strong><br /><br />
+                                                El 28 de febrero arranca la segunda edición del curso online <a href="http://escuelaueformaciononline.es/digital/curso/estrategia-de-contenidos-para-paginas-web/" style="font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align:left; text-decoration: none;"><strong>“Estrategia de contenidos para páginas web”</strong></a> de la Escuela de Comunicación de Unidad Editorial y el 10 de marzo la VI del curso presencial <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/gestion-de-contenidos-digitales-2017" style="font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align:left; text-decoration: none;"><strong>"Gestión de Contenidos Digitales".</strong></a><br /><br />
+                                                Conocer las claves para posicionar tus mensajes en Internet y llegar así mejor a tu público, es el objetivo de muchas marcas y pequeños negocios. Los emprendedores y responsables de pymes que quieren promover  sus iniciativas o potenciar sus marcas en el universo online deben conocer las posibilidades que ofrecen los contenidos digitales. El contenido es el rey, y no hay estrategia de marketing alguna que no pase hoy por la generación de unos buenos contenidos. <br /><br />
+                                                En el curso <strong>online</strong> de <a href="http://escuelaueformaciononline.es/digital/curso/estrategia-de-contenidos-para-paginas-web/" style="font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align:left; text-decoration: none;"><strong>Estrategia de contenidos para páginas web</strong></a>    de la Escuela de Unidad Editorial y elmundo.es, a lo largo de 6 semanas, se tratan todos estos asuntos en un campus virtual intuitivo y amigable, donde los alumnos comparten además experiencias y conocimientos con el resto de la comunidad virtual.<br /><br />
+                                                La Escuela ofrece también por estas fechas la VI edición del <strong>curso presencial</strong> de <a href="http://www.escuelaunidadeditorial.es/formacion-presencial/cursos-de-especializacion/gestion-de-contenidos-digitales-2017" style="font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align:left; text-decoration: none;"><strong>Gestión de Contenidos Digitales</strong></a>,  que aborda todas estas cuestiones a lo largo de cuatro fines de semana, en horario de viernes tarde y sábado mañana. El programa empieza el 10 de marzo.<br /><br />
+                                                <a href="http://escuelaueformaciononline.es/digital/" style="font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align:left; text-decoration: none;"><strong>Más información AQUÍ</strong></a><br /><br />
+                                                Consulta tus dudas a la coordinadora del programa: <br /><br /><a href="mailto:belen.jimenez@colaboradoresunidadeditorial.es" style="font-size: 16px; mso-height-rule: exactly; line-height: 20px; color: #000000; text-align:left; text-decoration: none;"><strong>belen.jimenez@colaboradoresunidadeditorial.es</strong></a><br /><br />
+                                                O en el tf 91 4435167
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#f4f4f4">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" >
+                                        <tr>
+                                            <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                                INSCRIPCI&Oacute;N ONLINE: <br />
+                                                <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00527B; text-align:center;font-weight: 500;word-break:break-all" href="http://www.escuelaunidadeditorial.es?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=escuela_promofebmarz2017">www.escuelaunidadeditorial.es</a><br><br>
+                                                Para más información: <strong>91 443 51 67</strong> <br/> <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #00527B; text-align:center;font-weight: 500;" href="mailto:informacion@escuelaunidadeditorial.es"> informacion@escuelaunidadeditorial.es</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#f0f0f0">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; " bgcolor="#ffffff">
+                            <tr>
+                                <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                    © Unidad Editorial, 2017<br>Si no desea seguir recibiendo esta información de <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.escuelaunidadeditorial.es/?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=escuela_promofebmarz2017">www.escuelaunidadeditorial.es</a>,<br> por favor envíe un e-mail a <a style="font-family: 'FaktProSoft', sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                        <!--[if mso]>
+                    </td>
+                </tr>
+            </table>
+            <![endif]-->
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

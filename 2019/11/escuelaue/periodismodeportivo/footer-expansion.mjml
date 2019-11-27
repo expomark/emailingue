@@ -1,0 +1,9 @@
+<mj-wrapper full-width="full-width">
+    <mj-section padding-top="0">
+        <mj-column width="100%" padding-right="0">
+            <mj-text color="#445566" font-size="11px" align="center" line-height="16px">
+                Ha recibido este e-mail porque es usuario registrado de &quot;Unidad Editorial Informaci&oacute;n Econ&oacute;mica S.L.&quot; y ha aceptado recibir comunicaciones electr&oacute;nicas relacionadas con nuestros productos o servicios.<br>Si desea dejar de recibir este tipo concreto de comunicación, por favor <a class="text-color" href="{[Opt_Out Baja Expansion Consumer|46151]}">pulse aqu&iacute;</a>.<br />Si desea modificar sus datos <a class="text-color" href="https://seguro.expansion.com/registro/v2/zona-usuario.html">pulse aqu&iacute;</a>.
+            </mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>

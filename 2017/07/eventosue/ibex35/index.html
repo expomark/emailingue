@@ -1,0 +1,469 @@
+j<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Retos y oportunidades que genera el IBEX 35</title>
+
+    <style>
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-blond.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-normal.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    @font-face {
+        font-family: "FaktProSoft";
+        src: url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.eot?#iefix") format("embedded-opentype"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.woff") format("woff"), url("http://emailing.eventosue.com/fonts/faktsoftpro-medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        mso-font-alt: "Arial";
+    }
+    
+    html,
+    body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+    }
+    /* What it does: Stops email clients resizing small text. */
+    
+    * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    /* What is does: Centers email on Android 4.4 */
+    
+    div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+    }
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    
+    table,
+    td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+    }
+    /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+    
+    table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+    }
+    
+    table table table {
+        table-layout: auto;
+    }
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    
+    img {
+        -ms-interpolation-mode: bicubic;
+        height: auto !important;
+    }
+    /* What it does: A work-around for iOS meddling in triggered links. */
+    
+    .mobile-link--footer a,
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: underline !important;
+    }
+    /* What it does: Hover styles for buttons */
+    
+    .button-td {
+        transition: all 100ms ease-in;
+    }
+    
+    .button-td:hover {
+        cursor: pointer;
+        color: #FFF !important;
+        background: #555555 !important;
+        border-color: #555555 !important;
+    }
+    
+    .two-columns table {
+        width: 50%!important;
+        max-width: 50%!important;
+        float: left;
+    }
+    .three-columns table {
+        width: 33.3%!important;
+        float: left;
+    }
+    .four-columns table{
+        width: 25%;
+        float: left;
+    }
+    .show-xs {
+        display: none;
+    }
+    
+    .hidden-xs {
+        display: inline-block;
+    }
+    
+    @media only screen and (max-width: 414px) {
+        .show-xs {
+            display: block;
+        }
+        .two-columns table {
+            width: 100%!important;
+            max-width: 100%!important;
+            float: none;
+        }
+        .two-columns table:first-child {
+            margin-bottom: 30px!important;
+        }
+        .two-columns table a img {
+            width: 200px!important;
+            max-width: 200px!important;
+        }
+        .three-columns table {
+            width: 100%!important;
+            float: left!important;
+        }
+        .three-columns table td {
+            padding: 5px 0px!important;
+            text-align: center!important;
+        }
+        .three-columns-to-two table {
+            width: 50%!important;
+            float: left!important;
+        }
+        .three-columns-to-two table td {
+            padding: 5px 0px!important;
+            text-align: center!important;
+        }
+        .stack-column-center,
+        .stack-column-center a {
+            padding: 10px 0!important;
+        }
+        .hidden-xs {
+            display: none;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .show-xs {
+            display: block;
+        }
+        .hidden-xs {
+            display: none;
+        }
+        .three-columns table {
+            width: 100% !important;
+            float: left !important;
+        }
+        .three-columns table td {
+            padding: 5px 0px!important;
+            text-align: center!important;
+        }
+        .three-columns-to-two table {
+            width: 50%!important;
+            float: left!important;
+        }
+    }
+    </style>
+</head>
+
+<body width="100%" bgcolor="#EFF2F7" style="margin: 0; background: #EFF2F7;">
+    <table align="center" bgcolor="#EFF2F7" style="background:#EFF2F7;width:100%">
+        <tr>
+            <td>
+                <!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="600">
+                            <tr>
+                                <td>
+                    <![endif]-->
+                <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="text-decoration:none;padding: 20px 10px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; font-weight: 300; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;"> Si no visualiza correctamente este correo haga clic <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://emailing.eventosue.com/2017/07/eventosue/ibex35/index.html?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=ibex35_julio2017">aquí.</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td height="8" style="font-size: 0; line-height: 0;">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="max-width: 600px; border-radius: 8px 8px 0 0;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td height="8" style="font-size: 0; line-height: 0;">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:600px;" class="four-columns" bgcolor="#FFFFFF">
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" width="25%" style="font-size:14px;text-align:left;float:left;">
+                                    <tr>
+                                        <td style="padding: 5px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                           Patrocinan:
+                                        </td>
+                                    </tr>  
+                                    <tr>
+                                        <td style="padding: 5px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                            <a href="http://www.eventosyconferenciasue.com/eventos/retos-y-oportunidades-que-genera-el-ibex-35-25-anos-de-historia?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=ibex35_julio2017">
+                                                <img src="http://emailing.eventosue.com/2017/07/eventosue/ibex35/img/logo-01.gif?v=4" alt="Ferrovial" style=";width: 100%; max-width: 150px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="150">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <!--[if mso]>
+                                </td>
+                                <td>
+                            <![endif]-->
+                                <table cellspacing="0" cellpadding="0" border="0" width="25%" style="font-size:14px;text-align:left;float:left;">
+                                    <tr>
+                                        <td height="26">
+                                            
+                                        </td>
+                                    </tr>  
+                                    <tr>
+                                        <td style="padding: 5px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                            <a href="http://www.eventosyconferenciasue.com/eventos/retos-y-oportunidades-que-genera-el-ibex-35-25-anos-de-historia?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=ibex35_julio2017">
+                                                <img src="http://emailing.eventosue.com/2017/07/eventosue/ibex35/img/logo-02.gif?v=4" alt="GVC Gaesco" style=";width: 100%; max-width: 150px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="150">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <!--[if mso]>
+                                </td>
+                                <td>
+                            <![endif]-->
+                                <table cellspacing="0" cellpadding="0" border="0" width="25%" style="font-size:14px;text-align:left;float:left;">
+                                     <tr>
+                                        <td height="26">
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 5px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                            <a href="http://www.eventosyconferenciasue.com/eventos/retos-y-oportunidades-que-genera-el-ibex-35-25-anos-de-historia?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=ibex35_julio2017">
+                                                <img src="http://emailing.eventosue.com/2017/07/eventosue/ibex35/img/logo-03.gif?v=2" alt="Telefónica" style=";width: 100%; max-width: 150px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="150">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if mso]>
+                                </td>
+                                <td>
+                                <![endif]-->
+                                <table cellspacing="0" cellpadding="0" border="0" width="25%" style="font-size:14px;text-align:left;float:left;">
+                                    <tr>
+                                        <td style="padding: 5px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                           Colabora:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 5px 0px; font-size: 11px; font-family: 'Raleway', sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #111111;">
+                                            <a href="http://www.eventosyconferenciasue.com/eventos/retos-y-oportunidades-que-genera-el-ibex-35-25-anos-de-historia?utm_source=ue&amp;utm_medium=mailing&amp;utm_campaign=ibex35_julio2017">
+                                                <img src="http://emailing.eventosue.com/2017/07/eventosue/ibex35/img/logo-04.gif?v=3" alt="Cellnex" style=";width: 100%; max-width: 150px; font-family: 'Raleway', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" height="" align="middle" border="0" width="150">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td height="20" style="font-size: 0; line-height: 0;" bgcolor="#FFFFFF">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="4" style="font-size: 0; line-height: 0;" bgcolor="#FFFFFF">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+                <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                                    <tr>
+                                        <td bgcolor="#ffffff">
+                                            <a href="http://www.eventosyconferenciasue.com/eventos/retos-y-oportunidades-que-genera-el-ibex-35-25-anos-de-historia?utm_source=ue&utm_medium=mailing&utm_campaign=ibex35_julio2017">
+                                                <img src="http://emailing.eventosue.com/2017/07/eventosue/ibex35/img/img-main-01.jpg?v=13" width="600" alt="Retos y oportunidades que genera el IBEX 35" border="0" align="center" style="width: 100%; max-width: 600px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="max-width: 600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table style="max-width: 600px; margin: 0 auto;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#FFFFFF">
+                                    <tr>
+                                        <td>
+                                            <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#dbdce0">
+                                                <tr>
+                                                    <td style="padding: 15px 20px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; font-weight:300; mso-height-rule: exactly; line-height: 24px; color: #000000; background-color: #cfd7d8; text-align:center;"><span style="font-family: 'FaktProSoft', sans-serif, Arial; font-weight:500; mso-height-rule: exactly;">MADRID 12 julio 2017</span><br>Bolsa de Madrid. Plaza de la Lealtad, 1
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20" style="font-size: 0; line-height: 0;" bgcolor="#FFFFFF">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding: 30px 0px;">
+                                            <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: 0 auto;">
+                                                <tr>
+                                                    <td height="60" style="border-radius: 3px; background: #cfd7d8; text-align: center;" class="button-td">
+                                                        <a href="http://www.eventosyconferenciasue.com/eventos/retos-y-oportunidades-que-genera-el-ibex-35-25-anos-de-historia?utm_source=ue&utm_medium=mailing&utm_campaign=ibex35_julio2017" style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 18px; line-height: 1.1; letter-spacing: .5px; text-align: center; text-decoration: none; display: block; color:#000000; border-radius: 3px;">
+                                                                                &nbsp;&nbsp;&nbsp;&nbsp;Solicitar invitación aquí&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px 20px 15px;  background: #fff; font-family: 'FaktProSoft', sans-serif; font-size: 14px; font-weight:400; mso-height-rule: exactly; line-height: 18px; color: #000000; background-color: #FFF; text-align:left; text-decoration: none;">
+                                            <table style="margin: 0 auto;" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding: 20px;  background: #fff; font-family: 'FaktProSoft', sans-serif; font-size: 14px; font-weight:400; mso-height-rule: exactly; line-height: 18px; color: #000000; background-color: #fff; text-align:justify; text-decoration: none;border-radius:5px">
+                                                            Estimado amigo,<br /><br />
+
+                                                            El 14 de enero de 1992 nacía el Ibex 35, el índice más representativo del mercado de valores español, compuesto por las 35 compañías con más líquidez que cotizan en la Bolsa.<br /><br />
+
+                                                            <span style="font-family: 'FaktProSoft', sans-serif; font-size: 14px; font-weight:400; mso-height-rule: exactly; line-height: 18px; color: #E00F2D; text-decoration: none;border-radius:5px"></span> A lo largo de estos 25 años de vida, se han visto reflejados de alguna manera todos los acontecimientos ocurridos en la economía española, europea y mundial. Hoy en día, es un referente tanto para los inversores nacionales como internacionales, habiéndose revalorizado un 255% desde su creación.<br /><br />
+                                                            <span style="font-family: 'FaktProSoft', sans-serif; font-size: 14px; font-weight:400; mso-height-rule: exactly; line-height: 18px; color: #E00F2D; text-decoration: none;border-radius:5px"></span> Desde el diario EXPANSIÓN y BME, junto con el patrocinio de Ferrovial, GVC Gaesco y Telefónica, y la colaboración de Cellnex, le invitamos a asistir a este encuentro donde repasaremos lo que ha representado este índice, valoraremos sus logros y analizaremos los principales retos a los que se enfrenta.<br /><br />
+                                                            <br><br/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" valign="top" width="100%">
+                                            <table style="max-width: 600px;" align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;" class="two-columns">
+                                                            <tr>
+                                                                <td align="center" valign="top">
+                                                                     
+                                                                     
+                                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="50%" style="max-width:560px;">
+                                                                        <tr>
+                                                                            <td style="text-align: center; padding: 0 10px;">
+                                                                                <img src="http://emailing.eventosue.com/2017/07/eventosue/ibex35/img/tw_200x50.gif?v=1" width="200" height="" alt="Hastag #25Ibex35" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="text-align: center;font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 5px 0;" class="stack-column-center">
+                                                                                <a style="padding: 40px 20px 20px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="https://twitter.com/hashtag/25Ibex35">#25Ibex35</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <!--[if mso]>
+                                                                        </td>
+                                                                        <td align="center" valign="top">
+                                                                    <![endif]-->
+                                                                    <table cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size:14px;text-align:left;float:left;">
+                                                                        <tr>
+                                                                            <td style="text-align: center; padding: 0 10px;">
+                                                                                <img src="http://emailing.eventosue.com/2017/07/eventosue/ibex35/img/agenda_200x50.gif" width="200" height="" alt="Descargar Agenda" style="border: 0;width: 200px;max-width: 200px; background: #dddddd; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="text-align: center;font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                                                <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center; text-decoration: none;" href="http://emailing.eventosue.com/2017/07/eventosue/ibex35/img/agenda.pdf?v=21">Descargar agenda</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table> 
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                    <!--[if mso]>
+                                        <td>
+                                        </td>
+                                        <![endif]-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#f4f4f4">
+                                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align:center;" class="stack-column-center">
+                                                        Inscripciones a través de la web:
+                                                        <br>
+                                                        <a style="padding: 40px; font-family: 'FaktProSoft', sans-serif, Arial; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #30509a; text-align:center;font-weight: 500;" href="http://www.eventosyconferenciasue.com/eventos/retos-y-oportunidades-que-genera-el-ibex-35-25-anos-de-historia?utm_source=ue&utm_medium=mailing&utm_campaign=ibex35_julio2017">www.eventosue.com/25ibex</a>
+                                                        <br>
+                                                        <br> Para más información: <strong>91 443 53 36</strong>
+                                                        <br class="show-xs" /><span class="hidden-xs">–</span>Aforo limitado.
+                                                        <br>Imprescindible confirmación por parte de la organización
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+                        <tr>
+                            <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: 'FaktProSoft', sans-serif, Arial; mso-height-rule: exactly; line-height:18px; text-align: center; color: #444444;">
+                                © Unidad Editorial, 2017
+                                <br>Si no desea seguir recibiendo esta información de <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="http://www.eventosyconferenciasue.com/?utm_source=ue&utm_medium=mailing&utm_campaign=ibex35_julio2017">www.eventosyconferenciasue.com</a>,
+                                <br> por favor envíe un e-mail a <a style="font-family: 'FaktProSoft', sans-serif, Arial; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #444444; text-align:center;" href="mailto:lopd@unidadeditorial.es">lopd@unidadeditorial.es</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+                <!--[if mso]>
+                            </td>
+                        </tr>
+                    </table>
+                <![endif]-->
+    <img src="http://www.google-analytics.com/collect?v=1&tid=UA-65264953-1&cid={(user_id)}&t=event&ec=email&ea=open&cs=ue&cm=emailing&cn=ibex35_julio2017" style="visibility: hidden;" />
+</body>
+
+</html>
